@@ -94,7 +94,7 @@
 | Frontend Web Application | https://github.com/1ASI0730-8088-Blit/blip-fleetproof-frontend | v1.0.0|
 | Web Services | https://github.com/1ASI0730-8088-Blit/blip-fleetproof-backend | v1.0.0|
 
-Landing Page desplegada en GitHub Pages: https://1asi0730-8088-blit.github.io/fleetproof-landing-page/
+Landing Page desplegada en GitHub Pages: https://upc-pre-202620-asi0730-8088-blip.github.io/fleetproof-website/
 
 Release de la Landing Page: https://github.com/1ASI0730-8088-Blit/fleetproof-landing-page/releases/tag/v1.0.0
 
