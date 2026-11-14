@@ -729,4 +729,44 @@ Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 
 
 ## 5.4 Video About-the-Product
 
-El video debe presentar la propuesta de FleetProof, mostrar la consulta de un reporte y el recorrido de plan, vehículo y flota, e incorporar una opinión por segmento. Las entrevistas de 5.3 son material de validación y no sustituyen este video. No se ha verificado un enlace publicado para AV2.
+El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
+
+El video recorre el flujo desde el Landing Page hacia la Web Application conectada a los Web Services. El segmento de propietarios y compradores crea su cuenta, solicita un reporte por placa con pago de demostración y descarga el PDF. El segmento empresarial activa un plan, importa vehículos mediante un archivo CSV, crea una flota, asigna un responsable y activa el seguimiento, y revisa el panel de control en escritorio y en móvil. Incluye una opinión de cada segmento, tomada de las sesiones de validación de 5.3: Roxana Limo (empresas con flota) y Cristhian Amaya (propietarios y compradores), quienes autorizaron el uso de sus sesiones en este trabajo. Las escenas de la aplicación indican en pantalla que los datos y los pagos son de demostración.
+
+Las tomas de la aplicación se grabaron con la Web Application (rama `develop`, commit `48f27d9`) y los Web Services (repositorio `fleetproof-platform`, base `c1177eb`) ejecutados en local con PostgreSQL. La rama del backend usada incluía además el historial de revisiones de monitoreo, que no aparece en el video. Las sesiones de validación se realizaron con una interfaz de referencia, por lo que el video muestra solo el recuadro de la videollamada y la frase de cada participante.
+
+| Elemento | Detalle |
+|---|---|
+| Archivo | `upc-pre-202620-1asi0730-8088-blip-about-the-product-sprint-3.mp4` |
+| Duración | 2 min 10 s (00:02:10) |
+| URL en Microsoft Stream | [Video About-the-Product en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQCQ6V5wfx5fQrCdjl89rGCsARuOrdOL1O6iodVaMBtRpBs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kdfgch) |
+| URL en YouTube (incrustado en el Landing Page) | [https://youtu.be/zLoyj8Rw4oA](https://youtu.be/zLoyj8Rw4oA) |
+
+![Cuadro del video About-the-Product: panel de control en escritorio y en móvil](assets/chapter-5/sprint-3/about-the-product-captura.png)
+
+**Figura 5.4-1.** Cuadro del video About-the-Product (00:01:25).
+*Fuente: Elaboración propia.*
+
+### Pauta de secuencias
+
+| Momento | Contenido |
+|---|---|
+| 00:00:00 | El problema: consultas en varios portales, hojas de cálculo y mensajes. |
+| 00:00:10 | Presentación de FleetProof, de BLIP, y su propuesta de valor. |
+| 00:00:19 | Los dos segmentos en el Landing Page: empresas con flota y propietarios o compradores; selector de idioma ES/EN. |
+| 00:00:29 | Segmento de propietarios y compradores: del Landing Page a la aplicación, registro, reporte por placa con pago de demostración y descarga del PDF. |
+| 00:00:53 | Segmento empresarial: activación del plan, importación CSV, flotas, responsable y seguimiento. |
+| 00:01:21 | Panel de control con la distribución de riesgo y diseño adaptable (escritorio y móvil). |
+| 00:01:29 | Presentación de los testimonios de las sesiones de validación. |
+| 00:01:36 | Testimonio de Roxana Limo (empresas con flota). |
+| 00:01:45 | Testimonio de Cristhian Amaya (propietarios y compradores). |
+| 00:01:55 | Modelo de suscripción y cierre. |
+
+### Testimonios incluidos
+
+| Participante | Segmento | Fragmento de la sesión de validación | Frase que aparece en el video |
+|---|---|---|---|
+| Roxana Limo | Empresas con flota | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing), 03:40–03:49 | «Claro que sí, sí, me parece súper interesante. Es más, se lo recomendaría a los clientes corporativos que tenemos que compren flotas.» |
+| Cristhian Amaya | Propietarios y compradores | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing), 03:24–03:34 | «Sí, sí, me interesa: uno para comprar el carro y otro para el monitoreo del carro, pero todo con el tema de las fotopapeletas.» |
+
+Los dos testimonios expresan interés en usar la solución. El de Roxana incluye además la intención de recomendarla a clientes corporativos. Los subtítulos en español y en inglés se entregan junto con el video en el archivo .zip de complementarios.
