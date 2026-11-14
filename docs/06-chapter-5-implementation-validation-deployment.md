@@ -508,30 +508,216 @@ Figura 5.2.2-7. Historial de commits del frontend durante TB1. La [captura compl
 
 **S2-T16:** se adjuntaron la matriz de responsabilidades, la matriz de verificación técnica y la captura del historial. Para cerrar la tarea según su alcance faltan URL y captura del tablero original, video de navegación, capturas nativas de analíticos y constancia de horarios y aceptación del equipo. No se presentan reconstrucciones como evidencia histórica.
 
+### 5.2.3 Sprint 3
+
+El incremento de AV2 conecta la Web Application Vue con los Web Services de FleetProof en ASP.NET Core, EF Core y PostgreSQL. El alcance verificado es local: suscripción, vehículos y flotas; además, el panel muestra reportes y sus detalles. Los cobros y las fuentes vehiculares externas no forman parte de la integración real de este incremento.
+
+#### 5.2.3.1 Sprint Planning 3
+
+| Sprint # | Sprint 3 |
+|---|---|
+| **Sprint Planning Background** | Sprint 2 permitió demostrar Vue sobre una Fake RESTful API. Sprint 3 incorpora servicios con persistencia relacional y conserva el contrato de los recorridos principales. La validación ayuda a distinguir consulta puntual, gestión de flota y seguimiento. |
+| Date | No consta la fecha de una reunión formal de planificación en la evidencia revisada. |
+| Time | Inicio y fin no registrados. |
+| Location | No documentada. |
+| Prepared By | Equipo BLIP; registro consolidado a partir del código y pruebas disponibles. |
+| Attendees (to planning meeting) | Asistencia a la reunión no verificada. |
+| Sprint 2 Review Summary | Quedaron verificados los recorridos del frontend y de la Mock API en escritorio y móvil. |
+| Sprint 2 Retrospective Summary | El historial del informe permite identificar oportunidades: registrar pruebas con su versión y ambiente, y distinguir evidencia de ejecución de evidencia de publicación. No se presenta como acta de retrospectiva. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Permitir que un usuario active un plan, registre un vehículo y lo asigne a una flota desde FleetProof. La asignación debe seguir visible tras recargar, no ser accesible por otra cuenta y las escrituras deben quedar bloqueadas sin un plan activo. |
+| Sprint 3 Velocity | Capacidad no acordada en un acta verificable. |
+| Sum of Story Points | No se calcula una velocidad ni un compromiso a partir del borrador de tareas. |
+
+#### 5.2.3.2 Aspect Leaders and Collaborators
+
+Distribución propuesta para completar AV2, no registro de aportes ya realizados. L = líder; C = colaborador. La autoría verificable se registra en 5.2.3.4 y 5.2.3.8.
+
+| Team Member | GitHub Username | Web Services | Web Application | Arquitectura | Validación | Landing y audiovisual |
+|---|---|---|---|---|---|---|
+| Reyes Limo, Sebastian Eduardo | llegastian11 | L | C | C | | |
+| Palomino Murga, Daniel Stalin | DanielPM23 | C | L | | C | |
+| Becerra Durand, Sebastian Uriel | sebasdev28 | C | | L | | |
+| Gómez De La Torre Huertas, Rodrigo Fernando | rod670 | C | C | | L | C |
+| Payesa Torres, Harrison Hubert | Harrison1024 | | | | C | L |
+
+#### 5.2.3.3 Sprint Backlog 3
+
+Las tareas se vinculan a historias existentes cuando corresponde; los ítems transversales se registran como técnicos. Las horas son estimaciones propuestas, no horas reales. El estado Done corresponde al alcance verificado de cada tarea. S3-T01 a S3-T05 cuentan con pruebas locales y S3-T09 y S3-T10 con evidencia de publicación. La aceptación de las historias se registra por separado. Falta adjuntar URL pública y captura del tablero real.
+
+**Sprint #: Sprint 3**
+
+| Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
+|---|---|---|---|---|---:|---|---|
+| US006 | Manage user access | S3-T01 | Persist and isolate accounts | Probar registro, login y separación de recursos con PostgreSQL. | 6 | llegastian11 | Done |
+| US007 | View plan usage | S3-T02 | Activate subscription in Vue | Validar tres frecuencias, precios por segmento, confirmación QR y persistencia. | 6 | DanielPM23 / llegastian11 | Done |
+| US008 | Register vehicle | S3-T03 | Verify fleet assignment | Registrar vehículo, crear flota y asignarlo; comprobar el resultado tras recargar. | 6 | DanielPM23 / llegastian11 | Done |
+| Técnico | Comunicación entre contextos | S3-T04 | Verify fleet entitlement ACL | Validar que Flotas no lea directamente Suscripciones y que el API rechace escrituras sin permiso. | 6 | llegastian11 | Done |
+| US020 | Provide vehicle report API | S3-T05 | Verify API contract | Verificar el documento OpenAPI y la respuesta de salud de los servicios locales. | 4 | llegastian11 | Done |
+| Técnico | Arquitectura y dominio | S3-T06 | Align diagrams with implementation | Corregir Big Picture, Context Map y C4 contra el código actual y distinguir lo externo de lo local. | 6 | sebasdev28 | To Do |
+| Técnico | Validación | S3-T07 | Analyze validation sessions | Registrar las dos sesiones disponibles y sus hallazgos; no atribuir ejecución autónoma. | 4 | rod670 | To Review |
+| Técnico | Validación | S3-T08 | Validate missing scenarios | Completar muestra por segmento, interacción con Landing y prueba autónoma del flujo empresarial. | 8 | rod670 / Harrison1024 | To Do |
+| Técnico | Publicación | S3-T09 | Deploy Web Services | Publicar C# con PostgreSQL persistente y verificar URL, commit y salud. El release se registra en S3-T12. | 8 | llegastian11 | Done |
+| Técnico | Publicación | S3-T10 | Deploy integrated Web App | Configurar la API pública, verificar Vue desde la URL de producción y conservar la evidencia. | 6 | DanielPM23 | Done |
+| Técnico | Publicación | S3-T11 | Update Landing Page | Publicar la versión AV2 y enlazar los videos cuando estén disponibles. | 6 | Harrison1024 | To Do |
+| Técnico | Entrega | S3-T12 | Consolidate review evidence | Adjuntar analíticos, tablero, evidencias de releases y videos del equipo y del producto. | 6 | rod670 / Harrison1024 | To Do |
+
+#### 5.2.3.4 Development Evidence for Sprint Review
+
+El [repositorio del informe](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/branches) contiene correcciones por capítulo. Los commits de documentación no acreditan implementación ni despliegue. Los commits de código del backend y de Vue se vinculan con las publicaciones verificadas en 5.2.3.7.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| fleetproof-report | feature/sprint3/capitulo-1 | `8e6a379` | docs: update cover and report control for AV2 | Sin cuerpo adicional. | 2026-11-11 |
+| fleetproof-report | feature/sprint3/capitulo-3 | `1c11ff3` | docs: align product backlog with verified demo scope | Sin cuerpo adicional. | 2026-11-11 |
+| fleetproof-report | feature/sprint3/capitulo-5 | `e43805e` | docs: document sprint evidence and validation interviews | Sin cuerpo adicional. | 2026-11-11 |
+| fleetproof-platform | main | [c1177eb](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/commit/c1177ebcd33140b9e48ba34f6b4f2daeb639f93e) | feat: implement FleetProof platform and Docker deployment | Backend C# y configuración Docker. | 2026-11-14 |
+| fleetproof-webapp | develop | [2f5234e](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/commit/2f5234eeae0ef4c1eedf2869cb84ad08ebfe34ca) | Configure Netlify to use real authentication | Autenticación contra el backend de Render. | 2026-11-14 |
+| fleetproof-webapp | develop | [48f27d9](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/commit/48f27d9c02bd05accbc12c3eee00b987c3e5412f) | Adapt FleetProof frontend to the validation video design | Navegación lateral, panel y catálogo de planes. | 2026-11-14 |
+
+#### 5.2.3.5 Execution Evidence for Sprint Review
+
+| Recorrido | Resultado verificado en local |
+|---|---|
+| Vue, C# y PostgreSQL | Registro y login; visualización de tres planes por segmento; cancelación del diálogo sin activar; confirmación del plan anual y estado activo tras recargar. |
+| Flotas y ACL | Alta de vehículo, creación de flota y asignación con responsable. La asignación persiste. Sin plan activo, la API rechaza las escrituras de flota; las consultas existentes siguen disponibles. |
+| Reportes y panel | La cuenta de prueba tiene 30 reportes por placa; el panel mostró tres páginas de diez y el acceso al detalle correspondiente. |
+| Aislamiento de cuentas | La prueba de API valida que otra cuenta no pueda consultar ni modificar recursos ajenos. |
+
+![Flota y asignación verificadas en Vue](assets/chapter-5/sprint-3/vue-flota.png)
+
+Figura 5.2.3-1. Asignación de un vehículo a una flota en la aplicación Vue durante la prueba local.
+
+![Planes de suscripción en la aplicación](assets/chapter-5/sprint-3/vue-planes.png)
+
+Figura 5.2.3-2. Catálogo de tres frecuencias en Vue.
+
+El 14 de noviembre de 2026, desde la [aplicación pública](https://zesty-sorbet-f6d433.netlify.app/login), se registró una cuenta de prueba, se inició sesión y se guardó el vehículo ficticio `TST-483`. El vehículo continuó visible al recargar. También se comprobó que el catálogo mostraba las tres frecuencias.
+
+<figure style="margin: 12pt 0; break-inside: avoid">
+  <img src="assets/chapter-5/sprint-3/frontend-panel-produccion.png" alt="Panel rediseñado en Netlify" style="display:block; max-height:120mm; margin:auto">
+  <figcaption>Figura 5.2.3-3. Panel autenticado del frontend publicado, con navegación lateral y reportes recientes.</figcaption>
+</figure>
+
+<figure style="margin: 12pt 0; break-inside: avoid">
+  <img src="assets/chapter-5/sprint-3/frontend-flota-produccion.png" alt="Vehículo de prueba visible tras recargar" style="display:block; max-height:120mm; margin:auto">
+  <figcaption>Figura 5.2.3-4. El vehículo de prueba permanece visible tras recargar la vista Flota.</figcaption>
+</figure>
+
+<figure style="margin: 12pt 0; break-inside: avoid">
+  <img src="assets/chapter-5/sprint-3/frontend-planes-produccion.png" alt="Planes del frontend publicado" style="display:block; max-height:120mm; margin:auto">
+  <figcaption>Figura 5.2.3-5. Catálogo de planes semanal, mensual y anual en la aplicación pública.</figcaption>
+</figure>
+
+#### 5.2.3.6 Services Documentation Evidence for Sprint Review
+
+El backend publica el [documento OpenAPI](https://fleetproof-platform.onrender.com/openapi/v1.json) y el [endpoint de salud](https://fleetproof-platform.onrender.com/api/v1/health). Ambos respondieron HTTP 200. La Web App consume la base `https://fleetproof-platform.onrender.com/api/v1`; el servidor autentica con Bearer y limita los recursos a la cuenta correspondiente. Subscription Management decide la elegibilidad y el ACL traduce esa decisión al permiso que consume Fleet Management. No se requiere HTTP entre esos dos módulos.
+
+| Recurso | Operaciones de referencia | Resultado |
+|---|---|---|
+| `/health` | GET | Comprueba la conexión de la API con PostgreSQL. |
+| `/authentication/sign-up`, `/authentication/sign-in` | POST | Registro y autenticación; el inicio exitoso devuelve el token de sesión. |
+| `/subscriptions` | GET, POST; PUT por identificador | Consulta, alta y actualización de frecuencia, segmento y estado del plan. |
+| `/vehicles`, `/fleets`, `/assignments` | GET y POST | Recursos de la cuenta. Sin plan activo, crear flota o asignación devuelve 403. |
+| `/reports` | GET, POST; PUT por identificador | Consulta y gestión de reportes de demostración de la cuenta. |
+
+![Documento OpenAPI del backend C# en local](assets/chapter-5/sprint-3/openapi-local.jpg)
+
+Figura 5.2.3-6. Especificación OpenAPI del backend FleetProof v1 consultada en el entorno local.
+
+![Respuesta exitosa del health check local](assets/chapter-5/sprint-3/health-local.jpg)
+
+Figura 5.2.3-7. Respuesta `{"status":"ok"}` a `GET /api/v1/health` en local. La comprobación confirma que el backend pudo conectarse a PostgreSQL en ese entorno.
+
+#### 5.2.3.7 Software Deployment Evidence for Sprint Review
+
+El 12 de noviembre de 2026 se aprovisionó PostgreSQL 17 en Render, en la región Oregon. Desde la terminal local se ejecutó `dotnet ef database update` contra la base remota para aplicar el esquema antes de publicar el servicio C#.
+
+| Producto | Publicación verificada | Evidencia |
+|---|---|---|
+| Landing Page | [GitHub Pages](https://upc-pre-202620-asi0730-8088-blip.github.io/fleetproof-website/), rama `main`. | `bf686b9` restaura el contenido anterior. La nueva versión de la landing para AV2 sigue pendiente. |
+| Web Application | [Netlify](https://zesty-sorbet-f6d433.netlify.app/login), rama `develop`, commit `48f27d9`. Vue se compiló con la URL pública de Render y autenticación real. | [Publicación del frontend](https://app.netlify.com/projects/zesty-sorbet-f6d433/deploys/6af88a0a514969ab8779f55e), figura 5.2.3-11 y pruebas en 5.2.3.5. |
+| Web Services | [Render](https://fleetproof-platform.onrender.com/api/v1/health), rama `main`, commit `c1177eb`. ASP.NET Core en Docker con PostgreSQL 17. | [Despliegue del backend](https://dashboard.render.com/web/srv-dbs7g7ei0phs73cbg380/deploys/dep-dbs7ooj0pb7s739o1te0), figura 5.2.3-10 y OpenAPI en 5.2.3.6. |
+
+![Instancia PostgreSQL 17 disponible en Render](assets/chapter-5/sprint-3/postgresql-render.jpg)
+
+Figura 5.2.3-8. Instancia `fleetproof-postgres-av2` disponible en Oregon en el plan Free de Render.
+
+![Migraciones de EF Core aplicadas a PostgreSQL en Render](assets/chapter-5/sprint-3/migraciones-render.png)
+
+Figura 5.2.3-9. Aplicación de la migración `AddSubscriptionAudience` a la base remota. La salida final `Done.` confirma que el comando terminó.
+
+<figure style="margin: 12pt 0; break-inside: avoid">
+  <img src="assets/chapter-5/sprint-3/render-live.png" alt="Despliegue exitoso en Render" style="display:block; max-height:120mm; margin:auto">
+  <figcaption>Figura 5.2.3-10. Servicio Docker activo en Render. Las comprobaciones de salud registran HTTP 200.</figcaption>
+</figure>
+
+<figure style="margin: 12pt 0; break-inside: avoid">
+  <img src="assets/chapter-5/sprint-3/netlify-produccion.png" alt="Deploy de producción en Netlify" style="display:block; max-height:120mm; margin:auto">
+  <figcaption>Figura 5.2.3-11. Netlify registra como publicado el commit 48f27d9 de develop.</figcaption>
+</figure>
+
+#### 5.2.3.8 Team Collaboration Insights during Sprint
+
+Se separaron las correcciones por capítulo para facilitar su revisión e integración. La evidencia disponible son las [ramas de Sprint 3](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/branches) y los commits enumerados arriba. La matriz LACX no sustituye contribuciones verificables. Para cerrar la sección faltan PR y revisiones de los productos, además de capturas de analíticos con repositorio, rama y período.
+
 ## 5.3 Validation Interviews
 
 Se registran las entrevistas de validación de AV2, separadas de las entrevistas de levantamiento del Capítulo II. Los enlaces corresponden a las grabaciones compartidas por el equipo.
 
 ### 5.3.1 Diseño de entrevistas
 
-Se realizaron demostraciones guiadas y preguntas abiertas. Con Cristhian se planteó la compra de un vehículo usado y se preguntó qué consultaría; luego se mostró el reporte por placa y se conversó sobre alertas. Con Roxana se mostró el panel y se preguntó qué elemento priorizaría; luego se explicó la suscripción y el flujo de flota. La revisión usa los archivos MOV locales y una transcripción automática como apoyo. Los tramos son aproximados y no acreditan ejecución autónoma ni mediciones de éxito por tarea.
+**Objetivo.** Identificar si los segmentos reconocen el punto de entrada del producto y entienden el alcance de un reporte puntual frente al seguimiento de vehículos. Se reconstruyó la pauta a partir de los dos archivos MOV de FleetProof y su transcripción; las preguntas surgieron durante la conversación y no se presentan como un cuestionario aplicado textualmente a todos.
+
+| Segmento | Escenario y elemento mostrado | Recorrido de la Web Application | Preguntas reconstruidas a partir de la sesión |
+|---|---|---|---|
+| Consulta individual | Cristhian evalúa cómo investigar un vehículo usado. Se muestra la consulta por placa y sus resultados. | Plantear la consulta → mostrar reporte y fuentes → conversar sobre vigencia y alertas posteriores. | ¿Dónde buscarías información antes de comprar? ¿Qué datos del historial consultarías? ¿Cómo distinguirías una consulta puntual del seguimiento? |
+| Gestión empresarial | Roxana evalúa qué priorizaría al supervisar vehículos en distintas sedes. Se muestra el panel y se explica el flujo de flotas. | Abrir el panel → localizar el riesgo → abrir el detalle → mostrar la activación y el registro de una flota. | ¿Qué mirarías primero? ¿Qué información reúnes hoy y cuánto trabajo implica? ¿En qué escenario usarías esta herramienta? |
+
+**Moderación y registro.** El moderador mostró el flujo, hizo preguntas abiertas y solicitó comentarios. Se registraron el tramo, la observación y su implicación. No se midieron tiempo por tarea, tasa de éxito ni uso autónomo. Los fotogramas muestran la interfaz de referencia del curso paralelo de Open Source: las sesiones aportan evidencia sobre la propuesta y los flujos compartidos, pero no acreditan una prueba de usabilidad de la aplicación Vue de Aplicaciones Web. El recorrido mostrado a Roxana no valida el plan Empresa con los cerca de 25 vehículos que administra. Para una ronda posterior se debe probar la Landing Page y pedir a participantes que ejecuten los flujos sin asistencia en Vue.
 
 ### 5.3.2 Registro de entrevistas
+
+Después de las entrevistas, se adaptó la navegación de la aplicación Vue al diseño de referencia. La barra lateral, la cabecera y la paleta conservan los patrones visuales del recorrido mostrado. Se verificaron en Vue los flujos de registro, inicio de sesión, activación de plan, registro de vehículo y asignación a flota con el backend local. Las grabaciones corresponden a las sesiones originales y documentan las observaciones que motivaron la adaptación.
 
 | Participante | Perfil de referencia | Grabación | Duración (mm:ss) y resultado observado |
 |---|---|---|---|
 | Roxana Limo | Gestión comercial automotriz; perspectiva empresarial. | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) | **04:09.** En 00:50–00:54 señala la columna de riesgo. En 02:08–02:55 explica que supervisa alrededor de 25 vehículos en tres ciudades y que reunir datos de distintas áreas le toma tiempo. En 03:36–03:49 expresa intención de usar y recomendar la solución. |
 | Cristhian Amaya | Asesoría automotriz; perspectiva de consulta y recomendación vehicular. | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing) | **03:50.** En 00:18–00:36 describe la consulta por placa en varias fuentes. En 01:21–01:48 pregunta por información registral relevante para la compra. En 02:37–03:17 pregunta cuándo se obtienen los datos y qué pasa si una infracción aparece después. |
 
-La duración corresponde al archivo local, redondeada al segundo. No se consigna fecha u hora de sesión sin registro independiente.
+La duración corresponde al archivo local, redondeada al segundo. El inicio de cada sesión en su grabación individual es `00:00`. No se consigna fecha u hora de sesión sin registro independiente.
+
+![Cristhian y el detalle de cobertura de fuentes en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+
+Figura 5.3-1. Cristhian, 01:42: revisión guiada de fuentes en la interfaz de referencia.
+
+![Roxana y la columna de riesgo en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-roxana.jpg)
+
+Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
 
 ### 5.3.3 Evaluaciones según heurísticas
 
-| Heurística | Hallazgo y tramo | Mejora propuesta |
-|---|---|---|
-| Visibilidad del estado del sistema | Cristhian, 02:37–02:56: no queda claro cuándo se consultan o actualizan los datos. | Mostrar fecha de consulta por fuente y distinguir datos simulados de resultados reales. |
-| Correspondencia con el mundo real | Cristhian, 01:21–01:59: pregunta qué información registral y de revisiones técnicas puede ver. | Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte. |
-| Reconocimiento antes que recuerdo | Roxana, 00:50–00:54: reconoce el indicador de riesgo como punto de entrada. En 02:08–02:55 explica el valor de centralizar la información. | Mantener el riesgo visible y ofrecer filtros por flota o sede para priorizar revisiones. |
-| Visibilidad y control del seguimiento | Cristhian, 02:56–03:17: pregunta por una infracción posterior a la consulta. | Distinguir el reporte puntual de la suscripción e indicar la frecuencia efectiva y el canal disponible de alertas. |
+**Ficha de evaluación.** Aplicaciones Web, NRC 8088; equipo evaluador: BLIP; participantes: Cristhian Amaya y Roxana Limo; producto: interfaz de referencia FleetProof. Se analizan consulta, comprensión de resultados y descubrimiento del riesgo; quedan fuera la interacción con Landing, accesibilidad, tareas autónomas y funcionamiento de integraciones.
+
+**Escala del Anexo D:** 1 superficial, 2 menor, 3 mayor y 4 muy grave. La severidad consignada es editorial y preliminar; en estas sesiones no se midió frecuencia ni se observó un bloqueo autónomo.
+
+| # | Problema | Severidad preliminar | Heurística o principio |
+|---|---|---:|---|
+| H01 | No se entiende cuándo se consultan o actualizan los datos. | 2 | Usabilidad: visibilidad del estado del sistema. |
+| H02 | La cobertura de fuentes necesita explicación adicional. | 2 | Arquitectura de información: comprensibilidad de etiquetas y cobertura. |
+| H03 | El alcance del seguimiento posterior no se distingue claramente de la consulta puntual. | 2 | Usabilidad: visibilidad del estado y control del seguimiento. |
+
+**Descripción y recomendaciones**
+
+- **H01.** Cristhian, 02:37–02:56: pregunta si el dato se obtiene al momento o desde una base previa. Mostrar la fecha de consulta por fuente y explicar cuándo se actualiza.
+- **H02.** Cristhian, 01:21–01:59 (figura 5.3-1): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
+- **H03.** Cristhian, 02:56–03:17: pregunta qué ocurre si se registra una infracción después de generar el reporte. Distinguir consulta puntual de seguimiento e indicar frecuencia y canal realmente disponibles.
+- **Fortaleza observada.** Roxana, 00:50–00:54, reconoce el riesgo como punto de entrada (figura 5.3-2). Entre 02:08 y 02:55 explica el valor de centralizar datos. Mantener el indicador visible y probar filtros por flota o sede con un escenario empresarial representativo.
 
 No se observó una prueba controlada de recuperación de errores. Las menciones de correo, fuentes externas o planes adicionales durante la explicación son propuestas del producto, no prestaciones verificadas de la demo local.
+
+Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 entrevistas por segmento** de la guía. Faltan al menos dos por segmento, perfiles con edad y distrito verificados y el video consolidado en Stream con enlaces y tiempos. El análisis de diseño inclusivo queda sin resultado hasta realizar pruebas específicas.
+
+## 5.4 Video About-the-Product
+
+El video debe presentar la propuesta de FleetProof, mostrar la consulta de un reporte y el recorrido de plan, vehículo y flota, e incorporar una opinión por segmento. Las entrevistas de 5.3 son material de validación y no sustituyen este video. No se ha verificado un enlace publicado para AV2.
