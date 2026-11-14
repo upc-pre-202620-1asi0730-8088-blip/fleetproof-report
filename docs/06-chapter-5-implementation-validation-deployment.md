@@ -657,6 +657,15 @@ Figura 5.2.3-9. Aplicación de la migración `AddSubscriptionAudience` a la base
   <figcaption>Figura 5.2.3-11. Netlify registra como publicado el commit 48f27d9 de develop.</figcaption>
 </figure>
 
+**Releases en GitHub**
+
+| Producto | Versión publicada | Alcance |
+|---|---|---|
+| Landing Page | [v2.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/release/v2.0.0) | Versión previa a AV2. El sitio vigente conserva su contenido. |
+| Web Application | [v1.1.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/releases/tag/v1.1.0) | Frontend de AV2 publicado en Netlify desde el commit `48f27d9`. |
+| Web Services | [v1.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/releases/tag/v1.0.0) | Backend de AV2 desplegado en Render desde el commit `c1177eb`. |
+| Informe | [av2-capitulo-5](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/releases/tag/av2-capitulo-5) | Prerelease de revisión del capítulo 5, correspondiente al commit `bbc545b`. |
+
 #### 5.2.3.8 Team Collaboration Insights during Sprint
 
 Se separaron las correcciones por capítulo para facilitar su revisión e integración. La evidencia disponible son las [ramas de Sprint 3](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/branches) y los commits enumerados arriba. La matriz LACX no sustituye contribuciones verificables. Para cerrar la sección faltan PR y revisiones de los productos, además de capturas de analíticos con repositorio, rama y período.
