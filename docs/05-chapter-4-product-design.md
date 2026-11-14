@@ -693,11 +693,11 @@ Step 8: External Systems
 
 Step 9: Aggregates
 
-![image](https://hackmd.io/_uploads/SJ88QAFKGl.png)
+![Aggregates de FleetProof](assets/chapter-4/eventstorming/aggregates.png)
 
 Step 10: Bounded Contexts
 
-![image](https://hackmd.io/_uploads/BJYAmRYYzl.png)
+![Mapa de bounded contexts de FleetProof](assets/chapter-4/eventstorming/bounded-contexts.png)
 
 ### 4.6.2 Software Architecture Context Diagram
 
