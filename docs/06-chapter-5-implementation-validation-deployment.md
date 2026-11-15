@@ -773,6 +773,7 @@ sobre la aplicación implementada.
 
 ## Descripción de problemas
 
+
 ### PROBLEMA H01: Falta de claridad sobre el momento de consulta y actualización de los datos vehiculares
 
 **Severidad:** 2 - Problema menor.
@@ -783,31 +784,38 @@ sobre la aplicación implementada.
 
 Durante la entrevista de validación realizada a Cristhian Amaya, entre los minutos 02:37 y 02:56, el participante manifestó dudas respecto al momento en que FleetProof obtiene la información vehicular, preguntando si los datos se consultan al generar el reporte o si proceden de una base de datos previamente almacenada.
 
-Si bien la interfaz de referencia presenta la fecha de generación del reporte, las fechas asociadas a las fuentes consultadas y sus respectivos estados, no se comunica con suficiente claridad la diferencia entre el momento de consulta y la última actualización de los datos.
+Posteriormente, mediante la inspección de la Web Application ejecutada en un entorno local, se identificó que la vista de detalle del reporte presenta fechas asociadas a Consulta Vehicular, SOAT y SBS Accidentes sin etiquetas descriptivas que permitan determinar su significado.
 
-Esta situación puede generar incertidumbre en los propietarios y compradores de vehículos, especialmente cuando necesitan información vigente para tomar decisiones relacionadas con la adquisición o evaluación de un vehículo.
+Asimismo, en el panel de revisión y publicación del reporte se presenta una fecha debajo del estado Publicado, sin especificar si corresponde a la generación, revisión o publicación del reporte.
+
+La ausencia de etiquetas descriptivas dificulta la diferenciación entre las fechas de consulta, actualización y publicación de la información vehicular.
+
+Esta situación puede generar incertidumbre en los propietarios y compradores de vehículos, especialmente cuando necesitan interpretar la vigencia de los datos antes de tomar una decisión.
 
 Se asigna una severidad preliminar de nivel 2 debido a que el problema dificulta la interpretación de la información, pero no impide continuar con la consulta vehicular.
 
 **Evidencia:**
 
-![Fechas de consulta y cobertura de fuentes del reporte vehicular](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+![Fechas sin etiquetas descriptivas en el detalle del reporte vehicular](assets/chapter-5/sprint-3/heuristics/h01-system-status.png)
 
-*Figura 5.3.3-1. Visualización de las fechas y estados de consulta de las fuentes de información en la interfaz de referencia de FleetProof.*
+*Figura 5.3.3-1. Fechas sin etiquetas descriptivas en las fuentes consultadas y en el panel de publicación del reporte vehicular de FleetProof.*
 
-La captura corresponde al minuto 01:42 de la entrevista y permite contextualizar la información presentada al participante. La observación específica sobre la actualización de los datos se encuentra registrada entre los minutos 02:37 y 02:56.
+La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
+
+La evaluación se realizó utilizando datos simulados. Por lo tanto, el hallazgo corresponde a la presentación y comprensión de las fechas, no a la vigencia real de la información proporcionada por fuentes externas.
 
 **Recomendación:**
 
 Se recomienda mejorar la comunicación del estado y la vigencia de la información vehicular mediante las siguientes acciones:
 
+- Incorporar etiquetas descriptivas junto a las fechas de cada fuente consultada.
 - Diferenciar la fecha de generación del reporte de la fecha de consulta de cada fuente.
 - Mostrar la fecha de última actualización de los datos cuando dicha información se encuentre disponible.
-- Indicar si los resultados proceden de una consulta realizada en el momento o de información previamente almacenada.
+- Identificar explícitamente la fecha de publicación del reporte.
 - Informar al usuario cuando no sea posible determinar la fecha de actualización de una fuente.
-- Incorporar mensajes explicativos que permitan comprender el alcance y la vigencia de los resultados obtenidos.
+- Mantener visible la identificación de los datos simulados en el entorno de demostración.
 
-Estas mejoras permitirían reducir la incertidumbre del usuario y facilitar la interpretación de la información presentada en los reportes vehiculares.
+Estas mejoras permitirían reducir la incertidumbre del usuario, mejorar la visibilidad del estado del sistema y facilitar la interpretación de la información presentada en los reportes vehiculares.
 
 
 ### PROBLEMA H02: Información insuficiente sobre el alcance y la cobertura de las fuentes consultadas
@@ -895,6 +903,48 @@ Se recomienda mejorar la comunicación de las características y el alcance de l
 
 Estas mejoras permitirían establecer una correspondencia más clara entre las expectativas de los usuarios y el comportamiento de FleetProof, además de favorecer una comprensión adecuada de los servicios ofrecidos.
 
+
+### PROBLEMA H04: Inconsistencia del idioma en las etiquetas de navegación cuando se selecciona español
+
+**Severidad:** 1 - Problema superficial.
+
+**Heurística incumplida:** Usabilidad - Consistencia y estándares.
+
+**Problema:**
+
+Durante la inspección visual de las capturas de la Web Application de FleetProof, se identificó una inconsistencia en las etiquetas utilizadas en el sistema de navegación.
+
+A pesar de encontrarse seleccionado el idioma español, la barra lateral de navegación conserva la etiqueta Dashboard en inglés, mientras que las demás opciones, como Flota, Reportes, Alertas, Casos, Suscripciones y Mi perfil, se presentan en español.
+
+Esta combinación de idiomas afecta la consistencia del lenguaje utilizado en la interfaz y puede generar dificultades de comprensión para usuarios que no están familiarizados con términos en inglés.
+
+Asimismo, representa una oportunidad de mejora en la aplicación de las características de internacionalización (i18n) establecidas para los productos digitales de FleetProof.
+
+Se asigna una severidad preliminar de nivel 1 debido a que la inconsistencia no impide la navegación ni la identificación de las principales funcionalidades, pero afecta la uniformidad de la experiencia de usuario.
+
+**Evidencia:**
+
+![Inconsistencia del idioma en la barra lateral de navegación de FleetProof](assets/chapter-5/sprint-3/frontend-flota-produccion.png)
+
+*Figura 5.3.3-4. Presencia de la etiqueta Dashboard en inglés mientras se encuentra seleccionado el idioma español en la Web Application de FleetProof.*
+
+En la captura se observa que el selector de idioma presenta la opción ES, mientras que la primera etiqueta de la barra lateral de navegación permanece en inglés.
+
+Este hallazgo corresponde a una inspección visual de la Web Application desarrollada con Vue y no a una observación realizada por los participantes durante las entrevistas de validación.
+
+**Recomendación:**
+
+Se recomienda mejorar la consistencia del idioma y la implementación de la internacionalización mediante las siguientes acciones:
+
+- Incorporar todas las etiquetas de navegación en los recursos de internacionalización de la aplicación.
+- Utilizar la denominación Panel de control para español y Dashboard para inglés.
+- Evitar el uso de textos estáticos que no dependan de la configuración del idioma seleccionado.
+- Revisar las traducciones de los encabezados, botones, mensajes de estado, formularios y elementos de navegación.
+- Verificar la consistencia de la interfaz para los idiomas English (en_US) y Latin American Spanish (es_419).
+- Realizar pruebas de cambio de idioma en las principales vistas de la aplicación.
+- Mantener el inglés como idioma predeterminado, de acuerdo con las especificaciones del enunciado del trabajo final.
+
+Estas mejoras permitirían ofrecer una experiencia de usuario consistente, facilitar la comprensión de las funcionalidades y fortalecer el enfoque inclusivo de FleetProof mediante una adecuada internacionalización.
 
 
 ## 5.4 Video About-the-Product
