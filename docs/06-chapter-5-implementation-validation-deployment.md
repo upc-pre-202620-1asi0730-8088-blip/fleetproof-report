@@ -999,6 +999,45 @@ Se recomienda mejorar la comprensión y accesibilidad de los controles de gesti�
 
 Estas mejoras permitirían reducir la ambigüedad de los controles, facilitar el reconocimiento de las funcionalidades y proporcionar una experiencia de usuario más inclusiva para los segmentos objetivo de FleetProof.
 
+### PROBLEMA H06: Generación accidental de reportes duplicados por ausencia de confirmación y control de acciones repetidas
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Prevención de errores.
+
+**Problema:**
+
+Durante la inspección de la Web Application de FleetProof se identificó que, al seleccionar la acción de reporte desde la vista Flota, el sistema redirige directamente al detalle de un reporte sin solicitar confirmación previa ni explicar con claridad que la acción generará un nuevo registro.
+
+Como consecuencia, al repetir la interacción se generan múltiples reportes asociados a la misma placa, produciendo registros duplicados en la vista Reportes vehiculares.
+
+Esta situación puede ocasionar errores involuntarios, incrementar la cantidad de registros innecesarios y dificultar la gestión de la información por parte del usuario.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la integridad operativa del flujo y puede generar confusión, aunque no impide continuar utilizando la aplicación.
+
+**Evidencia:**
+
+![Generación de reportes duplicados en FleetProof](assets/chapter-5/sprint-3/heuristics/h06-error-prevention.png)
+
+*Figura 5.3.3-8. Vista de reportes vehiculares con múltiples registros generados para la misma placa.*
+
+Se observa que la acción de reporte permite generar más de un registro para la misma placa sin un mecanismo visible de confirmación, prevención de duplicados o advertencia previa.
+
+**Recomendación:**
+
+Se recomienda prevenir la generación accidental de reportes duplicados mediante las siguientes acciones:
+
+- Solicitar confirmación antes de generar un nuevo reporte.
+- Informar explícitamente al usuario que la acción creará un nuevo registro.
+- Verificar si ya existe un reporte reciente o en borrador para la misma placa antes de registrar uno nuevo.
+- Bloquear temporalmente la acción mientras se procesa la solicitud.
+- Mostrar mensajes de confirmación o retroalimentación después de completar la generación del reporte.
+- Diferenciar claramente entre ver un reporte existente y generar uno nuevo.
+
+Estas mejoras permitirían reducir errores involuntarios, mejorar el control de las acciones del usuario y fortalecer la prevención de errores en FleetProof.
+
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
