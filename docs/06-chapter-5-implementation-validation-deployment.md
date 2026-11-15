@@ -721,23 +721,17 @@ Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
 
 ## Site o App a evaluar
 
+La evaluación considera las observaciones iniciales obtenidas durante las entrevistas sobre la interfaz de referencia de FleetProof, complementadas con una inspección directa y pruebas de interacción sobre la Web Application desarrollada con Vue e integrada con los Web Services del producto.
+
 ### **FleetProof**
 
-FleetProof es una solución web orientada a la consulta de
-información vehicular y a la gestión de flotas.
+En esta sección se presenta la evaluación de la experiencia de usuario de FleetProof, considerando las observaciones registradas durante las entrevistas de validación del Sprint 3 y las pruebas de interacción realizadas directamente sobre la Web Application.
 
-La evaluación inicial toma como referencia las observaciones
-registradas durante las entrevistas de validación realizadas
-a representantes de los segmentos objetivo. Estas sesiones
-se desarrollaron utilizando la interfaz de referencia del
-producto.
+La evaluación se organiza siguiendo el formato establecido en el Anexo D del enunciado del trabajo final, considerando las dimensiones de usabilidad, diseño inclusivo y arquitectura de información.
 
-La evaluación podrá complementarse mediante la inspección
-heurística de la aplicación web implementada en Vue,
-diferenciando los hallazgos de esta inspección de aquellos
-obtenidos durante las entrevistas.
+Para la ejecución de las pruebas se utilizó la aplicación desarrollada con Vue, integrada con el backend ASP.NET Core y la base de datos PostgreSQL en un entorno local con datos simulados.
 
-
+Como resultado de la evaluación, se identificaron doce problemas, los cuales fueron clasificados según su nivel de severidad y documentados mediante evidencias visuales y recomendaciones de mejora.
 
 #### Tareas a evaluar
 
