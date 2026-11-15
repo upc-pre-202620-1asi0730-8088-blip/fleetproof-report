@@ -1073,6 +1073,38 @@ Se recomienda mejorar la orientación del estado vacío en la vista de Suscripci
 Estas mejoras permitirían reducir la incertidumbre del usuario y facilitar la comprensión del estado actual del servicio de suscripciones en FleetProof.
 
 
+### PROBLEMA H08: Inconsistencia de colores en los indicadores de distribución de riesgo
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Consistencia y estándares.
+
+**Problema:**
+
+En el panel de control de FleetProof se identificó una inconsistencia en la representación visual de los niveles de riesgo vehicular.
+
+La categoría En observación se identifica mediante una etiqueta de color naranja; sin embargo, la barra correspondiente a su distribución se presenta en color verde, el cual también se encuentra asociado a la categoría Sin novedad.
+
+Esta inconsistencia puede generar interpretaciones incorrectas sobre el estado de riesgo de los vehículos y dificultar la identificación rápida de situaciones que requieren atención.
+
+Se asigna una severidad de nivel 2 debido a que el problema afecta la interpretación de los indicadores, aunque las etiquetas textuales permiten identificar el estado correspondiente.
+
+**Evidencia:**
+
+![Inconsistencia de colores en la distribución de riesgo](assets/chapter-5/sprint-3/heuristics/h08-risk-colors.png)
+
+*Figura 5.3.3-10. Inconsistencia entre el color de la etiqueta y la barra de distribución del estado En observación.*
+
+Se observa que la categoría "En observación" utiliza una etiqueta naranja y una barra verde, generando una inconsistencia en la representación visual del riesgo vehicular.
+
+**Recomendación:**
+
+- Utilizar una paleta de colores consistente para representar los niveles de riesgo.
+- Emplear rojo para Crítico, naranja para En observación y verde para Sin novedad.
+- Mantener la correspondencia entre las etiquetas, barras e indicadores de riesgo.
+- Complementar los colores con etiquetas textuales para evitar que la interpretación dependa exclusivamente del color.
+- Incorporar estas convenciones en el Design System de FleetProof.
+
 
 ## 5.4 Video About-the-Product
 
