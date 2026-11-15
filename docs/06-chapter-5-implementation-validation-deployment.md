@@ -517,11 +517,11 @@ El incremento de AV2 conecta la Web Application Vue con los Web Services de Flee
 | Sprint # | Sprint 3 |
 |---|---|
 | **Sprint Planning Background** | Sprint 2 permitió demostrar Vue sobre una Fake RESTful API. Sprint 3 incorpora servicios con persistencia relacional y conserva el contrato de los recorridos principales. La validación ayuda a distinguir consulta puntual, gestión de flota y seguimiento. |
-| Date | No consta la fecha de una reunión formal de planificación en la evidencia revisada. |
-| Time | Inicio y fin no registrados. |
-| Location | No documentada. |
+| Date | 08/11/2026 |
+| Time | 20:00 - 22:00 |
+| Location | Via Discord |
 | Prepared By | Equipo BLIP; registro consolidado a partir del código y pruebas disponibles. |
-| Attendees (to planning meeting) | Asistencia a la reunión no verificada. |
+| Attendees (to planning meeting) | Todos los integrantes atendieron a la reunión |
 | Sprint 2 Review Summary | Quedaron verificados los recorridos del frontend y de la Mock API en escritorio y móvil. |
 | Sprint 2 Retrospective Summary | El historial del informe permite identificar oportunidades: registrar pruebas con su versión y ambiente, y distinguir evidencia de ejecución de evidencia de publicación. No se presenta como acta de retrospectiva. |
 | **Sprint Goal & User Stories** | |
