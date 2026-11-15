@@ -817,11 +817,15 @@ El diagrama de base de datos muestra las tablas que conforman FleetProof y las r
 
 **Explicación, decisiones y relación con otros artefactos:**
 
-El diagrama representa la estructura relacional de FleetProof y muestra cómo se distribuye la información entre las diferentes tablas del sistema. Su diseño contempla los siguientes aspectos:
+El diagrama representa la estructura relacional de FleetProof en PostgreSQL y muestra cómo se distribuye la información entre las tablas del sistema, agrupadas por bounded context. Su diseño contempla los siguientes aspectos:
 
-* **Normalización de datos:** El modelo se plantea siguiendo la Tercera Forma Normal (3FN), con el objetivo de reducir la redundancia y mantener la consistencia de los registros. La información de los vehículos se centraliza en `VEHICLES`, mientras que las consultas y los reportes se almacenan por separado.
+* **Normalización de datos:** El modelo sigue la Tercera Forma Normal (3FN) para reducir la redundancia y mantener la consistencia de los registros. La información de los vehículos se centraliza en `VEHICLES`, mientras que los hallazgos de los reportes (`REPORT_FINDINGS`) y los cambios de las alertas (`ALERT_CHANGES`) se almacenan en tablas propias.
 
 * **Identificación de registros:** Las tablas utilizan identificadores UUID como claves primarias, permitiendo identificar cada registro y establecer relaciones mediante claves foráneas.
 
-* **Gestión de flotas y monitoreo:** La tabla `FLEET_VEHICLE_ASSIGNMENTS` relaciona los vehículos con sus flotas y responsables. Por otro lado, `VEHICLE_MONITORINGS` y `MONITORING_ALERTS` permiten registrar las actividades de supervisión y las alertas generadas ante cambios en la información vehicular.
+* **Suscripciones y patrón Money:** La tabla `PLANS` define el catálogo de planes y `SUBSCRIPTIONS` registra el plan contratado por cada usuario. El precio se guarda como monto y moneda (`PRICE_AMOUNT`, `PRICE_CURRENCY`), siguiendo el patrón Money del diagrama de clases.
+
+* **Gestión de flotas y monitoreo:** La tabla `FLEET_VEHICLE_ASSIGNMENTS` relaciona los vehículos con sus flotas y responsables, y `RESOLUTION_CASES` registra los casos de riesgo vinculados a un reporte. Por otro lado, `VEHICLE_MONITORINGS` y `MONITORING_ALERTS` permiten registrar las actividades de supervisión y las alertas generadas ante cambios en la información vehicular.
+
+* **Relación con otros artefactos:** Cada tabla corresponde a una entidad del diagrama de clases del backend y la base de datos es el contenedor *Database (PostgreSQL)* del modelo C4, al que la Web API accede mediante Entity Framework Core.
 
