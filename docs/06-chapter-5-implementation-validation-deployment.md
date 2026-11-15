@@ -800,9 +800,7 @@ Se asigna una severidad preliminar de nivel 2 debido a que el problema dificulta
 
 *Figura 5.3.3-1. Fechas sin etiquetas descriptivas en las fuentes consultadas y en el panel de publicación del reporte vehicular de FleetProof.*
 
-La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
-
-La evaluación se realizó utilizando datos simulados. Por lo tanto, el hallazgo corresponde a la presentación y comprensión de las fechas, no a la vigencia real de la información proporcionada por fuentes externas.
+Se observa que las fechas de las fuentes consultadas y del panel de publicación del reporte carecen de etiquetas descriptivas, lo que dificulta identificar si corresponden a la consulta, actualización o publicación de la información vehicular.
 
 **Recomendación:**
 
@@ -816,8 +814,6 @@ Se recomienda mejorar la comunicación del estado y la vigencia de la informaci�
 - Mantener visible la identificación de los datos simulados en el entorno de demostración.
 
 Estas mejoras permitirían reducir la incertidumbre del usuario, mejorar la visibilidad del estado del sistema y facilitar la interpretación de la información presentada en los reportes vehiculares.
-
-
 
 ### PROBLEMA H02: Información insuficiente sobre el alcance y la cobertura de las fuentes consultadas
 
@@ -845,8 +841,6 @@ Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la
 
 *Figura 5.3.3-2. Diálogo de solicitud de reporte vehicular sin información descriptiva sobre las fuentes incluidas y el alcance del servicio.*
 
-La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
-
 Se observa que el diálogo permite ingresar la placa del vehículo y continuar al pago simulado, sin presentar información adicional sobre la cobertura del reporte. El hallazgo se limita a esta vista, sin afirmar que dicha información se encuentre ausente en todas las etapas posteriores del proceso.
 
 **Recomendación:**
@@ -863,8 +857,6 @@ Se recomienda mejorar la comprensión del alcance del reporte vehicular mediante
 - Mantener visible la advertencia sobre el carácter informativo del reporte vehicular.
 
 Estas mejoras permitirían reducir la incertidumbre de los usuarios, facilitar la comprensión de la información disponible y favorecer una toma de decisiones informada antes de solicitar un reporte vehicular.
-
-
 
 ### PROBLEMA H03: Diferenciación insuficiente entre la consulta puntual y el servicio de monitoreo continuo de vehículos
 
@@ -894,13 +886,7 @@ Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la
 
 *Figura 5.3.3-3. Vista Monitoreo de FleetProof, donde se presenta una descripción técnica del funcionamiento y las limitaciones del servicio de seguimiento vehicular.*
 
-La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
-
-En la imagen se observa la descripción del servicio, las opciones de configuración del intervalo, el botón de revisión manual y las columnas correspondientes a la última y próxima revisión.
-
-La aplicación también comunica correctamente la necesidad de contar con una suscripción activa. No obstante, la terminología técnica utilizada representa una oportunidad de mejora en la comunicación con los usuarios.
-
-La inspección se realizó sin una suscripción activa, por lo que no se verificó la ejecución efectiva de las revisiones ni la generación de alertas.
+Se observa que el diálogo de solicitud del reporte permite ingresar la placa del vehículo y continuar al pago simulado, sin proporcionar información sobre las fuentes consultadas, la cobertura ni las limitaciones del reporte vehicular.
 
 **Recomendación:**
 
@@ -919,8 +905,6 @@ Como propuesta de mejora, se recomienda utilizar el siguiente mensaje:
 "El monitoreo revisa los datos de tus vehículos según el intervalo seleccionado mientras mantienes esta pantalla abierta. Puedes solicitar una revisión manual en cualquier momento. Las revisiones se detienen al cerrar esta vista y no incluyen consultas a fuentes oficiales".
 
 Estas mejoras permitirían establecer una correspondencia más clara entre las expectativas de los usuarios y el funcionamiento actual de FleetProof.
-
-
 
 ### PROBLEMA H04: Inconsistencia del idioma en las etiquetas de navegación cuando se selecciona español
 
@@ -948,11 +932,7 @@ Se asigna una severidad preliminar de nivel 1 debido a que la inconsistencia no 
 
 *Figura 5.3.3-4. Inconsistencia entre la etiqueta Dashboard de la barra de navegación y el encabezado Panel de control con el idioma español seleccionado.*
 
-La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
-
-En la imagen se observa que el selector de idioma presenta la opción ES, mientras que la etiqueta Dashboard permanece en inglés y el encabezado de la vista se encuentra traducido al español.
-
-Este hallazgo fue identificado mediante una inspección directa de la interfaz y no corresponde a una observación realizada por los participantes durante las entrevistas de validación.
+Se observa que, a pesar de encontrarse seleccionado el idioma español (ES), la barra de navegación conserva la etiqueta Dashboard en inglés, mientras que el encabezado de la misma vista utiliza la denominación Panel de control en español.
 
 **Recomendación:**
 
@@ -968,6 +948,56 @@ Se recomienda mejorar la consistencia del idioma y la implementación de la inte
 
 Estas mejoras permitirían ofrecer una experiencia de usuario consistente, reducir las dificultades de comprensión y fortalecer las características de internacionalización de FleetProof.
 
+### PROBLEMA H05: Acciones de gestión vehicular representadas mediante iconos sin etiquetas de texto visibles
+
+**Severidad:** 2 - Problema menor.
+
+**Principio incumplido:** Diseño inclusivo - Considera la situación (Consider situation).
+
+**Problema:**
+
+Durante la inspección de la Web Application de FleetProof ejecutada en un entorno local, se identificó que la columna Acciones de la tabla de vehículos presenta dos controles representados únicamente mediante iconos, sin etiquetas de texto visibles que expliquen sus respectivas funcionalidades.
+
+El primer control utiliza un icono de lápiz, el cual permite acceder al diálogo de edición del vehículo. El segundo utiliza un icono de documento con un símbolo de adición, cuya interacción conduce a la vista de detalle de un reporte vehicular en estado Borrador.
+
+Si bien el icono de lápiz puede resultar familiar para usuarios con experiencia en aplicaciones digitales, el significado del segundo icono podría resultar ambiguo para usuarios que interactúan por primera vez con FleetProof.
+
+La dependencia de símbolos visuales para comunicar las acciones disponibles puede generar dificultades de comprensión en usuarios con distintos niveles de experiencia tecnológica, capacidades visuales o condiciones de interacción.
+
+En dispositivos táctiles, también resulta importante que la identificación de las funcionalidades no dependa exclusivamente de posicionar el cursor sobre los controles.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema puede incrementar el esfuerzo necesario para reconocer las acciones disponibles, aunque no impide acceder a las funcionalidades de gestión vehicular.
+
+**Evidencia:**
+
+![Controles sin etiquetas de texto visibles en la tabla de vehículos](assets/chapter-5/sprint-3/heuristics/h05-inclusive-design.png)
+
+*Figura 5.3.3-5. Columna Acciones de la vista Flota, donde se presentan los controles de gestión vehicular mediante iconos sin etiquetas de texto visibles.*
+
+* Al seleccionar el primer icono se presenta el diálogo Editar vehículo, que permite modificar la placa, el tipo de vehículo, la sede, el propietario y el estado de riesgo.
+* Al seleccionar el segundo icono se accede a la vista de detalle de un reporte vehicular en estado Borrador.
+
+
+![Diálogo de edición del vehículo](assets/chapter-5/sprint-3/heuristics/h05-edit-vehicle-and-report-action.png)
+
+*Figura 5.3.3-6. Diálogo de edición presentado después de seleccionar el icono de lápiz y el segundo icono se accede a la vista de detalle de un reporte vehicular en estado Borrador.*
+
+Se observa que los controles de la columna Acciones se representan únicamente mediante iconos sin etiquetas de texto visibles, lo que dificulta reconocer las funcionalidades de edición del vehículo y generación del reporte antes de interactuar con ellos.
+
+**Recomendación:**
+
+Se recomienda mejorar la comprensión y accesibilidad de los controles de gestión vehicular mediante las siguientes acciones:
+
+- Complementar los iconos con etiquetas de texto que describan las acciones disponibles.
+- Utilizar denominaciones comprensibles como Editar vehículo y Generar reporte, según el comportamiento efectivo de cada control.
+- Incorporar mecanismos de ayuda contextual que expliquen el propósito de las acciones.
+- Garantizar que la información proporcionada por estos mecanismos también pueda obtenerse mediante el teclado y la interacción táctil.
+- Verificar que cada control cuente con un nombre accesible mediante texto visible o atributos ARIA adecuados.
+- Comprobar que los controles puedan recibir el foco del teclado y que este sea perceptible visualmente.
+- Verificar que el tamaño y la separación de los controles faciliten la interacción desde dispositivos móviles.
+- Realizar pruebas complementarias con usuarios de distintos niveles de experiencia tecnológica y tecnologías de asistencia.
+
+Estas mejoras permitirían reducir la ambigüedad de los controles, facilitar el reconocimiento de las funcionalidades y proporcionar una experiencia de usuario más inclusiva para los segmentos objetivo de FleetProof.
 
 ## 5.4 Video About-the-Product
 
