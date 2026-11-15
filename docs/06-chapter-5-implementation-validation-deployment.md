@@ -672,7 +672,9 @@ Se separaron las correcciones por capítulo para facilitar su revisión e integr
 
 ## 5.3 Validation Interviews
 
-Se registran las entrevistas de validación de AV2, separadas de las entrevistas de levantamiento del Capítulo II. Los enlaces corresponden a las grabaciones compartidas por el equipo.
+Se registran las entrevistas de validación de AV2, separadas de las entrevistas de levantamiento del Capítulo II. Las dos sesiones se editaron en un único video consolidado, publicado en Microsoft Stream, en el que cada sesión aparece completa y precedida por una tarjeta de título con los datos de la persona, su segmento objetivo y la fecha de la entrevista.
+
+Los flujos de navegación que recorre el video son los siguientes. En la sesión de Roxana Limo se muestra el panel con los reportes recientes y la columna de riesgo, el detalle de un reporte con hallazgos, los planes de suscripción, la activación del plan y la creación de una flota. En la sesión de Cristhian Amaya se muestra la consulta de un vehículo por placa, el reporte con la cobertura de sus fuentes, el monitoreo con alertas y los planes de suscripción. Las grabaciones originales siguen disponibles en Google Drive.
 
 ### 5.3.1 Diseño de entrevistas
 
@@ -689,26 +691,61 @@ Se registran las entrevistas de validación de AV2, separadas de las entrevistas
 
 Después de las entrevistas, se adaptó la navegación de la aplicación Vue al diseño de referencia. La barra lateral, la cabecera y la paleta conservan los patrones visuales del recorrido mostrado. Se verificaron en Vue los flujos de registro, inicio de sesión, activación de plan, registro de vehículo y asignación a flota con el backend local. Las grabaciones corresponden a las sesiones originales y documentan las observaciones que motivaron la adaptación.
 
-| Participante | Perfil de referencia | Grabación | Duración (mm:ss) y resultado observado |
-|---|---|---|---|
-| Roxana Limo | Gestión comercial automotriz; perspectiva empresarial. | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) | **04:09.** En 00:50–00:54 señala la columna de riesgo. En 02:08–02:55 explica que supervisa alrededor de 25 vehículos en tres ciudades y que reunir datos de distintas áreas le toma tiempo. En 03:36–03:49 expresa intención de usar y recomendar la solución. |
-| Cristhian Amaya | Asesoría automotriz; perspectiva de consulta y recomendación vehicular. | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing) | **03:50.** En 00:18–00:36 describe la consulta por placa en varias fuentes. En 01:21–01:48 pregunta por información registral relevante para la compra. En 02:37–03:17 pregunta cuándo se obtienen los datos y qué pasa si una infracción aparece después. |
+**Video consolidado.** Las dos sesiones se editaron en el archivo `upc-pre-202620-1asi0730-8088-blip-validation-sprint-3.mp4`, de 08:07 de duración, publicado en Microsoft Stream con enlace privado: [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z). Cada sesión va precedida por una tarjeta de título de cuatro segundos con el nombre, la edad, el distrito, el segmento objetivo, la fecha y la duración, y durante la sesión se mantiene un rótulo con esos datos.
 
-La duración corresponde al archivo local, redondeada al segundo. El inicio de cada sesión en su grabación individual es `00:00`. No se consigna fecha u hora de sesión sin registro independiente.
+![Tarjeta de título de la primera entrevista en el video consolidado](assets/chapter-5/sprint-3/validacion-video-tarjeta.png)
 
-![Cristhian y el detalle de cobertura de fuentes en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+Figura 5.3-1. Tarjeta de título de la entrevista 1, en 00:00:02 del video consolidado.
 
-Figura 5.3-1. Cristhian, 01:42: revisión guiada de fuentes en la interfaz de referencia.
+#### Entrevista 1: Roxana Limo
 
-![Roxana y la columna de riesgo en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-roxana.jpg)
+| Campo | Detalle |
+|---|---|
+| Segmento | Responsables comerciales, logísticos y flotas pequeñas |
+| Nombres y apellidos | Roxana Limo |
+| Edad | 43 años |
+| Distrito | Trujillo |
+| Fecha | 11/11/2026 |
+| Video | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
+| Inicio en el video consolidado | 00:00:04 (tarjeta de título en 00:00:00) |
+| Duración | 04:09 |
+| Grabación original | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) |
+| Screenshot | Figura 5.3-2 |
+| Resumen | Roxana recorrió el panel con los reportes recientes y, al preguntarle qué le llamaba la atención, señaló la columna de riesgo (00:50–00:54). Vio el detalle de un reporte con hallazgos de riesgo alto, los planes de suscripción semanal, mensual y anual, y el registro de una flota. Calificó la solución como «súper interesante» por reunir «toda la información en un clic» (02:00–02:05). Explicó que, como jefa de marca automotriz, supervisa alrededor de 25 vehículos de prueba de manejo en tres ciudades y que obtener su kilometraje, movimientos y papeletas la obliga a consultar a varias personas de distintas áreas, lo que le toma bastante tiempo (02:17–02:55). Consideró la plataforma muy amigable, indicó que sí la usaría y que se la recomendaría a clientes corporativos que compran flotas, como empresas de taxis y de transporte (03:32–03:59). |
 
-Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
+![Roxana y la columna de riesgo en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-video-roxana.png)
+
+Figura 5.3-2. Roxana, en 00:01:02 del video consolidado (00:58 de su sesión): listado de vehículos con el riesgo destacado.
+
+#### Entrevista 2: Cristhian Amaya
+
+| Campo | Detalle |
+|---|---|
+| Segmento | Propietarios, compradores y asesores automotores |
+| Nombres y apellidos | Cristhian Amaya |
+| Edad | 39 años |
+| Distrito | Chiclayo |
+| Fecha | 11/11/2026 |
+| Video | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
+| Inicio en el video consolidado | 00:04:17 (tarjeta de título en 00:04:13) |
+| Duración | 03:50 |
+| Grabación original | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing) |
+| Screenshot | Figura 5.3-3 |
+| Resumen | Ante el escenario de comprar un vehículo usado, Cristhian indicó que buscaría por placa en las distintas fuentes, una por una (00:18–00:36). Al ver el reporte por placa con la cobertura de sus fuentes, preguntó qué información podría mostrar la fuente registral; al conocer que incluiría asientos registrales, deudas o garantías, cantidad de dueños, modificaciones y embargos, comentó que es la información que se busca para decidir una compra (01:21–01:41). Preguntó si los datos se obtienen en el momento de la consulta o desde una base guardada (02:37–02:49) y qué ocurre si aparece una papeleta una semana después (02:57–03:02); el moderador respondió que depende de si se elige el reporte individual o una suscripción, una explicación que corresponde a una propuesta del producto y no a una prestación verificada de la demo local. Sobre su intención de uso, dijo que le interesa una opción para comprar el vehículo y otra para su monitoreo (03:24–03:34). |
+
+![Cristhian y el detalle de cobertura de fuentes en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-video-cristhian.png)
+
+Figura 5.3-3. Cristhian, en 00:05:59 del video consolidado (01:42 de su sesión): revisión guiada de las fuentes en la interfaz de referencia.
+
+La edad y el distrito de cada persona coinciden con los registrados en el [Capítulo II](03-chapter-2-requirements-elicitation-analysis.md), donde ambas participaron antes en una entrevista de levantamiento (14/09/2026). La fecha de las sesiones se tomó de los metadatos de las grabaciones originales y de la fecha visible en la pantalla compartida. Las duraciones se redondean al segundo, y los tiempos entre paréntesis en cada resumen corresponden a la grabación original de la persona.
 
 ### 5.3.3 Evaluaciones según heurísticas
 
 **Ficha de evaluación.** Aplicaciones Web, NRC 8088; equipo evaluador: BLIP; participantes: Cristhian Amaya y Roxana Limo; producto: interfaz de referencia FleetProof. Se analizan consulta, comprensión de resultados y descubrimiento del riesgo; quedan fuera la interacción con Landing, accesibilidad, tareas autónomas y funcionamiento de integraciones.
 
 **Escala del Anexo D:** 1 superficial, 2 menor, 3 mayor y 4 muy grave. La severidad consignada es editorial y preliminar; en estas sesiones no se midió frecuencia ni se observó un bloqueo autónomo.
+
+**Tiempos.** Los tiempos de esta sección corresponden a la grabación original de cada persona. Para ubicarlos en el video consolidado se suman 00:00:04 en el caso de Roxana y 00:04:17 en el de Cristhian.
 
 | # | Problema | Severidad preliminar | Heurística o principio |
 |---|---|---:|---|
@@ -719,13 +756,13 @@ Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
 **Descripción y recomendaciones**
 
 - **H01.** Cristhian, 02:37–02:56: pregunta si el dato se obtiene al momento o desde una base previa. Mostrar la fecha de consulta por fuente y explicar cuándo se actualiza.
-- **H02.** Cristhian, 01:21–01:59 (figura 5.3-1): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
+- **H02.** Cristhian, 01:21–01:59 (figura 5.3-3): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
 - **H03.** Cristhian, 02:56–03:17: pregunta qué ocurre si se registra una infracción después de generar el reporte. Distinguir consulta puntual de seguimiento e indicar frecuencia y canal realmente disponibles.
 - **Fortaleza observada.** Roxana, 00:50–00:54, reconoce el riesgo como punto de entrada (figura 5.3-2). Entre 02:08 y 02:55 explica el valor de centralizar datos. Mantener el indicador visible y probar filtros por flota o sede con un escenario empresarial representativo.
 
 No se observó una prueba controlada de recuperación de errores. Las menciones de correo, fuentes externas o planes adicionales durante la explicación son propuestas del producto, no prestaciones verificadas de la demo local.
 
-Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 entrevistas por segmento** de la guía. Faltan al menos dos por segmento, perfiles con edad y distrito verificados y el video consolidado en Stream con enlaces y tiempos. El análisis de diseño inclusivo queda sin resultado hasta realizar pruebas específicas.
+Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 entrevistas por segmento** de la guía. Faltan al menos dos entrevistas por segmento, y las sesiones no incluyeron la interacción con el Landing Page ni con la aplicación Vue. El análisis de diseño inclusivo queda sin resultado hasta realizar pruebas específicas.
 
 ## 5.4 Video About-the-Product
 
