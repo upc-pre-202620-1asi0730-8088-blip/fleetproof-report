@@ -818,47 +818,51 @@ Se recomienda mejorar la comunicación del estado y la vigencia de la informaci�
 Estas mejoras permitirían reducir la incertidumbre del usuario, mejorar la visibilidad del estado del sistema y facilitar la interpretación de la información presentada en los reportes vehiculares.
 
 
+
 ### PROBLEMA H02: Información insuficiente sobre el alcance y la cobertura de las fuentes consultadas
 
 **Severidad:** 2 - Problema menor.
 
-**Principio incumplido:** Arquitectura de información - Comprensibilidad de la información y sus etiquetas.
+**Principio incumplido:** Arquitectura de información - Comprensibilidad de la información y sus etiquetas (Is it understandable?).
 
 **Problema:**
 
 Durante la entrevista de validación realizada a Cristhian Amaya, entre los minutos 01:21 y 01:59, el participante manifestó interés en conocer qué información registral y de revisiones técnicas puede consultar mediante FleetProof antes de adquirir un vehículo.
 
-En la interfaz de referencia, la sección denominada Cobertura de fuentes presenta las entidades SUNARP, SAT, CITV y SOAT, acompañadas de sus respectivos estados de consulta, fechas y hallazgos asociados.
+Posteriormente, durante la inspección de la Web Application ejecutada en un entorno local, se identificó que el diálogo Solicitar reporte únicamente presenta un campo para ingresar la placa del vehículo y un botón para continuar al pago simulado.
 
-Sin embargo, las fuentes se identifican principalmente mediante siglas, sin incorporar una explicación suficientemente detallada sobre el tipo de información que proporciona cada una, su alcance y las limitaciones de los datos consultados.
+El diálogo no proporciona una descripción de las fuentes de información incluidas, los tipos de datos que se obtendrán ni las limitaciones del reporte vehicular.
 
-Esta situación puede dificultar la interpretación de los resultados, especialmente para propietarios y compradores que no cuentan con conocimientos especializados sobre documentación vehicular, infracciones de tránsito, revisiones técnicas y seguros obligatorios.
+Esta ausencia de información puede generar incertidumbre en los propietarios y compradores de vehículos, debido a que no cuentan con suficientes elementos para determinar si el reporte satisface sus necesidades antes de continuar con la solicitud.
 
-Asimismo, la etiqueta Completo podría generar interpretaciones incorrectas sobre el alcance del reporte si el usuario desconoce los criterios utilizados para determinar dicho estado.
+Adicionalmente, en la vista de detalle del reporte se utilizan siglas como SOAT y SBS sin presentar sus denominaciones completas, lo que puede dificultar la comprensión de los resultados para usuarios que no poseen conocimientos especializados sobre información vehicular.
 
-Se asigna una severidad preliminar de nivel 2 debido a que el problema dificulta la comprensión de la información presentada, pero no impide que el usuario continúe consultando los resultados del reporte vehicular.
+Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la comprensión del servicio ofrecido y la toma de decisiones informadas, pero no impide continuar con la solicitud del reporte.
 
 **Evidencia:**
 
-![Cobertura de fuentes de información en el reporte vehicular](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+![Información insuficiente sobre la cobertura del reporte vehicular](assets/chapter-5/sprint-3/heuristics/h02-source-coverage.png)
 
-*Figura 5.3.3-2. Visualización de las fuentes de información y sus respectivos estados de consulta en la interfaz de referencia de FleetProof.*
+*Figura 5.3.3-2. Diálogo de solicitud de reporte vehicular sin información descriptiva sobre las fuentes incluidas y el alcance del servicio.*
 
-En la captura correspondiente al minuto 01:42 de la entrevista se observa que las fuentes se presentan mediante siglas y estados de consulta. También se muestran hallazgos asociados a registros sintéticos y una advertencia indicando que el reporte tiene carácter informativo y no constituye una certificación oficial.
+La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
+
+Se observa que el diálogo permite ingresar la placa del vehículo y continuar al pago simulado, sin presentar información adicional sobre la cobertura del reporte. El hallazgo se limita a esta vista, sin afirmar que dicha información se encuentre ausente en todas las etapas posteriores del proceso.
 
 **Recomendación:**
 
-Se recomienda mejorar la organización y comprensión de la información presentada en la sección Cobertura de fuentes mediante las siguientes acciones:
+Se recomienda mejorar la comprensión del alcance del reporte vehicular mediante las siguientes acciones:
 
-- Complementar las siglas de las fuentes con sus denominaciones completas.
-- Incorporar descripciones breves que expliquen el tipo de información que proporciona cada fuente.
-- Especificar qué información se encuentra incluida y excluida del reporte vehicular.
-- Explicar el significado de los estados de consulta y sus criterios de clasificación.
-- Diferenciar claramente los datos disponibles de aquellos que no pudieron obtenerse.
-- Incorporar mensajes de ayuda contextual que faciliten la interpretación de las fuentes consultadas.
-- Mantener visible la advertencia sobre el carácter informativo del reporte y distinguir los datos de demostración de los datos procedentes de consultas reales.
+- Incorporar una descripción breve del contenido del reporte en el diálogo de solicitud.
+- Presentar las fuentes de información incluidas antes de continuar al pago.
+- Explicar los tipos de datos vehiculares que proporciona cada fuente.
+- Complementar las siglas con sus denominaciones completas.
+- Comunicar las limitaciones del reporte y de las fuentes de información.
+- Incorporar mensajes de ayuda contextual que faciliten la comprensión del servicio.
+- Diferenciar explícitamente los datos simulados de aquellos que procederían de consultas reales.
+- Mantener visible la advertencia sobre el carácter informativo del reporte vehicular.
 
-Estas mejoras contribuirían a reducir la ambigüedad de las etiquetas, facilitar la comprensión de los resultados y permitir que los usuarios interpreten la información vehicular con mayor confianza.
+Estas mejoras permitirían reducir la incertidumbre de los usuarios, facilitar la comprensión de la información disponible y favorecer una toma de decisiones informada antes de solicitar un reporte vehicular.
 
 
 ### PROBLEMA H03: Diferenciación insuficiente entre la consulta puntual y el servicio de monitoreo continuo de vehículos
