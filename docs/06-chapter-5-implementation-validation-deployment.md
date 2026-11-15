@@ -865,6 +865,7 @@ Se recomienda mejorar la comprensión del alcance del reporte vehicular mediante
 Estas mejoras permitirían reducir la incertidumbre de los usuarios, facilitar la comprensión de la información disponible y favorecer una toma de decisiones informada antes de solicitar un reporte vehicular.
 
 
+
 ### PROBLEMA H03: Diferenciación insuficiente entre la consulta puntual y el servicio de monitoreo continuo de vehículos
 
 **Severidad:** 2 - Problema menor.
@@ -875,37 +876,49 @@ Estas mejoras permitirían reducir la incertidumbre de los usuarios, facilitar l
 
 Durante la entrevista de validación realizada a Cristhian Amaya, entre los minutos 02:56 y 03:17, el participante preguntó qué sucedería si se registrara una infracción de tránsito después de haber generado un reporte vehicular mediante FleetProof.
 
-Esta observación evidencia la necesidad de comunicar con mayor claridad las diferencias entre una consulta vehicular puntual y el servicio de monitoreo continuo. Mientras que una consulta puntual presenta la información disponible al momento de generar el reporte, el monitoreo continuo tiene como propósito facilitar el seguimiento de posibles cambios posteriores en el historial del vehículo.
+Esta observación evidenció la necesidad de comunicar con mayor claridad las diferencias entre una consulta vehicular puntual y el servicio de monitoreo.
 
-La falta de una diferenciación clara entre ambas funcionalidades puede generar expectativas incorrectas respecto a la actualización de los reportes y la recepción de notificaciones.
+Posteriormente, durante la inspección de la Web Application ejecutada en un entorno local, se identificó que la vista Monitoreo presenta la siguiente descripción: "Revisiones de datos locales mientras esta vista permanece abierta. Sin worker en servidor ni consultas oficiales".
 
-En el caso de propietarios y compradores de vehículos, esta situación podría ocasionar que los usuarios esperen recibir información sobre nuevas infracciones después de haber solicitado únicamente un reporte. Asimismo, las empresas que administran flotas podrían presentar dificultades para comprender el alcance del servicio de monitoreo.
+Si bien esta descripción comunica las limitaciones del servicio, utiliza términos técnicos como worker en servidor, cuyo significado puede resultar difícil de comprender para usuarios que no poseen conocimientos especializados en ingeniería de software.
 
-Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la comprensión de las funcionalidades y las expectativas del usuario, pero no impide continuar utilizando la aplicación.
+Asimismo, la vista permite configurar el intervalo de revisión, activar el monitoreo y solicitar una revisión manual. Sin embargo, no presenta una explicación explícita sobre las diferencias entre estas funcionalidades y la generación de un reporte vehicular puntual.
+
+Esta situación podría generar expectativas incorrectas respecto al seguimiento de los vehículos, especialmente sobre la continuidad de las revisiones después de cerrar la aplicación.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la comprensión del funcionamiento del servicio, pero no impide acceder a sus opciones de configuración.
 
 **Evidencia:**
 
-![Estado de monitoreo en el listado de vehículos de FleetProof](assets/chapter-5/sprint-3/frontend-flota-produccion.png)
+![Descripción técnica del servicio de monitoreo vehicular](assets/chapter-5/sprint-3/heuristics/h03-monitoring.png)
 
-*Figura 5.3.3-3. Visualización de los estados de monitoreo de los vehículos en la Web Application de FleetProof.*
+*Figura 5.3.3-3. Vista Monitoreo de FleetProof, donde se presenta una descripción técnica del funcionamiento y las limitaciones del servicio de seguimiento vehicular.*
 
-La captura muestra la columna correspondiente al estado de monitoreo dentro de la vista Flota. Esta evidencia permite contextualizar la funcionalidad implementada en la Web Application.
+La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
 
-La observación que origina el hallazgo se encuentra registrada entre los minutos 02:56 y 03:17 de la [entrevista de validación de Cristhian Amaya](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing), realizada sobre la interfaz de referencia.
+En la imagen se observa la descripción del servicio, las opciones de configuración del intervalo, el botón de revisión manual y las columnas correspondientes a la última y próxima revisión.
+
+La aplicación también comunica correctamente la necesidad de contar con una suscripción activa. No obstante, la terminología técnica utilizada representa una oportunidad de mejora en la comunicación con los usuarios.
+
+La inspección se realizó sin una suscripción activa, por lo que no se verificó la ejecución efectiva de las revisiones ni la generación de alertas.
 
 **Recomendación:**
 
-Se recomienda mejorar la comunicación de las características y el alcance de los servicios de consulta y monitoreo mediante las siguientes acciones:
+Se recomienda mejorar la comunicación del funcionamiento del monitoreo vehicular mediante las siguientes acciones:
 
-- Incorporar una descripción breve que explique las diferencias entre un reporte vehicular puntual y el monitoreo continuo.
-- Informar al usuario que el reporte puntual representa la información disponible al momento de su generación.
-- Mostrar de manera visible el estado de monitoreo de cada vehículo.
-- Explicar las condiciones necesarias para activar el servicio de monitoreo.
-- Indicar la frecuencia de actualización de la información y los canales de notificación efectivamente disponibles.
-- Incorporar mensajes de confirmación al activar o desactivar el monitoreo de un vehículo.
-- Comunicar las limitaciones del servicio de seguimiento para evitar generar expectativas que no correspondan a las funcionalidades implementadas.
+- Sustituir los términos técnicos por expresiones comprensibles para los segmentos objetivo.
+- Explicar las diferencias entre un reporte vehicular puntual y el servicio de monitoreo.
+- Informar explícitamente que las revisiones se realizan únicamente mientras la vista de monitoreo permanece abierta.
+- Comunicar que el servicio utiliza datos locales simulados y no realiza consultas a fuentes oficiales.
+- Explicar el propósito del intervalo de revisión y de la opción Revisar ahora.
+- Mantener visibles las condiciones necesarias para activar el monitoreo.
+- Evitar generar expectativas sobre revisiones automáticas en segundo plano o notificaciones que todavía no se encuentran implementadas.
 
-Estas mejoras permitirían establecer una correspondencia más clara entre las expectativas de los usuarios y el comportamiento de FleetProof, además de favorecer una comprensión adecuada de los servicios ofrecidos.
+Como propuesta de mejora, se recomienda utilizar el siguiente mensaje:
+
+"El monitoreo revisa los datos de tus vehículos según el intervalo seleccionado mientras mantienes esta pantalla abierta. Puedes solicitar una revisión manual en cualquier momento. Las revisiones se detienen al cerrar esta vista y no incluyen consultas a fuentes oficiales".
+
+Estas mejoras permitirían establecer una correspondencia más clara entre las expectativas de los usuarios y el funcionamiento actual de FleetProof.
 
 
 ### PROBLEMA H04: Inconsistencia del idioma en las etiquetas de navegación cuando se selecciona español
