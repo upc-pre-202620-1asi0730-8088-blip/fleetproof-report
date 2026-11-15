@@ -1106,6 +1106,43 @@ Se observa que la categoría "En observación" utiliza una etiqueta naranja y un
 - Incorporar estas convenciones en el Design System de FleetProof.
 
 
+### PROBLEMA H09: Dificultad para identificar y diferenciar reportes vehiculares
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Reconocimiento antes que recuerdo.
+
+**Problema:**
+
+En la vista Reportes vehiculares de FleetProof se identificó que los registros se presentan mediante la placa del vehículo, la fecha de solicitud y el estado del reporte.
+
+Cuando existen múltiples reportes asociados a una misma placa, generados durante el mismo día y con el mismo estado, la información visible resulta insuficiente para distinguirlos.
+
+La tabla no presenta un identificador individual, una hora de generación ni un número de versión que permita reconocer cada reporte sin acceder a su contenido.
+
+Como consecuencia, el usuario debe abrir individualmente los reportes para identificar cuál corresponde a la información que necesita consultar.
+
+Se asigna una severidad de nivel 2 debido a que el problema incrementa el esfuerzo necesario para localizar un reporte específico, aunque no impide acceder a su contenido.
+
+**Evidencia:**
+
+![Reportes vehiculares con información visualmente idéntica](assets/chapter-5/sprint-3/heuristics/h09-report-identification.png)
+
+*Figura 5.3.3-11. Reportes asociados a una misma placa sin elementos visibles que permitan diferenciarlos.*
+
+Se observa que varios reportes presentan la misma placa, fecha de solicitud y estado, sin un identificador visible que permita distinguirlos.
+
+**Recomendación:**
+
+- Incorporar un identificador único visible para cada reporte vehicular.
+- Mostrar la fecha y hora de generación del reporte.
+- Incorporar números de versión cuando corresponda.
+- Permitir ordenar los reportes según su fecha y hora de creación.
+- Facilitar la identificación de los reportes más recientes.
+- Proporcionar información descriptiva que permita reconocer cada registro sin necesidad de abrirlo.
+
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
