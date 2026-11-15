@@ -22,9 +22,9 @@ El equipo BLIP elaborará el informe en Markdown usando GitHub como sistema de c
 | Entrega | Evidencia requerida | Estado |
 |---|---|---|
 | AV1 | Commits, ramas, Pull Requests, merges y capturas de colaboración del informe. | Completado: 6 Pull Requests mergeados en `develop`, release `v1.0.0` de la Landing Page, despliegue en GitHub Pages y video About-the-Team. |
-| TB1 | Actualización de commits, mejoras sobre feedback y nueva versión del informe. | Pendiente para esa entrega |
+| TB1 | Actualización de commits, mejoras sobre feedback y nueva versión del informe. | Ver el registro de implementación del Sprint 2. |
 | AV2 | Evidencias ampliadas de colaboración, validación y mejoras. | PR #10 y #12 para evidencias audiovisuales; PR #14 para arquitectura; PR #13 y #15 abiertos para planificación y Student Outcome. |
-| TB2 | Evidencia final de colaboración durante todo el ciclo. | Pendiente para esa entrega |
+| TB2 | Evidencia final de colaboración durante todo el ciclo. | Fuera del alcance de AV2. |
 
 ## Convenciones de GitFlow
 
