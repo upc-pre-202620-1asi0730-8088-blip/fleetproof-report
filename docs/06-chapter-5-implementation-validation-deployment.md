@@ -921,6 +921,7 @@ Como propuesta de mejora, se recomienda utilizar el siguiente mensaje:
 Estas mejoras permitirían establecer una correspondencia más clara entre las expectativas de los usuarios y el funcionamiento actual de FleetProof.
 
 
+
 ### PROBLEMA H04: Inconsistencia del idioma en las etiquetas de navegación cuando se selecciona español
 
 **Severidad:** 1 - Problema superficial.
@@ -929,39 +930,43 @@ Estas mejoras permitirían establecer una correspondencia más clara entre las e
 
 **Problema:**
 
-Durante la inspección visual de las capturas de la Web Application de FleetProof, se identificó una inconsistencia en las etiquetas utilizadas en el sistema de navegación.
+Durante la inspección de la Web Application de FleetProof ejecutada en un entorno local, se identificó una inconsistencia en la traducción de las etiquetas de navegación.
 
-A pesar de encontrarse seleccionado el idioma español, la barra lateral de navegación conserva la etiqueta Dashboard en inglés, mientras que las demás opciones, como Flota, Reportes, Alertas, Casos, Suscripciones y Mi perfil, se presentan en español.
+A pesar de encontrarse seleccionado el idioma español (ES), la barra de navegación superior conserva la etiqueta Dashboard en inglés, mientras que las demás opciones, como Flota, Reportes, Monitoreo, Alertas y Casos, se presentan en español.
 
-Esta combinación de idiomas afecta la consistencia del lenguaje utilizado en la interfaz y puede generar dificultades de comprensión para usuarios que no están familiarizados con términos en inglés.
+Asimismo, al seleccionar la opción Dashboard, el encabezado de la vista presenta la denominación Panel de control. Esto evidencia que una misma funcionalidad se identifica mediante dos términos en idiomas diferentes.
 
-Asimismo, representa una oportunidad de mejora en la aplicación de las características de internacionalización (i18n) establecidas para los productos digitales de FleetProof.
+Esta inconsistencia puede generar dificultades de comprensión para usuarios que no están familiarizados con términos en inglés y afecta la uniformidad del lenguaje utilizado en la aplicación.
 
-Se asigna una severidad preliminar de nivel 1 debido a que la inconsistencia no impide la navegación ni la identificación de las principales funcionalidades, pero afecta la uniformidad de la experiencia de usuario.
+El problema también representa una oportunidad de mejora en la aplicación de las características de internacionalización (i18n) establecidas en el enunciado del trabajo final.
+
+Se asigna una severidad preliminar de nivel 1 debido a que la inconsistencia no impide acceder a las funcionalidades de FleetProof, pero afecta la consistencia de la experiencia de usuario.
 
 **Evidencia:**
 
-![Inconsistencia del idioma en la barra lateral de navegación de FleetProof](assets/chapter-5/sprint-3/frontend-flota-produccion.png)
+![Inconsistencia del idioma entre la navegación y el encabezado del panel de control](assets/chapter-5/sprint-3/heuristics/h04-language-consistency.png)
 
-*Figura 5.3.3-4. Presencia de la etiqueta Dashboard en inglés mientras se encuentra seleccionado el idioma español en la Web Application de FleetProof.*
+*Figura 5.3.3-4. Inconsistencia entre la etiqueta Dashboard de la barra de navegación y el encabezado Panel de control con el idioma español seleccionado.*
 
-En la captura se observa que el selector de idioma presenta la opción ES, mientras que la primera etiqueta de la barra lateral de navegación permanece en inglés.
+La captura fue obtenida el 15 de noviembre de 2026 durante la inspección de la Web Application desarrollada con Vue, conectada al backend ASP.NET Core y a la base de datos PostgreSQL en un entorno local.
 
-Este hallazgo corresponde a una inspección visual de la Web Application desarrollada con Vue y no a una observación realizada por los participantes durante las entrevistas de validación.
+En la imagen se observa que el selector de idioma presenta la opción ES, mientras que la etiqueta Dashboard permanece en inglés y el encabezado de la vista se encuentra traducido al español.
+
+Este hallazgo fue identificado mediante una inspección directa de la interfaz y no corresponde a una observación realizada por los participantes durante las entrevistas de validación.
 
 **Recomendación:**
 
 Se recomienda mejorar la consistencia del idioma y la implementación de la internacionalización mediante las siguientes acciones:
 
 - Incorporar todas las etiquetas de navegación en los recursos de internacionalización de la aplicación.
-- Utilizar la denominación Panel de control para español y Dashboard para inglés.
-- Evitar el uso de textos estáticos que no dependan de la configuración del idioma seleccionado.
-- Revisar las traducciones de los encabezados, botones, mensajes de estado, formularios y elementos de navegación.
-- Verificar la consistencia de la interfaz para los idiomas English (en_US) y Latin American Spanish (es_419).
-- Realizar pruebas de cambio de idioma en las principales vistas de la aplicación.
-- Mantener el inglés como idioma predeterminado, de acuerdo con las especificaciones del enunciado del trabajo final.
+- Utilizar la denominación Panel de control tanto en la barra de navegación como en el encabezado de la vista cuando se seleccione español.
+- Utilizar la denominación Dashboard cuando se seleccione inglés.
+- Mantener una terminología uniforme para identificar las funcionalidades en las diferentes vistas.
+- Revisar las traducciones de encabezados, botones, formularios y mensajes del sistema.
+- Realizar pruebas de cambio de idioma para English (en_US) y Latin American Spanish (es_419).
+- Verificar que el inglés se encuentre configurado como idioma predeterminado, según las especificaciones del enunciado del trabajo final.
 
-Estas mejoras permitirían ofrecer una experiencia de usuario consistente, facilitar la comprensión de las funcionalidades y fortalecer el enfoque inclusivo de FleetProof mediante una adecuada internacionalización.
+Estas mejoras permitirían ofrecer una experiencia de usuario consistente, reducir las dificultades de comprensión y fortalecer las características de internacionalización de FleetProof.
 
 
 ## 5.4 Video About-the-Product
