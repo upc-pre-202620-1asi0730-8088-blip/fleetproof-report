@@ -10,7 +10,7 @@
   <h2>1ASI0730</h2>
   <h2>Aplicaciones Web</h2>
 
-  <p><strong>NRC</strong><br /><strong>8088</p>
+  <p><strong>NRC</strong><br /><strong>8088</strong></p>
 
   <h1>Informe del Trabajo Final</h1>
 
@@ -89,13 +89,13 @@
 
 | Producto | Repositorio | Versiones requeridas |
 |---|---|---|
-| Project Report | https://github.com/1ASI0730-8088-Blit/blip-fleetproof-project-report | AV1 |
-| Landing Page | https://github.com/1ASI0730-8088-Blit/fleetproof-landing-page | v1.0.0 publicada |
-| Frontend Web Application | https://github.com/1ASI0730-8088-Blit/blip-fleetproof-frontend | v1.0.0|
-| Web Services | https://github.com/1ASI0730-8088-Blit/blip-fleetproof-backend | v1.0.0|
+| Project Report | https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report | AV2 |
+| Landing Page | https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website | v3.0.0 publicada |
+| Frontend Web Application | https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp | v1.1.0|
+| Web Services | https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform | v1.0.0|
 
 Landing Page desplegada en GitHub Pages: https://upc-pre-202620-asi0730-8088-blip.github.io/fleetproof-website/
 
-Release de la Landing Page: https://github.com/1ASI0730-8088-Blit/fleetproof-landing-page/releases/tag/v1.0.0
+Release de la Landing Page: https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/v3.0.0
 
 Los repositorios de Frontend Web Application y Web Services ya fueron creados en la organización y su implementación corresponde a las siguientes entregas del curso.

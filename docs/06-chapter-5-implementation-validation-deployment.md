@@ -21,8 +21,8 @@ Para garantizar la integridad, trazabilidad y el trabajo colaborativo en el desa
 
 | Producto / Artefacto | Propósito | Enlace al Repositorio en GitHub |
 | :--- | :--- | :--- |
-| **Project Documentation Report** | Repositorio para la elaboración colaborativa del informe técnico del proyecto en formato Markdown. | [blip-fleetproof-project-report](https://github.com/1ASI0730-8088-Blit/blip-fleetproof-project-report) |
-| **Landing Page** | Repositorio del sitio web estático para la presentación comercial y conversión del modelo de negocio. | [fleetproof-landing-page](https://github.com/1ASI0730-8088-Blit/fleetproof-landing-page) |
+| **Project Documentation Report** | Repositorio para la elaboración colaborativa del informe técnico del proyecto en formato Markdown. | [blip-fleetproof-project-report](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report) |
+| **Landing Page** | Repositorio del sitio web estático para la presentación comercial y conversión del modelo de negocio. | [fleetproof-landing-page](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website) |
 ##### Flujo de Ramas: GitFlow Workflow
 
 El equipo implementa el modelo de flujo de trabajo **GitFlow**, estructurando el ciclo de desarrollo a través de ramas principales y ramas temporales de soporte:

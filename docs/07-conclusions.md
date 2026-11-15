@@ -50,3 +50,22 @@ El video presenta el trabajo del equipo BLIP en la entrega AV1 del curso Aplicac
 ### URL del video
 
 [Video About-the-Team - AV1 (Google Drive)](https://drive.google.com/file/d/1FLNnxTZTzsK9Y0VTbScm8yhSiuJtYtqe/view?usp=sharing)
+
+### AV2 · Sprint 3
+
+Esta versión reúne cinco testimonios sobre el trabajo en FleetProof. El equipo explica cómo coordinó la integración entre la aplicación y el backend, revisó la arquitectura, preparó material audiovisual y organizó las correcciones de la entrega. Los testimonios relacionan esas actividades con el Student Outcome ABET 5: distribución del liderazgo, colaboración y verificación de objetivos compartidos.
+
+**Archivo:** `upc-pre-202620-1asi0730-8088-blip-about-the-team-sprint-3.mp4`. **Duración:** 00:06:09.
+
+| Inicio | Secuencia |
+|---|---|
+| 00:00:00 | Portada de FleetProof: BLIP, Aplicaciones Web, NRC 8088, AV2. |
+| 00:00:04 | Sebastián Eduardo Reyes Limo: coordinación, integración de flotas y reportes por placa, y verificación del flujo después de recargar. |
+| 00:01:26 | Harrison Hubert Payesa Torres: trabajo audiovisual, validaciones, monitoreo y coordinación con GitFlow. |
+| 00:02:21 | Daniel Stalin Palomino Murga: diseño, diagramas de arquitectura, implementación y revisión de artefactos. |
+| 00:03:41 | Sebastián Uriel Becerra Durand: documentación de arquitectura, trazabilidad de cambios y aprendizaje técnico. |
+| 00:05:04 | Rodrigo Fernando Gómez De La Torre Huertas: correcciones en equipo y retrospectiva sobre organización y tiempos. |
+
+![Portada del video About the Team de AV2](assets/team/about-the-team-av2.png)
+
+[Video About the Team AV2 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u202311656_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311656%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0730%2D8088%2Dblip%2Dabout%2Dthe%2Dteam%2Dsprint%2D3%2Emp4)
