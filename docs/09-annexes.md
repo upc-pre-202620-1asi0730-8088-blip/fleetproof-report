@@ -81,6 +81,6 @@ Las grabaciones originales de cada sesión están en Google Drive: [Validación 
 
 | Elemento | Evidencia |
 |---|---|
-| Video en Microsoft Stream | [About the Team AV2](https://upcedupe-my.sharepoint.com/personal/u202311656_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202311656%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0730%2D8088%2Dblip%2Dabout%2Dthe%2Dteam%2Dsprint%2D3%2Emp4) |
+| Video en Microsoft Stream | [About the Team AV2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311656_upc_edu_pe/IQAbbm_PwsF9Sqe3-cD1YA9HAZaLuQEnaHpzU96VtGrvscY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IXcbKr) |
 | Duración | 00:06:09 |
 | Pauta y fotograma | [Video About-the-Team](07-conclusions.md#video-about-the-team) |
