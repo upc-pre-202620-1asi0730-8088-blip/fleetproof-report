@@ -737,21 +737,56 @@ heurística de la aplicación web implementada en Vue,
 diferenciando los hallazgos de esta inspección de aquellos
 obtenidos durante las entrevistas.
 
-### Tareas a evaluar
 
-El alcance de las sesiones de validación registradas
-comprende las siguientes tareas y recorridos:
 
-1. Identificación del punto de entrada para la consulta
-   de información vehicular.
-2. Comprensión de los resultados de una consulta por placa.
-3. Identificación e interpretación de las fuentes de
-   información presentadas en el reporte.
-4. Identificación del nivel de riesgo vehicular desde
-   el panel de control.
-5. Comprensión de las diferencias entre una consulta
-   puntual y el seguimiento posterior de un vehículo.
-6. Reconocimiento del flujo de registro de una flota.
+#### Tareas a evaluar
+
+El alcance de la evaluación comprende la revisión de las siguientes tareas, considerando las necesidades de los segmentos objetivo de FleetProof.
+
+**Segmento objetivo 1: Propietarios y compradores de vehículos**
+
+1. Identificar las funcionalidades de consulta vehicular.
+2. Solicitar un reporte vehicular.
+3. Comprender la información presentada en los reportes.
+4. Reconocer las fuentes de información consultadas.
+5. Interpretar los indicadores de riesgo vehicular.
+6. Identificar las fechas de consulta y actualización de los datos.
+7. Diferenciar reportes asociados a una misma placa.
+8. Comprender las diferencias entre una consulta puntual y el monitoreo continuo.
+9. Interpretar la información de planes y suscripciones.
+
+**Segmento objetivo 2: Empresas con flota vehicular**
+
+1. Registrar vehículos.
+2. Editar la información de los vehículos.
+3. Reconocer las acciones disponibles en la tabla de vehículos.
+4. Identificar las opciones de búsqueda y filtrado.
+5. Interpretar los indicadores y la distribución de riesgo.
+6. Comprender la configuración del monitoreo vehicular.
+7. Iniciar el proceso de importación de vehículos mediante archivos CSV.
+8. Verificar la validación de los datos ingresados en los formularios.
+9. Evaluar el comportamiento de los formularios al descartar cambios.
+
+**Tareas transversales:**
+
+1. Navegar entre las principales vistas de la aplicación.
+2. Verificar la consistencia del idioma seleccionado.
+3. Evaluar la adaptación visual de la vista Flota a dispositivos móviles.
+4. Comprender los mensajes presentados en las vistas sin registros.
+5. Identificar mecanismos de prevención de errores.
+
+**Tareas no incluidas en esta versión de la evaluación:**
+
+1. Realizar transacciones con medios de pago reales.
+2. Verificar el funcionamiento de integraciones con fuentes oficiales externas.
+3. Evaluar el rendimiento bajo condiciones de alta concurrencia.
+4. Verificar la recepción efectiva de notificaciones automáticas.
+5. Evaluar la compatibilidad con lectores de pantalla.
+6. Completar recorridos autónomos de principio a fin por parte de los participantes de las entrevistas.
+7. Evaluar directamente la interacción con el Landing Page.
+8. Ejecutar el proceso completo de importación masiva de vehículos.
+
+La evaluación combina las observaciones de las entrevistas de validación, la inspección visual y las pruebas de interacción directa realizadas sobre la Web Application de FleetProof.
 
 ### Tareas excluidas de las sesiones registradas
 
