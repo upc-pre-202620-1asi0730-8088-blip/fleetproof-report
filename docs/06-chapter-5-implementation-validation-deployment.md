@@ -810,6 +810,50 @@ Se recomienda mejorar la comunicación del estado y la vigencia de la informaci�
 Estas mejoras permitirían reducir la incertidumbre del usuario y facilitar la interpretación de la información presentada en los reportes vehiculares.
 
 
+### PROBLEMA H02: Información insuficiente sobre el alcance y la cobertura de las fuentes consultadas
+
+**Severidad:** 2 - Problema menor.
+
+**Principio incumplido:** Arquitectura de información - Comprensibilidad de la información y sus etiquetas.
+
+**Problema:**
+
+Durante la entrevista de validación realizada a Cristhian Amaya, entre los minutos 01:21 y 01:59, el participante manifestó interés en conocer qué información registral y de revisiones técnicas puede consultar mediante FleetProof antes de adquirir un vehículo.
+
+En la interfaz de referencia, la sección denominada Cobertura de fuentes presenta las entidades SUNARP, SAT, CITV y SOAT, acompañadas de sus respectivos estados de consulta, fechas y hallazgos asociados.
+
+Sin embargo, las fuentes se identifican principalmente mediante siglas, sin incorporar una explicación suficientemente detallada sobre el tipo de información que proporciona cada una, su alcance y las limitaciones de los datos consultados.
+
+Esta situación puede dificultar la interpretación de los resultados, especialmente para propietarios y compradores que no cuentan con conocimientos especializados sobre documentación vehicular, infracciones de tránsito, revisiones técnicas y seguros obligatorios.
+
+Asimismo, la etiqueta Completo podría generar interpretaciones incorrectas sobre el alcance del reporte si el usuario desconoce los criterios utilizados para determinar dicho estado.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema dificulta la comprensión de la información presentada, pero no impide que el usuario continúe consultando los resultados del reporte vehicular.
+
+**Evidencia:**
+
+![Cobertura de fuentes de información en el reporte vehicular](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+
+*Figura 5.3.3-2. Visualización de las fuentes de información y sus respectivos estados de consulta en la interfaz de referencia de FleetProof.*
+
+En la captura correspondiente al minuto 01:42 de la entrevista se observa que las fuentes se presentan mediante siglas y estados de consulta. También se muestran hallazgos asociados a registros sintéticos y una advertencia indicando que el reporte tiene carácter informativo y no constituye una certificación oficial.
+
+**Recomendación:**
+
+Se recomienda mejorar la organización y comprensión de la información presentada en la sección Cobertura de fuentes mediante las siguientes acciones:
+
+- Complementar las siglas de las fuentes con sus denominaciones completas.
+- Incorporar descripciones breves que expliquen el tipo de información que proporciona cada fuente.
+- Especificar qué información se encuentra incluida y excluida del reporte vehicular.
+- Explicar el significado de los estados de consulta y sus criterios de clasificación.
+- Diferenciar claramente los datos disponibles de aquellos que no pudieron obtenerse.
+- Incorporar mensajes de ayuda contextual que faciliten la interpretación de las fuentes consultadas.
+- Mantener visible la advertencia sobre el carácter informativo del reporte y distinguir los datos de demostración de los datos procedentes de consultas reales.
+
+Estas mejoras contribuirían a reducir la ambigüedad de las etiquetas, facilitar la comprensión de los resultados y permitir que los usuarios interpreten la información vehicular con mayor confianza.
+
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
