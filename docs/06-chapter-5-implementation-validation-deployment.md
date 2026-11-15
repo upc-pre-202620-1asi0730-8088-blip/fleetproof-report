@@ -1263,6 +1263,30 @@ Al cerrar el formulario mediante el control de cierre, la aplicación descarta l
 Estas mejoras permitirían prevenir la pérdida involuntaria de información, proporcionar mayor control al usuario y reducir el esfuerzo asociado a la repetición de tareas.
 
 
+#### Tabla resumen
+
+A partir de las entrevistas de validación y las pruebas realizadas sobre la Web Application de FleetProof, se identificaron doce problemas relacionados con la usabilidad, el diseño inclusivo y la arquitectura de información.
+
+| # | Problema | Escala de severidad | Heurística/Principio incumplido |
+|:---:|---|:---:|---|
+| H01 | Falta de claridad sobre el momento de consulta y actualización de los datos vehiculares. | 2 | Usabilidad: Visibilidad del estado del sistema. |
+| H02 | Información insuficiente sobre el alcance y la cobertura de las fuentes consultadas. | 2 | Arquitectura de información: Is it understandable? |
+| H03 | Diferenciación insuficiente entre la consulta puntual y el servicio de monitoreo continuo. | 2 | Usabilidad: Correspondencia entre el sistema y el mundo real. |
+| H04 | Inconsistencia del idioma en las etiquetas de navegación cuando se selecciona español. | 1 | Usabilidad: Consistencia y estándares. |
+| H05 | Acciones de gestión vehicular representadas mediante iconos sin etiquetas de texto visibles. | 2 | Diseño inclusivo: Considera la situación. |
+| H06 | Generación accidental de reportes duplicados por ausencia de confirmación y control de acciones repetidas. | 2 | Usabilidad: Prevención de errores. |
+| H07 | Estado vacío con orientación insuficiente en la vista de Suscripciones. | 2 | Arquitectura de información: Is it understandable? |
+| H08 | Inconsistencia de colores en los indicadores de distribución de riesgo. | 2 | Usabilidad: Consistencia y estándares. |
+| H09 | Dificultad para identificar y diferenciar reportes vehiculares. | 2 | Usabilidad: Reconocimiento antes que recuerdo. |
+| H10 | Validación insuficiente de los datos ingresados en los formularios de gestión vehicular. | 3 | Usabilidad: Prevención de errores. |
+| H11 | Orientación insuficiente durante la importación de vehículos mediante archivos CSV. | 2 | Usabilidad: Ayuda y documentación. |
+| H12 | Pérdida de cambios sin advertencia durante la edición de vehículos. | 2 | Usabilidad: Libertad y control del usuario. |
+
+Los hallazgos H01, H02 y H03 se identificaron inicialmente durante las entrevistas de validación y se complementaron mediante la inspección directa de la Web Application. Los problemas restantes fueron identificados mediante la inspección y las pruebas de interacción realizadas sobre la aplicación.
+
+Las severidades asignadas representan estimaciones del impacto de cada problema sobre la experiencia de usuario y las tareas de los segmentos objetivo.
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
