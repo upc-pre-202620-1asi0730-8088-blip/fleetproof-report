@@ -1036,6 +1036,42 @@ Se recomienda prevenir la generación accidental de reportes duplicados mediante
 
 Estas mejoras permitirían reducir errores involuntarios, mejorar el control de las acciones del usuario y fortalecer la prevención de errores en FleetProof.
 
+### PROBLEMA H07: Estado vacío con orientación insuficiente en la vista de Suscripciones
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Arquitectura de información - Orientación y comprensión de estados vacíos.
+
+**Problema:**
+
+Durante la inspección de la Web Application de FleetProof se identificó que la vista Suscripciones presenta un estado vacío en la tabla inferior mediante el mensaje "No se encontraron registros", sin ofrecer una explicación adicional sobre la ausencia de registros ni una orientación clara sobre la acción que debe realizar el usuario.
+
+Aunque en la parte superior de la vista se muestran indicadores de uso para vehículos, reportes y monitoreo, la sección tabular no comunica si el usuario todavía no cuenta con una suscripción activa, si aún no ha completado un pago simulado o si simplemente no existen registros asociados.
+
+Esta situación puede generar confusión, debido a que el usuario visualiza información de consumo y opciones para continuar al pago simulado, pero no recibe suficiente orientación contextual en la sección vacía.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la comprensión del estado actual del servicio, aunque no impide continuar con la navegación.
+
+**Evidencia:**
+
+![Estado vacío en la vista de suscripciones](assets/chapter-5/sprint-3/heuristics/h07-empty-state-guidance.png)
+
+*Figura 5.3.3-9. Vista de Suscripciones con indicadores de uso visibles y tabla en estado vacío sin orientación adicional.*
+
+Se observa que la tabla muestra el mensaje "No se encontraron registros" sin explicar el motivo de la ausencia de información ni sugerir una acción concreta para completar el flujo.
+
+**Recomendación:**
+
+Se recomienda mejorar la orientación del estado vacío en la vista de Suscripciones mediante las siguientes acciones:
+
+- Explicar por qué no existen registros visibles en la tabla.
+- Indicar si el usuario todavía no cuenta con una suscripción activa.
+- Incorporar un mensaje de orientación que sugiera la acción siguiente, por ejemplo continuar al pago simulado o activar un plan.
+- Relacionar de manera más clara los indicadores de uso con el estado de la suscripción.
+- Mostrar mensajes distintos según la causa del estado vacío.
+
+Estas mejoras permitirían reducir la incertidumbre del usuario y facilitar la comprensión del estado actual del servicio de suscripciones en FleetProof.
+
 
 
 ## 5.4 Video About-the-Product
