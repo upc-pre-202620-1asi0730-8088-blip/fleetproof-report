@@ -1186,6 +1186,45 @@ Se observa que la aplicación permite almacenar caracteres especiales como tipo 
 Estas mejoras permitirían prevenir errores de ingreso, preservar la integridad de la información vehicular y mejorar la confiabilidad de los procesos de gestión de flotas.
 
 
+### PROBLEMA H11: Orientación insuficiente durante la importación de vehículos mediante archivos CSV
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Ayuda y documentación.
+
+**Problema:**
+
+Durante la inspección de la Web Application de FleetProof se identificó que, al seleccionar la opción Importar CSV en la vista Flota, la aplicación abre directamente el explorador de archivos del sistema operativo.
+
+Antes de seleccionar el archivo, la interfaz no presenta instrucciones sobre la estructura esperada del documento CSV, los encabezados de las columnas, los campos obligatorios ni los formatos admitidos.
+
+Asimismo, no se observa una opción visible para descargar una plantilla que facilite la preparación del archivo.
+
+Esta situación puede generar dificultades para los usuarios que necesitan registrar múltiples vehículos, debido a que deben preparar sus archivos sin conocer previamente la estructura requerida por FleetProof.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema incrementa el esfuerzo necesario para realizar la importación, aunque no impide acceder a la funcionalidad.
+
+**Evidencia:**
+
+![Selección de archivos CSV sin instrucciones previas](assets/chapter-5/sprint-3/heuristics/h11-csv-import.png)
+
+*Figura 5.3.3-14. Apertura directa del explorador de archivos al seleccionar la opción Importar CSV.*
+
+Se observa que la aplicación solicita seleccionar un archivo CSV sin presentar previamente instrucciones sobre su estructura, campos obligatorios o formatos admitidos.
+
+**Recomendación:**
+
+- Incorporar un diálogo informativo antes de seleccionar el archivo CSV.
+- Especificar los encabezados y campos obligatorios del documento.
+- Proporcionar una plantilla CSV descargable.
+- Incluir ejemplos de registros válidos.
+- Presentar una vista previa de los datos antes de confirmar la importación.
+- Informar sobre los registros incorrectos o duplicados detectados durante la importación.
+- Incorporar mensajes de ayuda que faciliten la corrección de errores.
+
+Estas mejoras permitirían reducir la incertidumbre del usuario, prevenir errores durante la preparación de archivos y facilitar el registro masivo de vehículos.
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
