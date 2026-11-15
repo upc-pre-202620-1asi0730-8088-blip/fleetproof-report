@@ -1316,6 +1316,48 @@ Los hallazgos H01, H02 y H03 se identificaron inicialmente durante las entrevist
 Las severidades asignadas representan estimaciones del impacto de cada problema sobre la experiencia de usuario y las tareas de los segmentos objetivo.
 
 
+#### Resultados de la evaluación heurística
+
+La evaluación heurística permitió identificar doce oportunidades de mejora relacionadas con la experiencia de usuario de FleetProof.
+
+**Distribución de problemas por dimensión:**
+
+| Dimensión | Cantidad de problemas | Porcentaje |
+|---|:---:|:---:|
+| Usabilidad | 9 | 75.00 % |
+| Arquitectura de información | 2 | 16.67 % |
+| Diseño inclusivo | 1 | 8.33 % |
+| **Total** | **12** | **100 %** |
+
+**Distribución de problemas por nivel de severidad:**
+
+| Nivel de severidad | Cantidad de problemas | Porcentaje |
+|---|:---:|:---:|
+| 1 - Problema superficial | 1 | 8.33 % |
+| 2 - Problema menor | 10 | 83.33 % |
+| 3 - Problema mayor | 1 | 8.33 % |
+| 4 - Problema muy grave | 0 | 0.00 % |
+| **Total** | **12** | **100 %** |
+
+Los resultados muestran que la mayor cantidad de oportunidades de mejora corresponde a la dimensión de usabilidad, principalmente en aspectos relacionados con la prevención de errores, la consistencia de la interfaz y la comprensión de las funcionalidades.
+
+El problema H10 presenta la mayor severidad identificada, debido al impacto potencial de la validación insuficiente de formularios sobre la integridad de la información vehicular.
+
+La ausencia de problemas de severidad 4 dentro del alcance evaluado no garantiza que la aplicación se encuentre libre de errores críticos.
+
+#### Priorización de mejoras
+
+| Prioridad | Problemas | Acciones propuestas |
+|---|---|---|
+| Alta | H10 | Fortalecer las reglas de validación de los formularios y preservar la integridad de la información. |
+| Media | H06, H12 | Prevenir la generación accidental de registros y la pérdida involuntaria de cambios. |
+| Media | H01, H02, H03, H07, H09 | Mejorar la comprensión, identificación y organización de la información. |
+| Media | H05, H08, H11 | Mejorar la identificación de controles, la consistencia visual y la orientación al usuario. |
+| Baja | H04 | Corregir las inconsistencias en las traducciones de la interfaz. |
+
+Se recomienda considerar estas mejoras durante el siguiente Sprint, priorizando aquellas que presentan un mayor impacto sobre la integridad de los datos y la ejecución de las tareas principales de los segmentos objetivo.
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
