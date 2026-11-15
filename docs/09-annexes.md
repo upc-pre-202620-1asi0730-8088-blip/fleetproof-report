@@ -46,7 +46,14 @@ La evidencia audiovisual de TB1 no está incorporada en esta versión. Correspon
 
 ## Anexo E: About the Product
 
-La evidencia audiovisual de TB1 no está incorporada en esta versión. Corresponde al video About-the-Product, que debe presentar la Web Application implementada en el Sprint 2. Mientras tanto, la propuesta de valor y el estado actual del producto se documentan en el [Capítulo I](02-chapter-1-introduction.md) y el [Capítulo V](06-chapter-5-implementation-validation-deployment.md), y el video About-the-Team de AV1 está disponible en el [Anexo F](#anexo-f-about-the-team).
+| Elemento | Evidencia |
+|---|---|
+| Video en Microsoft Stream | [Video About-the-Product en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQCQ6V5wfx5fQrCdjl89rGCsARuOrdOL1O6iodVaMBtRpBs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kdfgch) |
+| Video en YouTube (incrustado en el Landing Page) | [https://youtu.be/zLoyj8Rw4oA](https://youtu.be/zLoyj8Rw4oA) |
+| Archivo | `upc-pre-202620-1asi0730-8088-blip-about-the-product-sprint-3.mp4` |
+| Duración | 2 min 10 s |
+| Screenshot | ![Cuadro del video About-the-Product](assets/chapter-5/sprint-3/about-the-product-captura.png) |
+| Pauta de secuencias | Detallada en [5.4 Video About-the-Product](06-chapter-5-implementation-validation-deployment.md#54-video-about-the-product) |
 
 ## Anexo F: About the Team
 
