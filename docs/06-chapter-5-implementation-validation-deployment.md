@@ -1142,6 +1142,49 @@ Se observa que varios reportes presentan la misma placa, fecha de solicitud y es
 - Proporcionar información descriptiva que permita reconocer cada registro sin necesidad de abrirlo.
 
 
+### PROBLEMA H10: Validación insuficiente de los datos ingresados en los formularios de gestión vehicular
+
+**Severidad:** 3 - Problema mayor.
+
+**Heurística incumplida:** Usabilidad - Prevención de errores.
+
+**Problema:**
+
+Durante la inspección de la Web Application de FleetProof se identificó que los formularios de gestión vehicular permiten almacenar valores que no corresponden al significado esperado de sus campos.
+
+Se registró un vehículo con una placa exclusivamente numérica, caracteres especiales en los campos Tipo y Sede, y un valor exclusivamente numérico en el campo Propietario.
+
+La aplicación permitió almacenar estos datos y mostrarlos posteriormente en el listado de vehículos, sin impedir el registro de valores incoherentes.
+
+Esta situación puede afectar la calidad de la información vehicular, dificultar las operaciones de búsqueda y filtrado, y generar inconsistencias en los reportes y procesos de gestión de flotas.
+
+Se asigna una severidad preliminar de nivel 3 debido al impacto potencial sobre la integridad de la información almacenada y las funcionalidades que dependen de ella.
+
+**Evidencia:**
+
+![Formulario vehicular con datos incoherentes](assets/chapter-5/sprint-3/heuristics/h10-form-validation.png)
+
+*Figura 5.3.3-12. Formulario de edición vehicular con valores que no corresponden al significado esperado de los campos.*
+
+![Datos incoherentes almacenados en el listado de vehículos](assets/chapter-5/sprint-3/heuristics/h10-invalid-data.png)
+
+*Figura 5.3.3-13. Listado de vehículos que evidencia el almacenamiento de datos incoherentes.*
+
+Se observa que la aplicación permite almacenar caracteres especiales como tipo de vehículo y sede, además de valores exclusivamente numéricos como propietario, sin aplicar restricciones suficientes sobre el contenido ingresado.
+
+**Recomendación:**
+
+- Implementar reglas de validación específicas para cada campo del formulario.
+- Validar el formato de las placas según los tipos de matrícula admitidos por el negocio.
+- Utilizar un selector con categorías válidas para el tipo de vehículo.
+- Validar la información ingresada en los campos Sede y Propietario según las reglas del negocio.
+- Mostrar mensajes de error descriptivos junto a los campos que contienen valores incorrectos.
+- Impedir el almacenamiento de información que incumpla las reglas de validación.
+- Implementar las validaciones tanto en el frontend como en el backend.
+- Incorporar pruebas para verificar escenarios de ingreso de datos válidos e inválidos.
+
+Estas mejoras permitirían prevenir errores de ingreso, preservar la integridad de la información vehicular y mejorar la confiabilidad de los procesos de gestión de flotas.
+
 
 ## 5.4 Video About-the-Product
 
