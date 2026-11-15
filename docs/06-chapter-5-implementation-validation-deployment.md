@@ -853,6 +853,49 @@ Se recomienda mejorar la organización y comprensión de la información present
 Estas mejoras contribuirían a reducir la ambigüedad de las etiquetas, facilitar la comprensión de los resultados y permitir que los usuarios interpreten la información vehicular con mayor confianza.
 
 
+### PROBLEMA H03: Diferenciación insuficiente entre la consulta puntual y el servicio de monitoreo continuo de vehículos
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Correspondencia entre el sistema y el mundo real.
+
+**Problema:**
+
+Durante la entrevista de validación realizada a Cristhian Amaya, entre los minutos 02:56 y 03:17, el participante preguntó qué sucedería si se registrara una infracción de tránsito después de haber generado un reporte vehicular mediante FleetProof.
+
+Esta observación evidencia la necesidad de comunicar con mayor claridad las diferencias entre una consulta vehicular puntual y el servicio de monitoreo continuo. Mientras que una consulta puntual presenta la información disponible al momento de generar el reporte, el monitoreo continuo tiene como propósito facilitar el seguimiento de posibles cambios posteriores en el historial del vehículo.
+
+La falta de una diferenciación clara entre ambas funcionalidades puede generar expectativas incorrectas respecto a la actualización de los reportes y la recepción de notificaciones.
+
+En el caso de propietarios y compradores de vehículos, esta situación podría ocasionar que los usuarios esperen recibir información sobre nuevas infracciones después de haber solicitado únicamente un reporte. Asimismo, las empresas que administran flotas podrían presentar dificultades para comprender el alcance del servicio de monitoreo.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema afecta la comprensión de las funcionalidades y las expectativas del usuario, pero no impide continuar utilizando la aplicación.
+
+**Evidencia:**
+
+![Estado de monitoreo en el listado de vehículos de FleetProof](assets/chapter-5/sprint-3/frontend-flota-produccion.png)
+
+*Figura 5.3.3-3. Visualización de los estados de monitoreo de los vehículos en la Web Application de FleetProof.*
+
+La captura muestra la columna correspondiente al estado de monitoreo dentro de la vista Flota. Esta evidencia permite contextualizar la funcionalidad implementada en la Web Application.
+
+La observación que origina el hallazgo se encuentra registrada entre los minutos 02:56 y 03:17 de la [entrevista de validación de Cristhian Amaya](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing), realizada sobre la interfaz de referencia.
+
+**Recomendación:**
+
+Se recomienda mejorar la comunicación de las características y el alcance de los servicios de consulta y monitoreo mediante las siguientes acciones:
+
+- Incorporar una descripción breve que explique las diferencias entre un reporte vehicular puntual y el monitoreo continuo.
+- Informar al usuario que el reporte puntual representa la información disponible al momento de su generación.
+- Mostrar de manera visible el estado de monitoreo de cada vehículo.
+- Explicar las condiciones necesarias para activar el servicio de monitoreo.
+- Indicar la frecuencia de actualización de la información y los canales de notificación efectivamente disponibles.
+- Incorporar mensajes de confirmación al activar o desactivar el monitoreo de un vehículo.
+- Comunicar las limitaciones del servicio de seguimiento para evitar generar expectativas que no correspondan a las funcionalidades implementadas.
+
+Estas mejoras permitirían establecer una correspondencia más clara entre las expectativas de los usuarios y el comportamiento de FleetProof, además de favorecer una comprensión adecuada de los servicios ofrecidos.
+
+
 
 ## 5.4 Video About-the-Product
 
