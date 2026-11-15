@@ -1225,6 +1225,44 @@ Se observa que la aplicación solicita seleccionar un archivo CSV sin presentar 
 Estas mejoras permitirían reducir la incertidumbre del usuario, prevenir errores durante la preparación de archivos y facilitar el registro masivo de vehículos.
 
 
+##### PROBLEMA H12: Pérdida de cambios sin advertencia durante la edición de vehículos
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Libertad y control del usuario.
+
+**Problema:**
+
+Durante la inspección de la Web Application de FleetProof se identificó que el diálogo Editar vehículo permite cerrar el formulario después de modificar sus campos sin presentar una advertencia sobre la existencia de cambios pendientes de guardar.
+
+Como parte de la evaluación, se modificaron los campos Placa, Tipo, Sede, Propietario y Riesgo. Posteriormente, se cerró el diálogo mediante el control de cierre ubicado en la esquina superior derecha.
+
+La aplicación cerró el formulario sin solicitar confirmación. Al abrir nuevamente el diálogo de edición, se comprobó que las modificaciones realizadas se habían perdido.
+
+Esta situación puede ocasionar la pérdida involuntaria de información y obligar al usuario a repetir las tareas de edición, incrementando el tiempo y esfuerzo necesarios para gestionar sus vehículos.
+
+Se asigna una severidad de nivel 2 debido a que el problema genera pérdida de trabajo y dificultades de interacción, aunque no impide continuar utilizando la aplicación.
+
+**Evidencia:**
+
+![Formulario de edición vehicular con cambios pendientes de guardar](assets/chapter-5/sprint-3/heuristics/h12-unsaved-changes.png)
+
+*Figura 5.3.3-15. Diálogo de edición vehicular con modificaciones pendientes de guardar.*
+
+Al cerrar el formulario mediante el control de cierre, la aplicación descarta las modificaciones realizadas sin presentar un mensaje de advertencia ni solicitar confirmación al usuario.
+
+**Recomendación:**
+
+- Detectar automáticamente la existencia de cambios pendientes de guardar.
+- Presentar un diálogo de confirmación antes de cerrar un formulario modificado.
+- Incorporar las opciones Continuar editando y Descartar cambios.
+- Mantener los datos ingresados cuando el usuario decida continuar editando.
+- Aplicar este comportamiento de manera consistente en los formularios de la aplicación.
+- Evitar solicitar confirmación cuando no existan modificaciones pendientes.
+
+Estas mejoras permitirían prevenir la pérdida involuntaria de información, proporcionar mayor control al usuario y reducir el esfuerzo asociado a la repetición de tareas.
+
+
 ## 5.4 Video About-the-Product
 
 El video About-the-Product presenta FleetProof a dos públicos: los visitantes del Landing Page, que quieren conocer el modelo de negocio y las características del producto, y los usuarios de la Web Application, que quieren ver las tareas que pueden realizar con ella. Tiene una orientación promocional, usa el tono del producto (claro, profesional y orientado a la prevención) y está narrado en español, con subtítulos en español y en inglés.
