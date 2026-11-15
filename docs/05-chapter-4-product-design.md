@@ -735,42 +735,21 @@ Fleet management components diagram
 Report management components diagram
 ![image](assets/chapter-4/c4-webapp/reportManagementComponents.png)
 
-subscription management components diagram
+Subscription management components diagram
 ![image](assets/chapter-4/c4-webapp/subscriptionManagementComponents.png)
 
-user management components diagram
+User management components diagram
 ![image](assets/chapter-4/c4-webapp/userManagementComponents.png)
 
-vehicle information components diagram
+Vehicle information components diagram
 ![image](assets/chapter-4/c4-webapp/vehicleInformationComponents.png)
 
-vehicle monitoring components diagram
+Vehicle monitoring components diagram
 ![image](assets/chapter-4/c4-webapp/vehicleMonitoringComponents.png)
 
-### Backend Components Diagrams
+### Backend Component Diagram
 
 ![image](assets/chapter-4/c4-platform/webAPI.png)
-
-fleet management components diagram
-![image](assets/chapter-4/c4-platform/fleetManagement.png)
-
-report management components diagram
-![image](assets/chapter-4/c4-platform/reportManagement.png)
-
-shared components diagram
-![image](assets/chapter-4/c4-platform/shared.png)
-
-subscription management components diagram
-![image](assets/chapter-4/c4-platform/subscriptionManagement.png)
-
-user management components diagram
-![image](assets/chapter-4/c4-platform/userManagement.png)
-
-vehicle information components diagram
-![image](assets/chapter-4/c4-platform/vehicleInformation.png)
-
-vehicle monitoring components diagram
-![image](assets/chapter-4/c4-platform/vehicleMonitoring.png)
 
 
 El diagrama muestra cómo se organiza el despliegue de FleetProof, separando la interfaz web, la API y las tareas de monitoreo. La solución contempla servicios de alojamiento en la nube, una base de datos PostgreSQL y conexiones seguras con proveedores externos para consultas vehiculares, pagos, notificaciones y almacenamiento de archivos.
@@ -834,112 +813,8 @@ En esta sección se presenta el diseño de la base de datos de FleetProof, defin
 
 El diagrama de base de datos muestra las tablas que conforman FleetProof y las relaciones establecidas mediante claves primarias y foráneas. Su estructura se organiza de acuerdo con los seis contextos del dominio, facilitando el almacenamiento y la vinculación de la información vehicular y administrativa.
 
-```mermaid
-erDiagram
-    %% 1. User Management Context
-    users {
-        uuid id PK
-        varchar email
-        varchar password_hash
-        varchar full_name
-        varchar role
-        boolean is_active
-        timestamp created_at
-    }
+![image](assets/chapter-4/db-diagram/fleetproof-database-diagram.png)
 
-    %% 2. Subscription Management Context
-    subscriptions {
-        uuid id PK
-        uuid user_id FK
-        varchar service_type
-        varchar status
-        timestamp start_date
-        timestamp end_date
-        decimal amount_paid
-    }
-
-    %% 3. Vehicle Information Context
-    vehicles {
-        uuid id PK
-        varchar license_plate UK
-        varchar brand
-        varchar model
-        integer model_year
-        boolean is_valid_plate
-        timestamp registered_at
-    }
-
-    source_checks {
-        uuid id PK
-        uuid vehicle_id FK
-        varchar source_name
-        boolean is_available
-        text raw_response
-        timestamp checked_at
-    }
-
-    %% 4. Report Management Context
-    vehicle_reports {
-        uuid id PK
-        uuid vehicle_id FK
-        uuid requested_by_user_id FK
-        varchar report_type
-        text sunarp_data
-        text traffic_violations_data
-        varchar pdf_url
-        timestamp generated_at
-    }
-
-    %% 5. Vehicle Monitoring Context
-    vehicle_monitorings {
-        uuid id PK
-        uuid vehicle_id FK
-        uuid user_id FK
-        boolean is_active
-        timestamp last_check_date
-        timestamp next_scheduled_check
-    }
-
-    monitoring_alerts {
-        uuid id PK
-        uuid monitoring_id FK
-        text change_detail
-        varchar status
-        timestamp created_at
-    }
-
-    %% 6. Fleet Management Context
-    fleets {
-        uuid id PK
-        uuid manager_user_id FK
-        varchar fleet_name
-        timestamp created_at
-    }
-
-    fleet_vehicle_assignments {
-        uuid id PK
-        uuid fleet_id FK
-        uuid vehicle_id FK
-        uuid responsible_user_id FK
-        varchar current_risk_level
-        timestamp assigned_at
-    }
-
-    %% Relaciones Físicas (Foreign Keys)
-    users ||--o{ subscriptions : "contrata"
-    users ||--o{ vehicle_reports : "solicita"
-    users ||--o{ vehicle_monitorings : "suscribe"
-    users ||--o{ fleets : "administra"
-    users ||--o{ fleet_vehicle_assignments : "es responsable de"
-
-    vehicles ||--o{ source_checks : "registra consultas"
-    vehicles ||--o{ vehicle_reports : "genera"
-    vehicles ||--o{ vehicle_monitorings : "es monitoreado en"
-    vehicles ||--o{ fleet_vehicle_assignments : "es asignado en"
-
-    fleets ||--o{ fleet_vehicle_assignments : "contiene"
-    vehicle_monitorings ||--o{ monitoring_alerts : "dispara"
-```
 **Explicación, decisiones y relación con otros artefactos:**
 
 El diagrama representa la estructura relacional de FleetProof y muestra cómo se distribuye la información entre las diferentes tablas del sistema. Su diseño contempla los siguientes aspectos:
