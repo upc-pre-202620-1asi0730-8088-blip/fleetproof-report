@@ -693,11 +693,11 @@ Step 8: External Systems
 
 Step 9: Aggregates
 
-![image](https://hackmd.io/_uploads/SJ88QAFKGl.png)
+![Aggregates de FleetProof](assets/chapter-4/eventstorming/aggregates.png)
 
 Step 10: Bounded Contexts
 
-![image](https://hackmd.io/_uploads/BJYAmRYYzl.png)
+![Mapa de bounded contexts de FleetProof](assets/chapter-4/eventstorming/bounded-contexts.png)
 
 ### 4.6.2 Software Architecture Context Diagram
 
@@ -735,42 +735,21 @@ Fleet management components diagram
 Report management components diagram
 ![image](assets/chapter-4/c4-webapp/reportManagementComponents.png)
 
-subscription management components diagram
+Subscription management components diagram
 ![image](assets/chapter-4/c4-webapp/subscriptionManagementComponents.png)
 
-user management components diagram
+User management components diagram
 ![image](assets/chapter-4/c4-webapp/userManagementComponents.png)
 
-vehicle information components diagram
+Vehicle information components diagram
 ![image](assets/chapter-4/c4-webapp/vehicleInformationComponents.png)
 
-vehicle monitoring components diagram
+Vehicle monitoring components diagram
 ![image](assets/chapter-4/c4-webapp/vehicleMonitoringComponents.png)
 
-### Backend Components Diagrams
+### Backend Component Diagram
 
 ![image](assets/chapter-4/c4-platform/webAPI.png)
-
-fleet management components diagram
-![image](assets/chapter-4/c4-platform/fleetManagement.png)
-
-report management components diagram
-![image](assets/chapter-4/c4-platform/reportManagement.png)
-
-shared components diagram
-![image](assets/chapter-4/c4-platform/shared.png)
-
-subscription management components diagram
-![image](assets/chapter-4/c4-platform/subscriptionManagement.png)
-
-user management components diagram
-![image](assets/chapter-4/c4-platform/userManagement.png)
-
-vehicle information components diagram
-![image](assets/chapter-4/c4-platform/vehicleInformation.png)
-
-vehicle monitoring components diagram
-![image](assets/chapter-4/c4-platform/vehicleMonitoring.png)
 
 
 El diagrama muestra cómo se organiza el despliegue de FleetProof, separando la interfaz web, la API y las tareas de monitoreo. La solución contempla servicios de alojamiento en la nube, una base de datos PostgreSQL y conexiones seguras con proveedores externos para consultas vehiculares, pagos, notificaciones y almacenamiento de archivos.
@@ -804,8 +783,9 @@ Fleet Management Class Diagram
 
 ![image](assets/chapter-4/class-diagram/06-fleet-management.png)
 
+Diagram class completo:
 
-
+![image](assets/chapter-4/class-diagram/class-diagram-backend.png)
 
 
 **Explicación, decisiones y relación con otros artefactos:**
@@ -833,119 +813,19 @@ En esta sección se presenta el diseño de la base de datos de FleetProof, defin
 
 El diagrama de base de datos muestra las tablas que conforman FleetProof y las relaciones establecidas mediante claves primarias y foráneas. Su estructura se organiza de acuerdo con los seis contextos del dominio, facilitando el almacenamiento y la vinculación de la información vehicular y administrativa.
 
-```mermaid
-erDiagram
-    %% 1. User Management Context
-    USERS {
-        uuid id PK
-        varchar email
-        varchar password_hash
-        varchar full_name
-        varchar role
-        boolean is_active
-        timestamp created_at
-    }
+![image](assets/chapter-4/db-diagram/fleetproof-database-diagram.png)
 
-    %% 2. Subscription Management Context
-    SUBSCRIPTIONS {
-        uuid id PK
-        uuid user_id FK
-        varchar service_type
-        varchar status
-        timestamp start_date
-        timestamp end_date
-        decimal amount_paid
-    }
-
-    %% 3. Vehicle Information Context
-    VEHICLES {
-        uuid id PK
-        varchar license_plate UK
-        varchar brand
-        varchar model
-        integer model_year
-        boolean is_valid_plate
-        timestamp registered_at
-    }
-
-    SOURCE_CHECKS {
-        uuid id PK
-        uuid vehicle_id FK
-        varchar source_name
-        boolean is_available
-        text raw_response
-        timestamp checked_at
-    }
-
-    %% 4. Report Management Context
-    VEHICLE_REPORTS {
-        uuid id PK
-        uuid vehicle_id FK
-        uuid requested_by_user_id FK
-        varchar report_type
-        text sunarp_data
-        text traffic_violations_data
-        varchar pdf_url
-        timestamp generated_at
-    }
-
-    %% 5. Vehicle Monitoring Context
-    VEHICLE_MONITORINGS {
-        uuid id PK
-        uuid vehicle_id FK
-        uuid user_id FK
-        boolean is_active
-        timestamp last_check_date
-        timestamp next_scheduled_check
-    }
-
-    MONITORING_ALERTS {
-        uuid id PK
-        uuid monitoring_id FK
-        text change_detail
-        varchar status
-        timestamp created_at
-    }
-
-    %% 6. Fleet Management Context
-    FLEETS {
-        uuid id PK
-        uuid manager_user_id FK
-        varchar fleet_name
-        timestamp created_at
-    }
-
-    FLEET_VEHICLE_ASSIGNMENTS {
-        uuid id PK
-        uuid fleet_id FK
-        uuid vehicle_id FK
-        uuid responsible_user_id FK
-        varchar current_risk_level
-        timestamp assigned_at
-    }
-
-    %% Relaciones Físicas (Foreign Keys)
-    USERS ||--o{ SUBSCRIPTIONS : "contrata"
-    USERS ||--o{ VEHICLE_REPORTS : "solicita"
-    USERS ||--o{ VEHICLE_MONITORINGS : "suscribe"
-    USERS ||--o{ FLEETS : "administra"
-    USERS ||--o{ FLEET_VEHICLE_ASSIGNMENTS : "es responsable de"
-
-    VEHICLES ||--o{ SOURCE_CHECKS : "registra consultas"
-    VEHICLES ||--o{ VEHICLE_REPORTS : "genera"
-    VEHICLES ||--o{ VEHICLE_MONITORINGS : "es monitoreado en"
-    VEHICLES ||--o{ FLEET_VEHICLE_ASSIGNMENTS : "es asignado en"
-
-    FLEETS ||--o{ FLEET_VEHICLE_ASSIGNMENTS : "contiene"
-    VEHICLE_MONITORINGS ||--o{ MONITORING_ALERTS : "dispara"
-```
 **Explicación, decisiones y relación con otros artefactos:**
 
-El diagrama representa la estructura relacional de FleetProof y muestra cómo se distribuye la información entre las diferentes tablas del sistema. Su diseño contempla los siguientes aspectos:
+El diagrama representa la estructura relacional de FleetProof en PostgreSQL y muestra cómo se distribuye la información entre las tablas del sistema, agrupadas por bounded context. Su diseño contempla los siguientes aspectos:
 
-* **Normalización de datos:** El modelo se plantea siguiendo la Tercera Forma Normal (3FN), con el objetivo de reducir la redundancia y mantener la consistencia de los registros. La información de los vehículos se centraliza en `VEHICLES`, mientras que las consultas y los reportes se almacenan por separado.
+* **Normalización de datos:** El modelo sigue la Tercera Forma Normal (3FN) para reducir la redundancia y mantener la consistencia de los registros. La información de los vehículos se centraliza en `VEHICLES`, mientras que los hallazgos de los reportes (`REPORT_FINDINGS`) y los cambios de las alertas (`ALERT_CHANGES`) se almacenan en tablas propias.
 
 * **Identificación de registros:** Las tablas utilizan identificadores UUID como claves primarias, permitiendo identificar cada registro y establecer relaciones mediante claves foráneas.
 
-* **Gestión de flotas y monitoreo:** La tabla `FLEET_VEHICLE_ASSIGNMENTS` relaciona los vehículos con sus flotas y responsables. Por otro lado, `VEHICLE_MONITORINGS` y `MONITORING_ALERTS` permiten registrar las actividades de supervisión y las alertas generadas ante cambios en la información vehicular.
+* **Suscripciones y patrón Money:** La tabla `PLANS` define el catálogo de planes y `SUBSCRIPTIONS` registra el plan contratado por cada usuario. El precio se guarda como monto y moneda (`PRICE_AMOUNT`, `PRICE_CURRENCY`), siguiendo el patrón Money del diagrama de clases.
+
+* **Gestión de flotas y monitoreo:** La tabla `FLEET_VEHICLE_ASSIGNMENTS` relaciona los vehículos con sus flotas y responsables, y `RESOLUTION_CASES` registra los casos de riesgo vinculados a un reporte. Por otro lado, `VEHICLE_MONITORINGS` y `MONITORING_ALERTS` permiten registrar las actividades de supervisión y las alertas generadas ante cambios en la información vehicular.
+
+* **Relación con otros artefactos:** Cada tabla corresponde a una entidad del diagrama de clases del backend y la base de datos es el contenedor *Database (PostgreSQL)* del modelo C4, al que la Web API accede mediante Entity Framework Core.
 

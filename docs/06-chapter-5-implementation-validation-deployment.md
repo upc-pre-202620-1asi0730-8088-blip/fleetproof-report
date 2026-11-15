@@ -517,17 +517,17 @@ El incremento de AV2 conecta la Web Application Vue con los Web Services de Flee
 | Sprint # | Sprint 3 |
 |---|---|
 | **Sprint Planning Background** | Sprint 2 permitió demostrar Vue sobre una Fake RESTful API. Sprint 3 incorpora servicios con persistencia relacional y conserva el contrato de los recorridos principales. La validación ayuda a distinguir consulta puntual, gestión de flota y seguimiento. |
-| Date | No consta la fecha de una reunión formal de planificación en la evidencia revisada. |
-| Time | Inicio y fin no registrados. |
-| Location | No documentada. |
+| Date | 08/11/2026 |
+| Time | 20:00 - 22:00 |
+| Location | Via Discord |
 | Prepared By | Equipo BLIP; registro consolidado a partir del código y pruebas disponibles. |
-| Attendees (to planning meeting) | Asistencia a la reunión no verificada. |
+| Attendees (to planning meeting) | Todos los integrantes atendieron a la reunión |
 | Sprint 2 Review Summary | Quedaron verificados los recorridos del frontend y de la Mock API en escritorio y móvil. |
 | Sprint 2 Retrospective Summary | El historial del informe permite identificar oportunidades: registrar pruebas con su versión y ambiente, y distinguir evidencia de ejecución de evidencia de publicación. No se presenta como acta de retrospectiva. |
-| **Sprint Goal & User Stories** | |
-| Sprint 3 Goal | **Our focus is on** permitir que un usuario active un plan, registre un vehículo y lo asigne a una flota desde FleetProof. **We believe it delivers** control sobre su flota, con datos persistentes que solo ve su propia cuenta, a los responsables de flotas pequeñas y a los propietarios que registran sus vehículos. **This will be confirmed when** un usuario de prueba activa un plan, registra un vehículo, lo asigna a una flota y lo sigue viendo tras recargar; otra cuenta no puede acceder a ese recurso y la API rechaza las escrituras de flota sin un plan activo. |
-| Sprint 3 Velocity | **13 SP como capacidad objetivo**, igual a la suma de las historias seleccionadas. La velocidad lograda es la suma de los Story Points de las historias aceptadas al cierre del Sprint; mientras la columna Aceptación de la tabla siguiente no tenga constancia del equipo, no se declara. |
-| Sum of Story Points | **13 SP**: US006 (3), US007 (2), US008 (3) y US020 (5), según los Story Points del Capítulo III. |
+| **Sprint Goal & User Stories** |• US006: Manage user access (3 SP) <br> • US007: View plan usage (2 SP) <br> •US008: Register vehicle (3 SP) <br> •US020: Provide vehicle report API (5 SP) <br> •T-ACL: Fleet Entitlement ACL & Persistence Integration (5 SP) |
+| Sprint 3 Goal | Permitir que un usuario active un plan, registre un vehículo y lo asigne a una flota desde FleetProof. La asignación debe seguir visible tras recargar, no ser accesible por otra cuenta y las escrituras deben quedar bloqueadas sin un plan activo. |
+| Sprint 3 Velocity | **21 Story Points registrados en la planificación actualizada**. El backlog documenta 18 SP planificados; los 21 SP no se pueden conciliar con la aceptación de historias registrada, por lo que no se presentan como velocidad lograda verificada. |
+| Sum of Story Points | 18 Story Points |
 
 Historias seleccionadas para el Sprint 3, con los mismos Story Id de la tabla de 5.2.3.3:
 
@@ -537,7 +537,8 @@ Historias seleccionadas para el Sprint 3, con los mismos Story Id de la tabla de
 | US007 | View plan usage | 2 | Catálogo de tres frecuencias, activación del plan y estado persistente tras recargar (5.2.3.5). | Sin constancia de aceptación del equipo. |
 | US008 | Register vehicle | 3 | Alta de vehículo, creación de flota y asignación visible tras recargar (5.2.3.5). | Sin constancia de aceptación del equipo. |
 | US020 | Provide vehicle report API | 5 | Documento OpenAPI y respuesta de salud con HTTP 200 (5.2.3.6); reportes de la cuenta de prueba consultados desde el panel (5.2.3.5). | Sin constancia de aceptación del equipo. |
-| **Total** | | **13** | | |
+| T-ACL | Fleet Entitlement ACL & Persistence Integration | 5 | Verificación de permisos de flota y persistencia (S3-T04). | Tarea técnica; no es una historia de usuario. |
+| **Total planificado** | | **18** | 13 de historias y 5 de la tarea técnica. | |
 
 #### 5.2.3.2 Aspect Leaders and Collaborators
 
@@ -555,7 +556,7 @@ Relación con las tareas: Web Services (S3-T01, T04, T05 y T09), Web Application
 
 #### 5.2.3.3 Sprint Backlog 3
 
-El Sprint 3 busca que un usuario active un plan, registre un vehículo y lo asigne a una flota desde la Web Application conectada a los Web Services. Las tareas se vinculan a historias existentes cuando corresponde; los ítems transversales se registran como técnicos. Las horas son estimaciones propuestas, no horas reales. El estado Done corresponde al alcance verificado de cada tarea: S3-T01 a S3-T05 cuentan con pruebas locales, S3-T09, S3-T10 y S3-T11 con evidencia de publicación, y S3-T07 con el video y el registro de 5.3. S3-T06, S3-T08 y parte de S3-T12 se registran como completadas por el Team Leader, con evidencia que aún no está en los repositorios (ver la lista de evidencias de los estados). La aceptación de las historias se registra por separado.
+El Sprint 3 busca que un usuario active un plan, registre un vehículo y lo asigne a una flota desde la Web Application conectada a los Web Services. Las tareas se vinculan a historias existentes cuando corresponde; los ítems transversales se registran como técnicos. Las horas son estimaciones propuestas, no horas reales. El estado Done corresponde al alcance verificado de cada tarea: S3-T01 a S3-T05 cuentan con pruebas locales, S3-T09, S3-T10 y S3-T11 con evidencia de publicación, y S3-T07 con el video y el registro de 5.3. S3-T08 sigue en revisión: el registro publicado aún no acredita la muestra ni las pruebas autónomas. S3-T06 y parte de S3-T12 se registran como completadas por el Team Leader, con evidencia que aún no está en los repositorios (ver la lista de evidencias de los estados). La aceptación de las historias se registra por separado.
 
 El tablero del Sprint 3 está en Trello y es público: [FleetProof – Sprint 3 Backlog](https://trello.com/b/2TKnLvwr/fleetproof-sprint-3-backlog). Sus columnas son To Do, In Process, To Review y Done, y cada tarjeta indica la historia, la tarea, las horas, el responsable y la evidencia.
 
@@ -574,7 +575,7 @@ Figura 5.2.3.3-1. Tablero público de Trello del Sprint 3, capturado el 14 de no
 | US020 | Provide vehicle report API | S3-T05 | Verify API contract | Verificar el documento OpenAPI y la respuesta de salud de los servicios locales. | 4 | llegastian11 | Done |
 | Técnico | Arquitectura y dominio | S3-T06 | Align diagrams with implementation | Corregir Big Picture, Context Map y C4 contra el código actual y distinguir lo externo de lo local. | 6 | sebasdev28 | Done |
 | Técnico | Validación | S3-T07 | Analyze validation sessions | Registrar las dos sesiones disponibles y sus hallazgos; no atribuir ejecución autónoma. | 4 | rod670 / Harrison1024 | Done |
-| Técnico | Validación | S3-T08 | Validate missing scenarios | Completar muestra por segmento, interacción con Landing y prueba autónoma del flujo empresarial. | 8 | rod670 / Harrison1024 | Done |
+| Técnico | Validación | S3-T08 | Validate missing scenarios | Completar muestra por segmento, interacción con Landing y prueba autónoma del flujo empresarial. | 8 | rod670 / Harrison1024 | To Review |
 | Técnico | Publicación | S3-T09 | Deploy Web Services | Publicar C# con PostgreSQL persistente y verificar URL, commit y salud. El release se registra en S3-T12. | 8 | llegastian11 | Done |
 | Técnico | Publicación | S3-T10 | Deploy integrated Web App | Configurar la API pública, verificar Vue desde la URL de producción y conservar la evidencia. | 6 | DanielPM23 | Done |
 | Técnico | Publicación | S3-T11 | Update Landing Page | Publicar la versión AV2 y enlazar los videos cuando estén disponibles. | 6 | Harrison1024 | Done |
@@ -589,7 +590,7 @@ Figura 5.2.3.3-1. Tablero público de Trello del Sprint 3, capturado el 14 de no
 - **S3-T11:** el PR #7 del Landing Page (`c8fb901`) se integró, el release v3.0.0 se publicó en `main` y la página de GitHub Pages incrusta el video About the Product y enlaza la aplicación publicada (5.2.3.7 y 5.4).
 - **S3-T07:** el video consolidado de las dos sesiones de validación está en Microsoft Stream y su registro está en 5.3.2, 5.3.3 y el Anexo D.
 - **S3-T12:** están el video About the Product (5.4 y Anexo E), el video de validación (5.3 y Anexo D), este tablero y las capturas de analíticos de 5.2.3.8.
-- **S3-T06, S3-T08 y el resto de S3-T12** (video de navegación del producto, video About the Team y evidencias de releases): el Team Leader las da por completadas y conserva el material en su copia local. Esa evidencia aún no figura en los repositorios; hasta que se integre, estas tareas no se pueden comprobar desde el informe. Las secciones 5.3 y el Anexo D registran solo las dos sesiones de validación publicadas.
+- **S3-T06 y el resto de S3-T12** (video de navegación del producto, video About the Team y evidencias de releases): el Team Leader las da por completadas y conserva el material en su copia local. Esa evidencia aún no figura en los repositorios; hasta que se integre, estas tareas no se pueden comprobar desde el informe. Las secciones 5.3 y el Anexo D registran solo las dos sesiones de validación publicadas.
 
 #### 5.2.3.4 Development Evidence for Sprint Review
 
@@ -707,7 +708,7 @@ Se separaron las correcciones por capítulo para facilitar su revisión e integr
 | Reyes Limo, Sebastian Eduardo (llegastian11) | Backend C# con PostgreSQL y configuración Docker para su despliegue; frontend conectado a la autenticación real y adaptado al diseño de la validación; integración del Landing Page y publicación de su release v3.0.0; documentación del Sprint en el informe. | [c1177eb](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/commit/c1177eb), [2f5234e](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/commit/2f5234e), [48f27d9](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/commit/48f27d9), PR #8 y #9 del Landing Page, [638906f](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/638906f) del informe. | Integró el PR #7 del Landing Page y el PR #10 del informe, ambos de Harrison1024. |
 | Palomino Murga, Daniel Stalin (DanielPM23) | Diagrama de clases completo del backend; Capítulo IV del informe: diagramas de componentes y estructura relacional de PostgreSQL. | [b80cdde](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/commit/b80cdde) en el backend; [0ddc1dd](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/0ddc1dd), [2477b49](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/2477b49) y [315f0be](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/315f0be) en la rama `feature/sprint3/capitulo-4`. | La rama `feature/sprint3/capitulo-4` aún no está integrada en `develop`. |
 | Becerra Durand, Sebastian Uriel (sebasdev28) | No registra commits en los repositorios de FleetProof entre el 2026-10-11 y el 2026-11-15. | Capturas 5.2.3.8-1 a 5.2.3.8-4. | Sin revisiones registradas. |
-| Gómez De La Torre Huertas, Rodrigo Fernando (rod670) | No registra commits en los repositorios de FleetProof entre el 2026-10-11 y el 2026-11-15. | Capturas 5.2.3.8-1 a 5.2.3.8-4. | Sin revisiones registradas. |
+| Gómez De La Torre Huertas, Rodrigo Fernando (rod670) | Actualizó fecha, horario, modalidad y asistentes de la planificación, y registró historias y puntos del Sprint 3. | [c410aeb](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/c410aeb) y [2b59bb7](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/2b59bb7). | Sin revisiones registradas. |
 | Payesa Torres, Harrison Hubert (Harrison1024) | Landing Page de AV2 con el video About the Product incrustado y las llamadas a la acción hacia la aplicación publicada; video About the Product; video de las entrevistas de validación; secciones 5.3, 5.4 y los anexos D y E del informe. | [c8fb901](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/commit/c8fb901), [c204778](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/c204778), PR #12 del informe, [video en YouTube](https://youtu.be/zLoyj8Rw4oA). | Sus PR #7 y #10 fueron revisados e integrados por llegastian11. |
 
 Las capturas siguientes son páginas públicas de GitHub. Cada una muestra el repositorio, la rama y el período consultado.
@@ -728,11 +729,13 @@ Figura 5.2.3.8-3. Commits de `fleetproof-webapp`, rama `develop`, del 11 de octu
 
 Figura 5.2.3.8-4. Commits de `fleetproof-website`, rama `main`, del 11 de octubre al 15 de noviembre de 2026: incluye el commit `c8fb901` de Harrison1024 y los PR #7, #8 y #9 integrados por llegastian11.
 
-Con esta evidencia quedan documentados los aportes de tres integrantes. Para Becerra Durand y Gómez De La Torre falta añadir sus commits, PR o revisiones del Sprint 3 para que todos los miembros del equipo figuren con participación verificable.
+La tabla registra aportes verificables de cuatro integrantes. La tarea de Becerra Durand consta en el backlog; queda por vincular su evidencia individual.
 
 ## 5.3 Validation Interviews
 
-Se registran las entrevistas de validación de AV2, separadas de las entrevistas de levantamiento del Capítulo II. Los enlaces corresponden a las grabaciones compartidas por el equipo.
+Se registran las entrevistas de validación de AV2, separadas de las entrevistas de levantamiento del Capítulo II. Las dos sesiones se editaron en un único video consolidado, publicado en Microsoft Stream, en el que cada sesión aparece completa y precedida por una tarjeta de título con los datos de la persona, su segmento objetivo y la fecha de la entrevista.
+
+Los flujos de navegación que recorre el video son los siguientes. En la sesión de Roxana Limo se muestra el panel con los reportes recientes y la columna de riesgo, el detalle de un reporte con hallazgos, los planes de suscripción, la activación del plan y la creación de una flota. En la sesión de Cristhian Amaya se muestra la consulta de un vehículo por placa, el reporte con la cobertura de sus fuentes, el monitoreo con alertas y los planes de suscripción. Las grabaciones originales siguen disponibles en Google Drive.
 
 ### 5.3.1 Diseño de entrevistas
 
@@ -749,26 +752,61 @@ Se registran las entrevistas de validación de AV2, separadas de las entrevistas
 
 Después de las entrevistas, se adaptó la navegación de la aplicación Vue al diseño de referencia. La barra lateral, la cabecera y la paleta conservan los patrones visuales del recorrido mostrado. Se verificaron en Vue los flujos de registro, inicio de sesión, activación de plan, registro de vehículo y asignación a flota con el backend local. Las grabaciones corresponden a las sesiones originales y documentan las observaciones que motivaron la adaptación.
 
-| Participante | Perfil de referencia | Grabación | Duración (mm:ss) y resultado observado |
-|---|---|---|---|
-| Roxana Limo | Gestión comercial automotriz; perspectiva empresarial. | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) | **04:09.** En 00:50–00:54 señala la columna de riesgo. En 02:08–02:55 explica que supervisa alrededor de 25 vehículos en tres ciudades y que reunir datos de distintas áreas le toma tiempo. En 03:36–03:49 expresa intención de usar y recomendar la solución. |
-| Cristhian Amaya | Asesoría automotriz; perspectiva de consulta y recomendación vehicular. | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing) | **03:50.** En 00:18–00:36 describe la consulta por placa en varias fuentes. En 01:21–01:48 pregunta por información registral relevante para la compra. En 02:37–03:17 pregunta cuándo se obtienen los datos y qué pasa si una infracción aparece después. |
+**Video consolidado.** Las dos sesiones se editaron en el archivo `upc-pre-202620-1asi0730-8088-blip-validation-sprint-3.mp4`, de 08:07 de duración, publicado en Microsoft Stream con enlace privado: [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z). Cada sesión va precedida por una tarjeta de título de cuatro segundos con el nombre, la edad, el distrito, el segmento objetivo, la fecha y la duración, y durante la sesión se mantiene un rótulo con esos datos.
 
-La duración corresponde al archivo local, redondeada al segundo. El inicio de cada sesión en su grabación individual es `00:00`. No se consigna fecha u hora de sesión sin registro independiente.
+![Tarjeta de título de la primera entrevista en el video consolidado](assets/chapter-5/sprint-3/validacion-video-tarjeta.png)
 
-![Cristhian y el detalle de cobertura de fuentes en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+Figura 5.3-1. Tarjeta de título de la entrevista 1, en 00:00:02 del video consolidado.
 
-Figura 5.3-1. Cristhian, 01:42: revisión guiada de fuentes en la interfaz de referencia.
+#### Entrevista 1: Roxana Limo
 
-![Roxana y la columna de riesgo en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-roxana.jpg)
+| Campo | Detalle |
+|---|---|
+| Segmento | Responsables comerciales, logísticos y flotas pequeñas |
+| Nombres y apellidos | Roxana Limo |
+| Edad | 43 años |
+| Distrito | Trujillo |
+| Fecha | 11/11/2026 |
+| Video | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
+| Inicio en el video consolidado | 00:00:04 (tarjeta de título en 00:00:00) |
+| Duración | 04:09 |
+| Grabación original | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) |
+| Screenshot | Figura 5.3-2 |
+| Resumen | Roxana recorrió el panel con los reportes recientes y, al preguntarle qué le llamaba la atención, señaló la columna de riesgo (00:50–00:54). Vio el detalle de un reporte con hallazgos de riesgo alto, los planes de suscripción semanal, mensual y anual, y el registro de una flota. Calificó la solución como «súper interesante» por reunir «toda la información en un clic» (02:00–02:05). Explicó que, como jefa de marca automotriz, supervisa alrededor de 25 vehículos de prueba de manejo en tres ciudades y que obtener su kilometraje, movimientos y papeletas la obliga a consultar a varias personas de distintas áreas, lo que le toma bastante tiempo (02:17–02:55). Consideró la plataforma muy amigable, indicó que sí la usaría y que se la recomendaría a clientes corporativos que compran flotas, como empresas de taxis y de transporte (03:32–03:59). |
 
-Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
+![Roxana y la columna de riesgo en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-video-roxana.png)
+
+Figura 5.3-2. Roxana, en 00:01:02 del video consolidado (00:58 de su sesión): listado de vehículos con el riesgo destacado.
+
+#### Entrevista 2: Cristhian Amaya
+
+| Campo | Detalle |
+|---|---|
+| Segmento | Propietarios, compradores y asesores automotores |
+| Nombres y apellidos | Cristhian Amaya |
+| Edad | 39 años |
+| Distrito | Chiclayo |
+| Fecha | 11/11/2026 |
+| Video | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
+| Inicio en el video consolidado | 00:04:17 (tarjeta de título en 00:04:13) |
+| Duración | 03:50 |
+| Grabación original | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing) |
+| Screenshot | Figura 5.3-3 |
+| Resumen | Ante el escenario de comprar un vehículo usado, Cristhian indicó que buscaría por placa en las distintas fuentes, una por una (00:18–00:36). Al ver el reporte por placa con la cobertura de sus fuentes, preguntó qué información podría mostrar la fuente registral; al conocer que incluiría asientos registrales, deudas o garantías, cantidad de dueños, modificaciones y embargos, comentó que es la información que se busca para decidir una compra (01:21–01:41). Preguntó si los datos se obtienen en el momento de la consulta o desde una base guardada (02:37–02:49) y qué ocurre si aparece una papeleta una semana después (02:57–03:02); el moderador respondió que depende de si se elige el reporte individual o una suscripción, una explicación que corresponde a una propuesta del producto y no a una prestación verificada de la demo local. Sobre su intención de uso, dijo que le interesa una opción para comprar el vehículo y otra para su monitoreo (03:24–03:34). |
+
+![Cristhian y el detalle de cobertura de fuentes en la interfaz de referencia](assets/chapter-5/sprint-3/validacion-video-cristhian.png)
+
+Figura 5.3-3. Cristhian, en 00:05:59 del video consolidado (01:42 de su sesión): revisión guiada de las fuentes en la interfaz de referencia.
+
+La edad y el distrito de cada persona coinciden con los registrados en el [Capítulo II](03-chapter-2-requirements-elicitation-analysis.md), donde ambas participaron antes en una entrevista de levantamiento (14/09/2026). La fecha de las sesiones se tomó de los metadatos de las grabaciones originales y de la fecha visible en la pantalla compartida. Las duraciones se redondean al segundo, y los tiempos entre paréntesis en cada resumen corresponden a la grabación original de la persona.
 
 ### 5.3.3 Evaluaciones según heurísticas
 
 **Ficha de evaluación.** Aplicaciones Web, NRC 8088; equipo evaluador: BLIP; participantes: Cristhian Amaya y Roxana Limo; producto: interfaz de referencia FleetProof. Se analizan consulta, comprensión de resultados y descubrimiento del riesgo; quedan fuera la interacción con Landing, accesibilidad, tareas autónomas y funcionamiento de integraciones.
 
 **Escala del Anexo D:** 1 superficial, 2 menor, 3 mayor y 4 muy grave. La severidad consignada es editorial y preliminar; en estas sesiones no se midió frecuencia ni se observó un bloqueo autónomo.
+
+**Tiempos.** Los tiempos de esta sección corresponden a la grabación original de cada persona. Para ubicarlos en el video consolidado se suman 00:00:04 en el caso de Roxana y 00:04:17 en el de Cristhian.
 
 | # | Problema | Severidad preliminar | Heurística o principio |
 |---|---|---:|---|
@@ -779,13 +817,13 @@ Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
 **Descripción y recomendaciones**
 
 - **H01.** Cristhian, 02:37–02:56: pregunta si el dato se obtiene al momento o desde una base previa. Mostrar la fecha de consulta por fuente y explicar cuándo se actualiza.
-- **H02.** Cristhian, 01:21–01:59 (figura 5.3-1): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
+- **H02.** Cristhian, 01:21–01:59 (figura 5.3-3): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
 - **H03.** Cristhian, 02:56–03:17: pregunta qué ocurre si se registra una infracción después de generar el reporte. Distinguir consulta puntual de seguimiento e indicar frecuencia y canal realmente disponibles.
 - **Fortaleza observada.** Roxana, 00:50–00:54, reconoce el riesgo como punto de entrada (figura 5.3-2). Entre 02:08 y 02:55 explica el valor de centralizar datos. Mantener el indicador visible y probar filtros por flota o sede con un escenario empresarial representativo.
 
 No se observó una prueba controlada de recuperación de errores. Las menciones de correo, fuentes externas o planes adicionales durante la explicación son propuestas del producto, no prestaciones verificadas de la demo local.
 
-Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 entrevistas por segmento** de la guía. Faltan al menos dos por segmento, perfiles con edad y distrito verificados y el video consolidado en Stream con enlaces y tiempos. El análisis de diseño inclusivo queda sin resultado hasta realizar pruebas específicas.
+Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 entrevistas por segmento** de la guía. Faltan al menos dos entrevistas por segmento, y las sesiones no incluyeron la interacción con el Landing Page ni con la aplicación Vue. El análisis de diseño inclusivo queda sin resultado hasta realizar pruebas específicas.
 
 ## 5.4 Video About-the-Product
 
