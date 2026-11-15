@@ -706,26 +706,70 @@ Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
 
 ### 5.3.3 Evaluaciones según heurísticas
 
-**Ficha de evaluación.** Aplicaciones Web, NRC 8088; equipo evaluador: BLIP; participantes: Cristhian Amaya y Roxana Limo; producto: interfaz de referencia FleetProof. Se analizan consulta, comprensión de resultados y descubrimiento del riesgo; quedan fuera la interacción con Landing, accesibilidad, tareas autónomas y funcionamiento de integraciones.
+**UX Heuristics & Principles Evaluation**
 
-**Escala del Anexo D:** 1 superficial, 2 menor, 3 mayor y 4 muy grave. La severidad consignada es editorial y preliminar; en estas sesiones no se midió frecuencia ni se observó un bloqueo autónomo.
+**Usability – Inclusive Design – Information Architecture**
 
-| # | Problema | Severidad preliminar | Heurística o principio |
-|---|---|---:|---|
-| H01 | No se entiende cuándo se consultan o actualizan los datos. | 2 | Usabilidad: visibilidad del estado del sistema. |
-| H02 | La cobertura de fuentes necesita explicación adicional. | 2 | Arquitectura de información: comprensibilidad de etiquetas y cobertura. |
-| H03 | El alcance del seguimiento posterior no se distingue claramente de la consulta puntual. | 2 | Usabilidad: visibilidad del estado y control del seguimiento. |
+| Datos de identificación | Descripción |
+|---|---|
+| Carrera | Ingeniería de Software |
+| Curso | Aplicaciones Web |
+| Sección | 8088 |
+| Profesores | Todos |
+| Auditor | BLIP |
+| Cliente(s) | Cristhian Amaya y Roxana Limo |
 
-**Descripción y recomendaciones**
+#### Site o App a evaluar
 
-- **H01.** Cristhian, 02:37–02:56: pregunta si el dato se obtiene al momento o desde una base previa. Mostrar la fecha de consulta por fuente y explicar cuándo se actualiza.
-- **H02.** Cristhian, 01:21–01:59 (figura 5.3-1): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
-- **H03.** Cristhian, 02:56–03:17: pregunta qué ocurre si se registra una infracción después de generar el reporte. Distinguir consulta puntual de seguimiento e indicar frecuencia y canal realmente disponibles.
-- **Fortaleza observada.** Roxana, 00:50–00:54, reconoce el riesgo como punto de entrada (figura 5.3-2). Entre 02:08 y 02:55 explica el valor de centralizar datos. Mantener el indicador visible y probar filtros por flota o sede con un escenario empresarial representativo.
+**FleetProof**
 
-No se observó una prueba controlada de recuperación de errores. Las menciones de correo, fuentes externas o planes adicionales durante la explicación son propuestas del producto, no prestaciones verificadas de la demo local.
+FleetProof es una solución web orientada a la consulta de
+información vehicular y a la gestión de flotas.
 
-Con una entrevista por segmento, la evidencia disponible no alcanza las **3 a 5 entrevistas por segmento** de la guía. Faltan al menos dos por segmento, perfiles con edad y distrito verificados y el video consolidado en Stream con enlaces y tiempos. El análisis de diseño inclusivo queda sin resultado hasta realizar pruebas específicas.
+La evaluación inicial toma como referencia las observaciones
+registradas durante las entrevistas de validación realizadas
+a representantes de los segmentos objetivo. Estas sesiones
+se desarrollaron utilizando la interfaz de referencia del
+producto.
+
+La evaluación podrá complementarse mediante la inspección
+heurística de la aplicación web implementada en Vue,
+diferenciando los hallazgos de esta inspección de aquellos
+obtenidos durante las entrevistas.
+
+#### Tareas a evaluar
+
+El alcance de las sesiones de validación registradas
+comprende las siguientes tareas y recorridos:
+
+1. Identificación del punto de entrada para la consulta
+   de información vehicular.
+2. Comprensión de los resultados de una consulta por placa.
+3. Identificación e interpretación de las fuentes de
+   información presentadas en el reporte.
+4. Identificación del nivel de riesgo vehicular desde
+   el panel de control.
+5. Comprensión de las diferencias entre una consulta
+   puntual y el seguimiento posterior de un vehículo.
+6. Reconocimiento del flujo de registro de una flota.
+
+#### Tareas excluidas de las sesiones registradas
+
+Las siguientes actividades no fueron evaluadas
+específicamente durante las sesiones de validación:
+
+1. Interacción con el Landing Page.
+2. Ejecución autónoma de tareas sin asistencia del moderador.
+3. Verificación técnica de accesibilidad.
+4. Recuperación ante errores durante la interacción.
+5. Verificación del funcionamiento de las integraciones
+   con fuentes externas.
+6. Gestión de una flota empresarial en condiciones
+   representativas de operación.
+
+Estas exclusiones corresponden al alcance de las sesiones
+registradas y no impiden realizar evaluaciones complementarias
+sobre la aplicación implementada.
 
 ## 5.4 Video About-the-Product
 
