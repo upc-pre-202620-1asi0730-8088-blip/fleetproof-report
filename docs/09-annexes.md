@@ -42,7 +42,17 @@ Prototipo desplegado (Landing Page v1.0.0): https://upc-pre-202620-asi0730-8088-
 
 ## Anexo D: Validation Interviews
 
-La evidencia audiovisual de TB1 no está incorporada en esta versión. Corresponde a las entrevistas de validación del prototipo con usuarios de los dos segmentos objetivo, que se ejecutarán después de cerrar las tareas de validación funcional descritas en el [Capítulo V](06-chapter-5-implementation-validation-deployment.md). El registro seguirá el formato del curso: datos del participante, evidencia visual, enlace al video, timing, duración y resumen.
+| Elemento | Evidencia |
+|---|---|
+| Video en Microsoft Stream | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
+| Archivo | `upc-pre-202620-1asi0730-8088-blip-validation-sprint-3.mp4` |
+| Duración | 08:07 |
+| Entrevista 1 | Roxana Limo, 11/11/2026, inicia en 00:00:04 y dura 04:09 |
+| Entrevista 2 | Cristhian Amaya, 11/11/2026, inicia en 00:04:17 y dura 03:50 |
+| Screenshot | ![Tarjeta de título de la primera entrevista](assets/chapter-5/sprint-3/validacion-video-tarjeta.png) |
+| Registro de cada entrevista | Detallado en [5.3.2 Registro de entrevistas](06-chapter-5-implementation-validation-deployment.md#532-registro-de-entrevistas) |
+
+Las grabaciones originales de cada sesión están en Google Drive: [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) y [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing).
 
 ## Anexo E: About the Product
 
