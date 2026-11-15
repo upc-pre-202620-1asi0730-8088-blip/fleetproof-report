@@ -719,9 +719,9 @@ Figura 5.3-2. Roxana, 00:58: listado de vehículos con el riesgo destacado.
 | Auditor | BLIP |
 | Cliente(s) | Cristhian Amaya y Roxana Limo |
 
-#### Site o App a evaluar
+## Site o App a evaluar
 
-**FleetProof**
+### **FleetProof**
 
 FleetProof es una solución web orientada a la consulta de
 información vehicular y a la gestión de flotas.
@@ -737,7 +737,7 @@ heurística de la aplicación web implementada en Vue,
 diferenciando los hallazgos de esta inspección de aquellos
 obtenidos durante las entrevistas.
 
-#### Tareas a evaluar
+### Tareas a evaluar
 
 El alcance de las sesiones de validación registradas
 comprende las siguientes tareas y recorridos:
@@ -753,7 +753,7 @@ comprende las siguientes tareas y recorridos:
    puntual y el seguimiento posterior de un vehículo.
 6. Reconocimiento del flujo de registro de una flota.
 
-#### Tareas excluidas de las sesiones registradas
+### Tareas excluidas de las sesiones registradas
 
 Las siguientes actividades no fueron evaluadas
 específicamente durante las sesiones de validación:
@@ -770,6 +770,45 @@ específicamente durante las sesiones de validación:
 Estas exclusiones corresponden al alcance de las sesiones
 registradas y no impiden realizar evaluaciones complementarias
 sobre la aplicación implementada.
+
+## Descripción de problemas
+
+### PROBLEMA H01: Falta de claridad sobre el momento de consulta y actualización de los datos vehiculares
+
+**Severidad:** 2 - Problema menor.
+
+**Heurística incumplida:** Usabilidad - Visibilidad del estado del sistema.
+
+**Problema:**
+
+Durante la entrevista de validación realizada a Cristhian Amaya, entre los minutos 02:37 y 02:56, el participante manifestó dudas respecto al momento en que FleetProof obtiene la información vehicular, preguntando si los datos se consultan al generar el reporte o si proceden de una base de datos previamente almacenada.
+
+Si bien la interfaz de referencia presenta la fecha de generación del reporte, las fechas asociadas a las fuentes consultadas y sus respectivos estados, no se comunica con suficiente claridad la diferencia entre el momento de consulta y la última actualización de los datos.
+
+Esta situación puede generar incertidumbre en los propietarios y compradores de vehículos, especialmente cuando necesitan información vigente para tomar decisiones relacionadas con la adquisición o evaluación de un vehículo.
+
+Se asigna una severidad preliminar de nivel 2 debido a que el problema dificulta la interpretación de la información, pero no impide continuar con la consulta vehicular.
+
+**Evidencia:**
+
+![Fechas de consulta y cobertura de fuentes del reporte vehicular](assets/chapter-5/sprint-3/validacion-cristhian.jpg)
+
+*Figura 5.3.3-1. Visualización de las fechas y estados de consulta de las fuentes de información en la interfaz de referencia de FleetProof.*
+
+La captura corresponde al minuto 01:42 de la entrevista y permite contextualizar la información presentada al participante. La observación específica sobre la actualización de los datos se encuentra registrada entre los minutos 02:37 y 02:56.
+
+**Recomendación:**
+
+Se recomienda mejorar la comunicación del estado y la vigencia de la información vehicular mediante las siguientes acciones:
+
+- Diferenciar la fecha de generación del reporte de la fecha de consulta de cada fuente.
+- Mostrar la fecha de última actualización de los datos cuando dicha información se encuentre disponible.
+- Indicar si los resultados proceden de una consulta realizada en el momento o de información previamente almacenada.
+- Informar al usuario cuando no sea posible determinar la fecha de actualización de una fuente.
+- Incorporar mensajes explicativos que permitan comprender el alcance y la vigencia de los resultados obtenidos.
+
+Estas mejoras permitirían reducir la incertidumbre del usuario y facilitar la interpretación de la información presentada en los reportes vehiculares.
+
 
 ## 5.4 Video About-the-Product
 
