@@ -777,15 +777,15 @@ Subscription Management Class Diagram
 
 Vehicle Information Class Diagram
 
-![image](assets/chapter-4/class-diagram/-vehicle-information.png)
+![image](assets/chapter-4/class-diagram/03-vehicle-information.png)
 
 Fleet Management Class Diagram
 
-![image](assets/chapter-4/class-diagram/-fleet-management.png)
+![image](assets/chapter-4/class-diagram/06-fleet-management.png)
 
 Diagram class completo:
 
-![image](assets/chapter-4/class-diagram/diagram-complete.png)
+![image](assets/chapter-4/class-diagram/class-diagram-backend.png)
 
 
 **Explicación, decisiones y relación con otros artefactos:**
