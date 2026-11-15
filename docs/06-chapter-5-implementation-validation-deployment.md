@@ -1316,7 +1316,7 @@ Los hallazgos H01, H02 y H03 se identificaron inicialmente durante las entrevist
 Las severidades asignadas representan estimaciones del impacto de cada problema sobre la experiencia de usuario y las tareas de los segmentos objetivo.
 
 
-#### Resultados de la evaluación heurística
+### Resultados de la evaluación heurística
 
 La evaluación heurística permitió identificar doce oportunidades de mejora relacionadas con la experiencia de usuario de FleetProof.
 
@@ -1345,7 +1345,7 @@ El problema H10 presenta la mayor severidad identificada, debido al impacto pote
 
 La ausencia de problemas de severidad 4 dentro del alcance evaluado no garantiza que la aplicación se encuentre libre de errores críticos.
 
-#### Priorización de mejoras
+### Priorización de mejoras
 
 | Prioridad | Problemas | Acciones propuestas |
 |---|---|---|
@@ -1356,6 +1356,32 @@ La ausencia de problemas de severidad 4 dentro del alcance evaluado no garantiza
 | Baja | H04 | Corregir las inconsistencias en las traducciones de la interfaz. |
 
 Se recomienda considerar estas mejoras durante el siguiente Sprint, priorizando aquellas que presentan un mayor impacto sobre la integridad de los datos y la ejecución de las tareas principales de los segmentos objetivo.
+
+
+### Fortalezas identificadas
+
+Durante la evaluación también se identificaron características que contribuyen positivamente a la experiencia de usuario de FleetProof:
+
+- Adaptación de la vista Flota a dispositivos móviles con una resolución de 360 × 800 píxeles.
+- Organización vertical de los filtros en pantallas pequeñas.
+- Uso de etiquetas textuales para complementar los colores de los estados de riesgo.
+- Identificación visible del entorno de demostración y de los datos simulados.
+- Comunicación de las limitaciones del servicio de monitoreo vehicular.
+- Disponibilidad de opciones para revisar manualmente los vehículos.
+- Identificación del estado de los reportes mediante etiquetas descriptivas.
+- Organización de las funcionalidades principales mediante un sistema de navegación consistente.
+
+Estas características representan una base favorable para continuar mejorando la experiencia de usuario de los segmentos objetivo.
+
+#### Conclusiones de la evaluación heurística
+
+La evaluación permitió identificar oportunidades de mejora en la comprensión de la información vehicular, la prevención de errores, la consistencia de la interfaz y el diseño inclusivo de FleetProof.
+
+Los doce problemas identificados fueron documentados mediante evidencias, clasificados según su severidad y complementados con recomendaciones orientadas a mejorar la experiencia de usuario.
+
+Se recomienda priorizar la validación de los datos ingresados, la prevención de registros accidentales y la protección de cambios pendientes de guardar, debido a su impacto sobre la integridad de la información y el esfuerzo requerido para completar las tareas.
+
+Finalmente, se recomienda realizar una nueva evaluación después de implementar las mejoras propuestas, con la finalidad de comprobar su efectividad y continuar fortaleciendo la calidad de los productos digitales de FleetProof.
 
 
 ## 5.4 Video About-the-Product
