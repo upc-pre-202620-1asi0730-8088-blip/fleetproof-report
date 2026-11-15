@@ -981,7 +981,10 @@ Estas mejoras permitirían ofrecer una experiencia de usuario consistente, reduc
 
 **Severidad:** 2 - Problema menor.
 
-**Principio incumplido:** Diseño inclusivo - Considera la situación (Consider situation).
+- **H01.** Cristhian, 02:37–02:56: pregunta si el dato se obtiene al momento o desde una base previa. Mostrar la fecha de consulta por fuente y explicar cuándo se actualiza.
+- **H02.** Cristhian, 01:21–01:59 (figura 5.3-1): pregunta qué información registral y de revisiones técnicas puede ver. Describir en lenguaje cotidiano qué cubre cada fuente y qué no incluye el reporte.
+- **H03.** Cristhian, 02:56–03:17: pregunta qué ocurre si se registra una infracción después de generar el reporte. Distinguir consulta puntual de seguimiento e indicar frecuencia y canal realmente disponibles.
+- **Fortaleza observada.** Roxana, 00:50–00:54, reconoce el riesgo como punto de entrada (figura 5.3-2). Entre 02:08 y 02:55 explica el valor de centralizar datos. Mantener el indicador visible y probar filtros por flota o sede con un escenario empresarial representativo.
 
 **Problema:**
 
