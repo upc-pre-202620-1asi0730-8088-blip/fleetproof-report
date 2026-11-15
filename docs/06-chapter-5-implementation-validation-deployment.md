@@ -524,10 +524,10 @@ El incremento de AV2 conecta la Web Application Vue con los Web Services de Flee
 | Attendees (to planning meeting) | Todos los integrantes atendieron a la reunión |
 | Sprint 2 Review Summary | Quedaron verificados los recorridos del frontend y de la Mock API en escritorio y móvil. |
 | Sprint 2 Retrospective Summary | El historial del informe permite identificar oportunidades: registrar pruebas con su versión y ambiente, y distinguir evidencia de ejecución de evidencia de publicación. No se presenta como acta de retrospectiva. |
-| **Sprint Goal & User Stories** | |
+| **Sprint Goal & User Stories** |• US006: Manage user access (3 SP) <br> • US007: View plan usage (2 SP) <br> •US008: Register vehicle (3 SP) <br> •US020: Provide vehicle report API (5 SP) <br> •T-ACL: Fleet Entitlement ACL & Persistence Integration (5 SP) |
 | Sprint 3 Goal | Permitir que un usuario active un plan, registre un vehículo y lo asigne a una flota desde FleetProof. La asignación debe seguir visible tras recargar, no ser accesible por otra cuenta y las escrituras deben quedar bloqueadas sin un plan activo. |
-| Sprint 3 Velocity | Capacidad no acordada en un acta verificable. |
-| Sum of Story Points | No se calcula una velocidad ni un compromiso a partir del borrador de tareas. |
+| Sprint 3 Velocity | 21 Story Points |
+| Sum of Story Points | 18 Story Points |
 
 #### 5.2.3.2 Aspect Leaders and Collaborators
 
