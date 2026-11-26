@@ -15,7 +15,7 @@
 
 ## Repositorio
 
-URL del repositorio del informe: https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report
+URL del repositorio del informe: https://github.com/upc-pre-202620-1asi0730-8088-blip/fleetproof-report
 
 ## Estrategia de colaboración
 
@@ -39,7 +39,7 @@ Captura histórica del repositorio `fleetproof-report`, rama `develop`, con el p
 
 ![Contributors de GitHub del informe](assets/chapter-5/sprint-3/github-report-contributors-2026-11-25.jpg)
 
-Captura nativa realizada el 25/11/2026 en [GitHub Contributors](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/graphs/contributors), rama `develop`, período visible del 22 de agosto al 21 de noviembre de 2026, excluyendo commits de fusión. GitHub muestra Harrison1024 (20), sebasdev28 (16), llegastian11 (16), DanielPM23 (16) y rod670 (15). Es un corte acumulado calculado por GitHub; no atribuye los commits de las correcciones de hoy a las entregas anteriores.
+Captura nativa realizada el 25/11/2026 en [GitHub Contributors](https://github.com/upc-pre-202620-1asi0730-8088-blip/fleetproof-report/graphs/contributors), rama `develop`, período visible del 22 de agosto al 21 de noviembre de 2026, excluyendo commits de fusión. GitHub muestra Harrison1024 (20), sebasdev28 (16), llegastian11 (16), DanielPM23 (16) y rod670 (15). Es un corte acumulado calculado por GitHub; no atribuye los commits de las correcciones de hoy a las entregas anteriores.
 
 ## Convenciones de GitFlow
 

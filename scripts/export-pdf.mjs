@@ -103,7 +103,7 @@ try {
         const hash=f+'--'+decodeURIComponent(u.hash.slice(1));
         l.setAttribute('href','#'+(u.hash&&document.getElementById(hash)?hash:f));
       } else if(f==='10-av1-work-plan'||f==='11-rubric-quality-control'){
-        l.setAttribute('href','https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/blob/develop/docs/'+f+'.md');
+        l.setAttribute('href','https://github.com/upc-pre-202620-1asi0730-8088-blip/fleetproof-report/blob/develop/docs/'+f+'.md');
       }
     }
     const cover = document.querySelector('.cover');

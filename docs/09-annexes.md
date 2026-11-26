@@ -29,7 +29,7 @@ Se realizaron siete entrevistas distribuidas en los dos segmentos objetivo. El r
 
 ## Anexo C: Prototype Navigation
 
-Prototipo desplegado (Landing Page v1.0.0): https://upc-pre-202620-asi0730-8088-blip.github.io/fleetproof-website/
+Prototipo desplegado (Landing Page v1.0.0): https://upc-pre-202620-1asi0730-8088-blip.github.io/fleetproof-website/
 
 | Elemento | Evidencia |
 |---|---|
