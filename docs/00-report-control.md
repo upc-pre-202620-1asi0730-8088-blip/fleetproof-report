@@ -8,6 +8,7 @@
 | 0.4.0 | 2026-11-15 | BLIP | AV2: se actualizó el Sprint 3 con evidencias de integración y despliegue, las entrevistas de validación y el video About the Team. |
 | v1.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
 | v2.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
+| v3.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
 
 # Project Report Collaboration Insights
 
