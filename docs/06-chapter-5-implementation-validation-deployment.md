@@ -184,9 +184,9 @@ Para el control del flujo de trabajo y seguimiento ágil bajo Kanban/Scrum, el e
   * `[T01]` Estructuración HTML semántica del encabezado y Hero (US001) - DanielPM23
   * `[T02]` Estilización CSS responsiva y tokens de diseño Material Design (US001) - Sebasdev28
   * `[T03]` Maquetación de la sección y llamada a la acción empresarial (US002) - Harrison1024
-  * `[T04]` Configuración de eventos de redirección para monitoreo de flotas (US002) - Ilegastian
+  * `[T04]` Configuración de eventos de redirección para monitoreo de flotas (US002) - llegastian11
   * `[T05]` Construcción visual del bloque de consulta vehicular para particulares (US003) - DanielPM23
-  * `[T06]` Enrutamiento y script de interacción para reporte unitario (US003) - Ilegastian
+  * `[T06]` Enrutamiento y script de interacción para reporte unitario (US003) - llegastian11
   * `[T07]` Maquetación HTML de tarjetas de planes de suscripción (US004) - Sebasdev28
   * `[T08]` Diseño responsivo en cuadrícula (CSS Grid/Flexbox) de planes (US004) - DanielPM23
   * `[T09]` Redacción y estructura de Términos de Servicio y Privacidad (US005) - Harrison1024
@@ -202,18 +202,20 @@ Para el control del flujo de trabajo y seguimiento ágil bajo Kanban/Scrum, el e
 |---|---|---|---|---|---:|---|---|
 | **US001** | View value proposition | T01 | **HTML Semantic Layout** | Estructurar el marcado semántico del encabezado y la sección hero principal con la propuesta de valor. | 4 | DanielPM23 (Daniel) | Done |
 | **US001** | View value proposition | T02 | **Hero Section Styling** | Aplicar reglas de estilo CSS adaptativas, tipografía y elementos visuales basados en Material Design. | 4 | Sebasdev28 (Becerra) | Done |
-| **US002** | Fleet monitoring CTA | T03 | **Enterprise CTA Component** | Maquetar y estilar el componente de llamada a la acción enfocado en administradores de flotas. | 3 | Harrison1024 (Harrison) | Done |
-| **US002** | Fleet monitoring CTA | T04 | **Enterprise Redirect Behavior** | Implementar la lógica de redirección y eventos de navegación hacia el flujo empresarial. | 3 | Ilegastian (Reyes) | Done |
-| **US003** | Vehicle report CTA | T05 | **B2C CTA Component** | Construir la sección de consulta vehicular individual y diseño del botón de acción para particulares. | 3 | DanielPM23 (Daniel) | Done |
-| **US003** | Vehicle report CTA | T06 | **B2C Query Navigation** | Configurar el enrutamiento interactivo para redirigir a los visitantes hacia la consulta por placa. | 3 | Ilegastian (Reyes) | Done |
+| **US002** | Fleet monitoring CTA | T03 | **Enterprise CTA Component** | Maquetar y estilar el componente de llamada a la acción enfocado en administradores de flotas. | 4 | Harrison1024 (Harrison) | Done |
+| **US002** | Fleet monitoring CTA | T04 | **Enterprise Redirect Behavior** | Implementar la lógica de redirección y eventos de navegación hacia el flujo empresarial. | 4 | llegastian11 (Reyes) | Done |
+| **US003** | Vehicle report CTA | T05 | **B2C CTA Component** | Construir la sección de consulta vehicular individual y diseño del botón de acción para particulares. | 4 | DanielPM23 (Daniel) | Done |
+| **US003** | Vehicle report CTA | T06 | **B2C Query Navigation** | Configurar el enrutamiento interactivo para redirigir a los visitantes hacia la consulta por placa. | 4 | llegastian11 (Reyes) | Done |
 | **US004** | Compare plans | T07 | **Subscription Pricing Layout** | Diseñar la estructura HTML y tarjetas comparativas para los planes Personal, Fleet Starter y Fleet Business. | 5 | Sebasdev28 (Becerra) | Done |
 | **US004** | Compare plans | T08 | **Pricing Grid Responsiveness** | Ajustar el diseño responsivo en cuadrícula (CSS Grid/Flexbox) para la visualización en móviles y escritorio. | 4 | DanielPM23 (Daniel) | Done |
 | **US005** | View legal pages | T09 | **Legal Content Views** | Redactar y maquetar los términos de servicio (Terms) y políticas de privacidad (Privacy Policy). | 4 | Harrison1024 (Harrison) | Done |
-| **US005** | View legal pages | T10 | **Footer Navigation Links** | Integrar los enlaces de navegación y metadatos de accesibilidad en el pie de página. | 2 | Harrison1024 (Harrison) | Done |
+| **US005** | View legal pages | T10 | **Footer Navigation Links** | Integrar los enlaces de navegación y metadatos de accesibilidad en el pie de página. | 4 | Harrison1024 (Harrison) | Done |
 | **General** | Sprint Constraint | T11 | **Deployment Pipeline Setup** | Configurar la integración continua en Vercel vinculada a la rama main de GitHub y validar disponibilidad HTTPS. | 4 | rod670 (Gómez De La Torre) | Done |
 | **General** | Sprint Constraint | T12 | **Sprint Documentation & Verification** | Consolidar las evidencias técnicas, matrices y redacción del Capítulo V en el informe Markdown. | 6 | rod670 (Gómez De La Torre) | Done |
 
-Las estimaciones de 2 o 3 horas se conservan como registro histórico del Sprint 1; no cumplen el rango de 4 a 8 horas evaluado en la rúbrica.
+**Revisión de estimaciones:** T03, T04, T05 y T06 se reestiman de 3 a 4 h; T10, de 2 a 4 h, para ajustarse al rango de 4–8 h. Son estimaciones revisadas el 25/11/2026, no horas consumidas ni una modificación de las fechas de ejecución. Las estimaciones originales permanecen en el historial Git.
+
+**Esfuerzo estimado revisado: 51 horas.**
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 
@@ -342,6 +344,8 @@ Las tareas descomponen el objetivo del incremento en actividades de **4 a 8 hora
 
 **Board del Sprint 2:** URL pública y captura no incorporadas en esta versión. La tabla siguiente no sustituye la evidencia de evolución de tarjetas en una herramienta ágil. No se reutiliza la captura del Sprint 1 como evidencia de este sprint.
 
+La descomposición se revisó el 25/11/2026: se conservaron los identificadores originales y se añadieron subtareas para separar actividades que ya estaban agrupadas en sus descripciones. Las estimaciones revisadas son de 4–8 h por tarea; no representan horas reales ni tarjetas históricas adicionales. Los responsables y los estados proceden del registro existente. La aceptación de cada historia requiere el conjunto de sus tareas.
+
 **Sprint #: Sprint 2**
 
 | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
@@ -350,23 +354,31 @@ Las tareas descomponen el objetivo del incremento en actividades de **4 a 8 hora
 | US006 | Manage user access | S2-T02 | Isolate account resources | Conservar sesión y restringir recursos por usuario en la API simulada. | 6 | DanielPM23 | Done |
 | US007 | View plan usage | S2-T03 | Display plan usage | Mostrar consumo de vehículos, reportes y monitoreos con cuotas de demostración. | 4 | Harrison1024 | Done |
 | US007 | View plan usage | S2-T04 | Simulate plan payment | Seleccionar frecuencia semanal/mensual, mostrar QR ficticio y guardar confirmación simulada. | 4 | Harrison1024 | Done |
-| US008 | Register vehicle | S2-T05 | Implement vehicle registration | Validar placa y campos obligatorios, guardar vehículos de la cuenta y organizar flotas desde la misma vista. | 6 | llegastian11 | Done |
-| US009 | Import vehicles | S2-T06 | Import fleet CSV | Procesar archivo CSV, incorporar filas válidas y mostrar errores de filas rechazadas. | 6 | llegastian11 | Done |
-| US010 | Search and filter fleet | S2-T07 | Implement fleet filters | Buscar por texto y filtrar tipo, sede y riesgo; verificar escenario sin coincidencias. | 4 | llegastian11 | Done |
+| US008 | Register vehicle | S2-T05 | Register account vehicle | Validar placa y campos obligatorios y guardar el vehículo de la cuenta. | 4 | llegastian11 | Done |
+| US008 | Register vehicle | S2-T18 | Assign registered vehicle to fleet | Crear la flota y asignar el vehículo registrado desde la vista de vehículos. | 4 | llegastian11 | Done |
+| US009 | Import vehicles | S2-T06 | Parse fleet CSV | Leer el archivo CSV, validar cabeceras y clasificar filas válidas e inválidas. | 4 | llegastian11 | Done |
+| US009 | Import vehicles | S2-T19 | Persist CSV results and display errors | Incorporar las filas válidas y mostrar los errores por fila sin descartar los registros aceptados. | 4 | llegastian11 | Done |
+| US010 | Search and filter fleet | S2-T07 | Apply fleet filters | Aplicar búsqueda por texto y filtros de tipo, sede y riesgo. | 4 | llegastian11 | Done |
+| US010 | Search and filter fleet | S2-T20 | Display empty search results | Verificar la combinación de filtros y presentar el escenario sin coincidencias. | 4 | llegastian11 | Done |
 | US011 | Request vehicle report | S2-T08 | Request individual report | Capturar placa válida sin exigir registro previo en una flota. | 4 | llegastian11 | Done |
 | US011 | Request vehicle report | S2-T09 | Simulate individual payment | Mostrar diálogo de pago y QR ficticio; crear reporte con tres fuentes simuladas después de confirmar. | 4 | llegastian11 | Done |
-| US015 | Download vehicle report | S2-T10 | Generate report PDF | Generar documento con diseño FleetProof, placa, fecha y resultados ficticios de las tres fuentes. Evidencia: figura 5.2.2-4. | 6 | llegastian11 | Done |
-| US017 | Prioritize critical vehicles | S2-T11 | Display fleet risk | Mostrar indicadores, tabla de vehículos y distribución de riesgo con datos simulados de la cuenta. | 4 | llegastian11 | Done |
-| US020 | Provide vehicle report API | S2-T12 | Configure Fake RESTful API | Exponer recursos de reportes y demás contextos mediante JSON Server con autenticación de demostración. | 6 | sebasdev28 | To Review |
+| US015 | Download vehicle report | S2-T10 | Build report PDF document | Generar el documento con diseño FleetProof, placa, fecha y resultados simulados de las tres fuentes. | 4 | llegastian11 | Done |
+| US015 | Download vehicle report | S2-T21 | Download generated report PDF | Integrar la descarga desde el reporte y comprobar el documento obtenido. Evidencia: figura 5.2.2-4. | 4 | llegastian11 | Done |
+| US017 | Prioritize critical vehicles | S2-T11 | Compute fleet risk indicators | Obtener los indicadores y la distribución de riesgo con datos simulados de la cuenta. | 4 | llegastian11 | Done |
+| US017 | Prioritize critical vehicles | S2-T22 | Display risk summary and vehicle list | Mostrar el resumen de riesgo y la tabla de vehículos del panel. | 4 | llegastian11 | Done |
+| US020 | Provide vehicle report API | S2-T12 | Configure mock report resources | Configurar los recursos de reportes y de los demás contextos en JSON Server. | 4 | sebasdev28 | To Review |
+| US020 | Provide vehicle report API | S2-T23 | Protect mock API resources | Configurar la autenticación de demostración y comprobar el acceso a los recursos protegidos. | 4 | sebasdev28 | To Review |
 | General | Sprint constraint | S2-T13 | Deploy frontend and Fake API | Configurar Netlify y Render gratuitos, URL HTTPS de API, redirección SPA y comprobar la versión publicada. | 4 | llegastian11 | Done |
 | General | Sprint constraint | S2-T14 | Validate responsive experience | Revisar escritorio y móvil, navegación, diálogos y errores; incorporar evidencias. | 6 | DanielPM23 / rod670 | Done |
 | General | Sprint constraint | S2-T15 | Align automatic report workflow | Retirar revisión/publicación manual, revisar Casos y consolidar Monitoreo en Flota conforme al flujo aclarado. | 6 | llegastian11 / rod670 | Done |
 | General | Sprint constraint | S2-T16 | Complete sprint evidence | Confirmar reunión y matriz; adjuntar tablero, video, analíticos y aceptación por historia. | 4 | rod670 | In Process |
 | General | Sprint constraint | S2-T17 | Update product backlog | Revisar US012-US015, US018-US019 y criterios de pago y frecuencia sin atribuir integraciones reales a la simulación. Evidencia: criterios y Product Backlog del Capítulo III. | 4 | Harrison1024 | Done |
 
-**Esfuerzo estimado propuesto: 84 horas.** No corresponde a tiempo consumido ni disponibilidad confirmada. Los estados Done de tareas técnicas no declaran terminada la historia cuando existen otros criterios sin validación de aceptación.
+**Trazabilidad de la descomposición:** S2-T18 deriva de S2-T05; S2-T19 de S2-T06; S2-T20 de S2-T07; S2-T21 de S2-T10; S2-T22 de S2-T11; S2-T23 de S2-T12. Se conserva la evidencia de cada actividad original.
 
-**Balance documentado:** 16 tareas Done y 1 con evidencia parcial (S2-T16). Se completó la revisión documental S2-T17. Las comprobaciones locales del 11 de noviembre de 2026 no implican un nuevo despliegue ni cambian la fecha del Sprint 2.
+**Esfuerzo estimado revisado: 100 horas (23 tareas).** No corresponde a tiempo consumido ni disponibilidad confirmada. Los estados Done de tareas técnicas no declaran terminada la historia cuando existen otros criterios sin validación de aceptación.
+
+**Balance documentado:** 20 tareas Done, 2 To Review (S2-T12 y S2-T23) y 1 In Process (S2-T16). Se completó la revisión documental S2-T17. Las comprobaciones locales del 11 de noviembre de 2026 no implican un nuevo despliegue ni cambian la fecha del Sprint 2.
 
 #### 5.2.2.4 Development Evidence for Sprint Review
 
@@ -557,32 +569,43 @@ Relación con las tareas: Web Services (S3-T01, T04, T05 y T09), Web Application
 
 #### 5.2.3.3 Sprint Backlog 3
 
-El Sprint 3 busca que un usuario active un plan, registre un vehículo y lo asigne a una flota desde la Web Application conectada a los Web Services. Las tareas se vinculan a historias existentes cuando corresponde; los ítems transversales se registran como técnicos. Las horas son estimaciones propuestas, no horas reales. El estado Done corresponde al alcance verificado de cada tarea: S3-T01 a S3-T05 cuentan con pruebas locales, S3-T09, S3-T10 y S3-T11 con evidencia de publicación, y S3-T07 con el video y el registro de 5.3. S3-T08 sigue en revisión: el registro publicado aún no acredita la muestra ni las pruebas autónomas. S3-T06 y parte de S3-T12 se registran como completadas por el Team Leader, con evidencia que aún no está en los repositorios (ver la lista de evidencias de los estados). La aceptación de las historias se registra por separado.
+El Sprint 3 busca que un usuario active un plan, registre un vehículo y lo asigne a una flota desde la Web Application conectada a los Web Services. Las tareas se vinculan a historias existentes cuando corresponde; los ítems transversales se registran como técnicos. Las horas son estimaciones propuestas, no horas reales. El estado Done corresponde al alcance verificado de cada tarea: S3-T01 a S3-T05 cuentan con pruebas locales, S3-T09, S3-T10 y S3-T11 con evidencia de publicación, y S3-T07 con el video y el registro de 5.3. S3-T08 sigue en revisión: el registro publicado aún no acredita la muestra ni las pruebas autónomas. Las tareas de arquitectura S3-T06 y S3-T18 permanecen To Review, a cargo del integrante responsable; esta revisión del backlog no modifica los diagramas. Las referencias de publicación y videos de S3-T12 y S3-T19 se contrastan con las secciones del informe. La aceptación de las historias se registra por separado.
 
 El tablero del Sprint 3 está en Trello y es público: [FleetProof – Sprint 3 Backlog](https://trello.com/b/2TKnLvwr/fleetproof-sprint-3-backlog). Sus columnas son To Do, In Process, To Review y Done, y cada tarjeta indica la historia, la tarea, las horas, el responsable y la evidencia.
 
 ![Tablero de Trello del Sprint 3 con las tareas S3-T01 a S3-T12](assets/chapter-5/sprint-3/sprint-backlog-3-tablero.png)
 
-Figura 5.2.3.3-1. Tablero público de Trello del Sprint 3, capturado el 14 de noviembre de 2026, con las 12 tareas en Done.
+Figura 5.2.3.3-1. Captura histórica del tablero público de Trello del Sprint 3, realizada el 14 de noviembre de 2026, con las 12 tarjetas originales en Done. No refleja la descomposición documental ni los estados revisados el 25/11/2026; no acredita la aceptación de las tareas de arquitectura o de la muestra de validación.
+
+La descomposición se revisó el 25/11/2026: se conservaron los identificadores originales y se añadieron subtareas para separar actividades que ya estaban agrupadas en sus descripciones. Las estimaciones revisadas son de 4–8 h por tarea; no representan horas reales ni tarjetas históricas adicionales. Los responsables y los estados proceden del registro existente. La aceptación de cada historia requiere el conjunto de sus tareas.
 
 **Sprint #: Sprint 3**
 
 | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
 |---|---|---|---|---|---:|---|---|
-| US006 | Manage user access | S3-T01 | Persist and isolate accounts | Probar registro, login y separación de recursos con PostgreSQL. | 6 | llegastian11 | Done |
-| US007 | View plan usage | S3-T02 | Activate subscription in Vue | Validar tres frecuencias, precios por segmento, confirmación QR y persistencia. | 6 | DanielPM23 / llegastian11 | Done |
-| US008 | Register vehicle | S3-T03 | Verify fleet assignment | Registrar vehículo, crear flota y asignarlo; comprobar el resultado tras recargar. | 6 | DanielPM23 / llegastian11 | Done |
-| Técnico | Comunicación entre contextos | S3-T04 | Verify fleet entitlement ACL | Validar que Flotas no lea directamente Suscripciones y que el API rechace escrituras sin permiso. | 6 | llegastian11 | Done |
-| US020 | Provide vehicle report API | S3-T05 | Verify API contract | Verificar el documento OpenAPI y la respuesta de salud de los servicios locales. | 4 | llegastian11 | Done |
-| Técnico | Arquitectura y dominio | S3-T06 | Align diagrams with implementation | Corregir Big Picture, Context Map y C4 contra el código actual y distinguir lo externo de lo local. | 6 | sebasdev28 | To Review |
+| US006 | Manage user access | S3-T01 | Verify account persistence | Probar registro e inicio de sesión con las cuentas persistidas en PostgreSQL. | 4 | llegastian11 | Done |
+| US006 | Manage user access | S3-T13 | Verify account resource isolation | Comprobar que una segunda cuenta no pueda acceder a los recursos de la primera. | 4 | llegastian11 | Done |
+| US007 | View plan usage | S3-T02 | Verify subscription selection | Validar las tres frecuencias y los precios por segmento en Vue. | 4 | DanielPM23 / llegastian11 | Done |
+| US007 | View plan usage | S3-T14 | Verify simulated subscription activation | Comprobar la confirmación QR simulada y la persistencia de la suscripción activada. | 4 | DanielPM23 / llegastian11 | Done |
+| US008 | Register vehicle | S3-T03 | Verify vehicle registration | Registrar el vehículo desde Vue conectado a la API real y comprobar su persistencia. | 4 | DanielPM23 / llegastian11 | Done |
+| US008 | Register vehicle | S3-T15 | Verify fleet assignment persistence | Crear la flota, asignar el vehículo y comprobar el resultado después de recargar. | 4 | DanielPM23 / llegastian11 | Done |
+| Técnico | Comunicación entre contextos | S3-T04 | Verify context boundary through ACL | Verificar que Flotas consulte los permisos mediante el ACL y no lea directamente el contexto de Suscripciones. | 4 | llegastian11 | Done |
+| Técnico | Comunicación entre contextos | S3-T16 | Verify denied fleet writes | Probar que la API rechace las escrituras de flota cuando la cuenta carece del permiso requerido. | 4 | llegastian11 | Done |
+| US020 | Provide vehicle report API | S3-T05 | Verify published API contract | Verificar la disponibilidad y las operaciones del documento OpenAPI de los servicios. | 4 | llegastian11 | Done |
+| US020 | Provide vehicle report API | S3-T17 | Verify service health | Comprobar la respuesta del endpoint de salud y la conexión a PostgreSQL. | 4 | llegastian11 | Done |
+| Técnico | Arquitectura y dominio | S3-T06 | Review architecture diagrams | Revisar Big Picture, Context Map y C4 contra el alcance implementado. Corrección a cargo del integrante responsable. | 4 | sebasdev28 | To Review |
+| Técnico | Arquitectura y dominio | S3-T18 | Review domain and integration boundaries | Contrastar los contextos y distinguir integraciones externas de comportamiento local. Corrección a cargo del integrante responsable. | 4 | sebasdev28 | To Review |
 | Técnico | Validación | S3-T07 | Analyze validation sessions | Registrar las dos sesiones disponibles y sus hallazgos; no atribuir ejecución autónoma. | 4 | rod670 / Harrison1024 | Done |
 | Técnico | Validación | S3-T08 | Validate missing scenarios | Completar muestra por segmento, interacción con Landing y prueba autónoma del flujo empresarial. | 8 | rod670 / Harrison1024 | To Review |
 | Técnico | Publicación | S3-T09 | Deploy Web Services | Publicar C# con PostgreSQL persistente y verificar URL, commit y salud. El release se registra en S3-T12. | 8 | llegastian11 | Done |
 | Técnico | Publicación | S3-T10 | Deploy integrated Web App | Configurar la API pública, verificar Vue desde la URL de producción y conservar la evidencia. | 6 | DanielPM23 | Done |
 | Técnico | Publicación | S3-T11 | Update Landing Page | Publicar la versión AV2 y enlazar los videos cuando estén disponibles. | 6 | Harrison1024 | Done |
-| Técnico | Entrega | S3-T12 | Consolidate review evidence | Adjuntar analíticos, tablero, evidencias de releases y videos del equipo y del producto. | 6 | rod670 / Harrison1024 | Done |
+| Técnico | Entrega | S3-T12 | Consolidate release and board evidence | Adjuntar analíticos, tablero y enlaces verificables de las releases. | 4 | rod670 / Harrison1024 | Done |
+| Técnico | Entrega | S3-T19 | Consolidate audiovisual references | Relacionar los videos del equipo, del producto y de validación con las secciones y anexos correspondientes. | 4 | rod670 / Harrison1024 | Done |
 
-**Esfuerzo estimado propuesto: 72 horas.** No corresponde a tiempo consumido.
+**Esfuerzo estimado revisado: 88 horas (19 tareas).** No corresponde a tiempo consumido.
+
+**Trazabilidad de la descomposición:** S3-T13 deriva de S3-T01; S3-T14 de S3-T02; S3-T15 de S3-T03; S3-T16 de S3-T04; S3-T17 de S3-T05; S3-T18 de S3-T06; S3-T19 de S3-T12. Comparten la evidencia citada para la actividad original, sin atribuir commits nuevos a sus responsables.
 
 **Evidencia de los estados**
 
@@ -697,7 +720,7 @@ Figura 5.2.3-9. Aplicación de la migración `AddSubscriptionAudience` a la base
 |---|---|---|
 | Landing Page | [v3.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/v3.0.0) | Landing de AV2 con el video About the Product incrustado y los enlaces a la aplicación publicada. La versión [v2.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/v2.0.0) es la anterior a AV2. |
 | Web Application | [v2.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/releases/tag/v2.0.0) | Integra en `main` y `develop` el frontend de AV2 y su conexión con Render; cierre de versión del 25/11/2026, commit `5ee5c6b`. Las capturas originales de AV2 conservan su commit de referencia `48f27d9`. |
-| Web Services | [v1.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/releases/tag/v1.0.0) | Backend de AV2 desplegado en Render desde el commit `c1177eb`. |
+| Web Services | [v1.1.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/releases/tag/v1.1.0) | Backend publicado en Render desde `34a2e70`, con historial de revisiones del PR #1 y migración aplicada el 25/11/2026. La v1.0.0 corresponde al corte original de AV2. |
 | Informe | [v4.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/releases/tag/v4.0.0) | Normalización del versionado solicitada el 25/11/2026. Las versiones v1.0.0 a v4.0.0 se distinguen por metadatos de versión; no representan cuatro entregas históricas reconstruidas. La prerelease anterior `av2-capitulo-5` se conserva como referencia de revisión. |
 
 #### 5.2.3.8 Team Collaboration Insights during Sprint
