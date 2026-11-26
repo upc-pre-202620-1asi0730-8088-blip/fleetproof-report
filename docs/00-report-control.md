@@ -9,6 +9,7 @@
 | v1.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
 | v2.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
 | v3.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
+| v4.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
 
 # Project Report Collaboration Insights
 
