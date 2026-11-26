@@ -1,56 +1,223 @@
-# UPC - 1ASI0730 Aplicaciones Web
+<!-- report-cover:start -->
+<div align="center" class="report-cover">
 
-## Informe de Trabajo Final
+  <img src="docs/assets/chapter-1/upc-logo.png" alt="Logo UPC" width="62" />
 
-**Startup:** BLIP  
-**Producto:** FleetProof  
-**NRC:** 8088  
-**Profesor:** Efraín Ricardo Bautista Ubillús  
-**Ciclo académico:** 2026-20  
-**Mes y año:** TODO  
+  <p>Universidad Peruana de Ciencias Aplicadas<br />Carrera de Ingeniería de Software</p>
 
-## Integrantes
+  <p class="course"><strong>1ASI0730<br />Aplicaciones Web</strong></p>
 
-| Código | Apellidos y nombres | Carrera | GitHub username | Rol AV1 |
-|---|---|---|---|---|
-| u2022311656 | Reyes Limo Sebastian | Ingeniería de Software | llegastian11 | Technical Lead, SCM and Rubric Owner |
-| U20201B253 | Palomino Murga Daniel Stalin | Ingeniería de Software | DanielPM23 | Lean UX Owner |
-| TODO | Becerra Durand Sebastian Uriel | Ingeniería de Software | TODO | UX Research Owner |
-| TODO | Gómez De La Torre Huertas Rodrigo Fernando | Ingeniería de Software | TODO | Requirements Owner |
-| TODO | Payesa Torres Harrison Hubert | Ingeniería de Software | TODO | Product Design and Landing Page Owner |
+  <p>NRC<br /><strong>8088</strong></p>
+
+  <h1>Informe de Trabajo Final</h1>
+
+  <p>Docente<br /><strong>Bautista Ubillús, Efrain Ricardo</strong></p>
+
+  <p class="team">Equipo<br /><strong>BLIP</strong><br />Proyecto<br /><strong>FleetProof</strong></p>
+
+  <h2>Integrantes</h2>
+  <table align="center" style="width:auto;margin-left:auto;margin-right:auto;text-align:left">
+    <thead><tr><th scope="col">Código</th><th scope="col">Apellidos y Nombres</th></tr></thead>
+    <tbody>
+      <tr><td>U202311656</td><td>Reyes Limo, Sebastian Eduardo</td></tr>
+      <tr><td>U20201B253</td><td>Palomino Murga, Daniel Stalin</td></tr>
+      <tr><td>U20221B756</td><td>Becerra Durand, Sebastian Uriel</td></tr>
+      <tr><td>U202311464</td><td>Gómez De La Torre Huertas, Rodrigo Fernando</td></tr>
+      <tr><td>U202221024</td><td>Payesa Torres, Harrison Hubert</td></tr>
+    </tbody>
+  </table>
+
+  <p class="period"><strong>Período 202620</strong></p>
+  <p class="month"><strong>Noviembre 2026</strong></p>
+
+</div>
+<!-- report-cover:end -->
+
+---
 
 ## Tabla de Contenidos
 
-- [Registro de Versiones del Informe](docs/00-report-control.md)
+- [Registro de Versiones del Informe](docs/00-report-control.md#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](docs/00-report-control.md#project-report-collaboration-insights)
-- [Student Outcome](docs/01-student-outcome.md)
-- [Capítulo I: Introducción](docs/02-chapter-1-introduction.md)
-- [Capítulo II: Requirements Elicitation & Analysis](docs/03-chapter-2-requirements-elicitation-analysis.md)
-- [Capítulo III: Requirements Specification](docs/04-chapter-3-requirements-specification.md)
-- [Capítulo IV: Product Design](docs/05-chapter-4-product-design.md)
-- [Capítulo V: Product Implementation, Validation & Deployment](docs/06-chapter-5-implementation-validation-deployment.md)
-- [Plan de Trabajo AV1](docs/10-av1-work-plan.md)
-- [Control de Calidad de Rúbrica](docs/11-rubric-quality-control.md)
-- [Conclusiones](docs/07-conclusions.md)
-- [Bibliografía](docs/08-bibliography.md)
-- [Anexos](docs/09-annexes.md)
-
-## Estado AV1
-
-| Bloque | Responsable | Estado | Evidencia |
-|---|---|---|---|
-| GitHub, GitFlow y releases | Reyes Limo Sebastian | En progreso | Repositorio del informe y estructura base. |
-| Lean UX Process | Palomino Murga Daniel Stalin | Pendiente | TODO |
-| UX Research y competidores | Becerra Durand Sebastian Uriel | Pendiente | TODO |
-| User Stories y Product Backlog | Gómez De La Torre Huertas Rodrigo Fernando | Pendiente | TODO |
-| Product Design y Landing Page v1.0.0 | Payesa Torres Harrison Hubert | Pendiente | TODO |
-
-## Repositorios del Proyecto
-
-| Producto | Repositorio | Versiones requeridas |
-|---|---|---|
-| Project Report | https://github.com/1ASI0730-8088-Blit/blip-fleetproof-project-report | AV1, TB1, AV2, TB2 |
-| Landing Page | TODO | v1.0.0, v2.0.0, v3.0.0, v4.0.0 |
-| Frontend Web Application | TODO | v1.0.0, v2.0.0, v3.0.0 |
-| Web Services | TODO | v1.0.0, v2.0.0 |
-
+  - [Repositorio](docs/00-report-control.md#repositorio)
+  - [Estrategia de colaboración](docs/00-report-control.md#estrategia-de-colaboración)
+  - [Evidencias por entrega](docs/00-report-control.md#evidencias-por-entrega)
+  - [Analíticos de GitHub del informe](docs/00-report-control.md#analíticos-de-github-del-informe)
+  - [Analíticos acumulados y correcciones](docs/00-report-control.md#analíticos-acumulados-y-correcciones)
+  - [Convenciones de GitFlow](docs/00-report-control.md#convenciones-de-gitflow)
+  - [Versiones requeridas por producto](docs/00-report-control.md#versiones-requeridas-por-producto)
+- [Student Outcome](docs/01-student-outcome.md#student-outcome)
+- [Capítulo I: Introducción](docs/02-chapter-1-introduction.md#capítulo-i-introducción)
+  - [1.1. Startup Profile](docs/02-chapter-1-introduction.md#11-startup-profile)
+    - [1.1.1. Descripción de la Startup](docs/02-chapter-1-introduction.md#111-descripción-de-la-startup)
+    - [1.1.2 Perfiles de integrantes del equipo](docs/02-chapter-1-introduction.md#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](docs/02-chapter-1-introduction.md#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](docs/02-chapter-1-introduction.md#121-antecedentes-y-problemática)
+    - [1.2.2 Lean UX Process](docs/02-chapter-1-introduction.md#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](docs/02-chapter-1-introduction.md#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](docs/02-chapter-1-introduction.md#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](docs/02-chapter-1-introduction.md#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](docs/02-chapter-1-introduction.md#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](docs/02-chapter-1-introduction.md#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation & Analysis](docs/03-chapter-2-requirements-elicitation-analysis.md#capítulo-ii-requirements-elicitation--analysis)
+  - [2.1 Competidores](docs/03-chapter-2-requirements-elicitation-analysis.md#21-competidores)
+    - [2.1.1 Análisis competitivo](docs/03-chapter-2-requirements-elicitation-analysis.md#211-análisis-competitivo)
+      - [Competitive Analysis Landscape](docs/03-chapter-2-requirements-elicitation-analysis.md#competitive-analysis-landscape)
+      - [SWOT de BLIP FleetProof frente a competidores](docs/03-chapter-2-requirements-elicitation-analysis.md#swot-de-blip-fleetproof-frente-a-competidores)
+    - [2.1.2 Estrategias y tácticas frente a competidores](docs/03-chapter-2-requirements-elicitation-analysis.md#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2 Entrevistas](docs/03-chapter-2-requirements-elicitation-analysis.md#22-entrevistas)
+    - [2.2.1 Diseño de entrevistas](docs/03-chapter-2-requirements-elicitation-analysis.md#221-diseño-de-entrevistas)
+      - [Guion para propietarios, compradores y asesores automotores](docs/03-chapter-2-requirements-elicitation-analysis.md#guion-para-propietarios-compradores-y-asesores-automotores)
+      - [Guion para responsables comerciales, logísticos y flotas pequeñas](docs/03-chapter-2-requirements-elicitation-analysis.md#guion-para-responsables-comerciales-logísticos-y-flotas-pequeñas)
+    - [2.2.2 Registro de entrevistas](docs/03-chapter-2-requirements-elicitation-analysis.md#222-registro-de-entrevistas)
+      - [Entrevista 1: Cristhian Amaya](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-1-cristhian-amaya)
+      - [Entrevista 2: Diego Salazar](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-2-diego-salazar)
+      - [Entrevista 3: Carmen Rojas](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-3-carmen-rojas)
+      - [Entrevista 4: Roxana Limo](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-4-roxana-limo)
+      - [Entrevista 5: Patricia Valdez](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-5-patricia-valdez)
+      - [Entrevista 6: Jorge Quispe](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-6-jorge-quispe)
+      - [Entrevista 7: Mei Lin Tanaka](docs/03-chapter-2-requirements-elicitation-analysis.md#entrevista-7-mei-lin-tanaka)
+    - [2.2.3 Análisis de entrevistas](docs/03-chapter-2-requirements-elicitation-analysis.md#223-análisis-de-entrevistas)
+      - [Resultados generales](docs/03-chapter-2-requirements-elicitation-analysis.md#resultados-generales)
+      - [Segmento 1: propietarios, compradores y asesores automotores](docs/03-chapter-2-requirements-elicitation-analysis.md#segmento-1-propietarios-compradores-y-asesores-automotores)
+      - [Segmento 2: responsables comerciales, logísticos y flotas pequeñas](docs/03-chapter-2-requirements-elicitation-analysis.md#segmento-2-responsables-comerciales-logísticos-y-flotas-pequeñas)
+      - [Conclusiones de Needfinding derivadas de entrevistas](docs/03-chapter-2-requirements-elicitation-analysis.md#conclusiones-de-needfinding-derivadas-de-entrevistas)
+  - [2.3 Needfinding](docs/03-chapter-2-requirements-elicitation-analysis.md#23-needfinding)
+    - [2.3.1 User Personas](docs/03-chapter-2-requirements-elicitation-analysis.md#231-user-personas)
+      - [User Persona: Cristhian Amaya](docs/03-chapter-2-requirements-elicitation-analysis.md#user-persona-cristhian-amaya)
+      - [User Persona: Roxana Limo](docs/03-chapter-2-requirements-elicitation-analysis.md#user-persona-roxana-limo)
+    - [2.3.2 User Task Matrix](docs/03-chapter-2-requirements-elicitation-analysis.md#232-user-task-matrix)
+    - [2.3.3 User Journey Mapping](docs/03-chapter-2-requirements-elicitation-analysis.md#233-user-journey-mapping)
+      - [User Journey Map: Cristhian Amaya](docs/03-chapter-2-requirements-elicitation-analysis.md#user-journey-map-cristhian-amaya)
+      - [User Journey Map: Roxana Limo](docs/03-chapter-2-requirements-elicitation-analysis.md#user-journey-map-roxana-limo)
+    - [2.3.4 Empathy Mapping](docs/03-chapter-2-requirements-elicitation-analysis.md#234-empathy-mapping)
+      - [Empathy Map: Cristhian Amaya](docs/03-chapter-2-requirements-elicitation-analysis.md#empathy-map-cristhian-amaya)
+      - [Empathy Map: Roxana Limo](docs/03-chapter-2-requirements-elicitation-analysis.md#empathy-map-roxana-limo)
+    - [2.3.5 As-is Scenario Mapping](docs/03-chapter-2-requirements-elicitation-analysis.md#235-as-is-scenario-mapping)
+      - [Segmento 2: responsables de flotas pequeñas y medianas](docs/03-chapter-2-requirements-elicitation-analysis.md#segmento-2-responsables-de-flotas-pequeñas-y-medianas)
+      - [Segmento 1: propietarios o compradores particulares](docs/03-chapter-2-requirements-elicitation-analysis.md#segmento-1-propietarios-o-compradores-particulares)
+      - [Actor complementario: vendedor o equipo comercial](docs/03-chapter-2-requirements-elicitation-analysis.md#actor-complementario-vendedor-o-equipo-comercial)
+      - [Actor complementario: asesor o generador de contenido automotor](docs/03-chapter-2-requirements-elicitation-analysis.md#actor-complementario-asesor-o-generador-de-contenido-automotor)
+      - [Síntesis de oportunidades derivadas](docs/03-chapter-2-requirements-elicitation-analysis.md#síntesis-de-oportunidades-derivadas)
+  - [2.4 Big Picture Event Storming](docs/03-chapter-2-requirements-elicitation-analysis.md#24-big-picture-event-storming)
+    - [2.4.1 Fase Open](docs/03-chapter-2-requirements-elicitation-analysis.md#241-fase-open)
+    - [2.4.2 Fase Explore](docs/03-chapter-2-requirements-elicitation-analysis.md#242-fase-explore)
+    - [2.4.3 Fase Close](docs/03-chapter-2-requirements-elicitation-analysis.md#243-fase-close)
+  - [2.5 Ubiquitous Language](docs/03-chapter-2-requirements-elicitation-analysis.md#25-ubiquitous-language)
+- [Capítulo III: Requirements Specification](docs/04-chapter-3-requirements-specification.md#capítulo-iii-requirements-specification)
+  - [3.1 User Stories](docs/04-chapter-3-requirements-specification.md#31-user-stories)
+  - [3.2 Impact Mapping](docs/04-chapter-3-requirements-specification.md#32-impact-mapping)
+  - [3.3 Product Backlog](docs/04-chapter-3-requirements-specification.md#33-product-backlog)
+- [Capítulo IV: Product Design](docs/05-chapter-4-product-design.md#capítulo-iv-product-design)
+  - [4.1 Style Guidelines](docs/05-chapter-4-product-design.md#41-style-guidelines)
+    - [4.1.1 General Style Guidelines](docs/05-chapter-4-product-design.md#411-general-style-guidelines)
+    - [Identidad visual y branding](docs/05-chapter-4-product-design.md#identidad-visual-y-branding)
+    - [Paleta de colores](docs/05-chapter-4-product-design.md#paleta-de-colores)
+    - [Tipografía](docs/05-chapter-4-product-design.md#tipografía)
+    - [Espaciado y composición](docs/05-chapter-4-product-design.md#espaciado-y-composición)
+    - [Iconografía y elementos gráficos](docs/05-chapter-4-product-design.md#iconografía-y-elementos-gráficos)
+    - [Tono de comunicación](docs/05-chapter-4-product-design.md#tono-de-comunicación)
+    - [4.1.2 Web Style Guidelines](docs/05-chapter-4-product-design.md#412-web-style-guidelines)
+    - [Diseño responsive](docs/05-chapter-4-product-design.md#diseño-responsive)
+    - [Componentes y botones](docs/05-chapter-4-product-design.md#componentes-y-botones)
+    - [Formularios y validaciones](docs/05-chapter-4-product-design.md#formularios-y-validaciones)
+    - [Tablas y visualización de información](docs/05-chapter-4-product-design.md#tablas-y-visualización-de-información)
+    - [Alertas y mensajes de retroalimentación](docs/05-chapter-4-product-design.md#alertas-y-mensajes-de-retroalimentación)
+    - [Accesibilidad](docs/05-chapter-4-product-design.md#accesibilidad)
+  - [4.2 Information Architecture](docs/05-chapter-4-product-design.md#42-information-architecture)
+    - [4.2.1 Organization Systems](docs/05-chapter-4-product-design.md#421-organization-systems)
+    - [Organización jerárquica](docs/05-chapter-4-product-design.md#organización-jerárquica)
+    - [Organización por audiencia](docs/05-chapter-4-product-design.md#organización-por-audiencia)
+    - [Organización secuencial](docs/05-chapter-4-product-design.md#organización-secuencial)
+    - [4.2.2 Labeling Systems](docs/05-chapter-4-product-design.md#422-labeling-systems)
+    - [Etiquetado de la landing page](docs/05-chapter-4-product-design.md#etiquetado-de-la-landing-page)
+    - [Etiquetado de la aplicación web](docs/05-chapter-4-product-design.md#etiquetado-de-la-aplicación-web)
+    - [Etiquetado de acciones](docs/05-chapter-4-product-design.md#etiquetado-de-acciones)
+    - [4.2.3 SEO Tags and Meta Tags](docs/05-chapter-4-product-design.md#423-seo-tags-and-meta-tags)
+    - [4.2.4 Searching Systems](docs/05-chapter-4-product-design.md#424-searching-systems)
+    - [4.2.5 Navigation Systems](docs/05-chapter-4-product-design.md#425-navigation-systems)
+      - [Navegación de la Landing Page](docs/05-chapter-4-product-design.md#navegación-de-la-landing-page)
+      - [Navegación de la Web Application](docs/05-chapter-4-product-design.md#navegación-de-la-web-application)
+      - [Navegación por segmento de usuario](docs/05-chapter-4-product-design.md#navegación-por-segmento-de-usuario)
+      - [Propuesta de rutas de navegación](docs/05-chapter-4-product-design.md#propuesta-de-rutas-de-navegación)
+  - [4.3 Landing Page UI Design](docs/05-chapter-4-product-design.md#43-landing-page-ui-design)
+    - [4.3.1 Landing Page Wireframe](docs/05-chapter-4-product-design.md#431-landing-page-wireframe)
+    - [4.3.2 Landing Page Mock-up](docs/05-chapter-4-product-design.md#432-landing-page-mock-up)
+  - [4.4 Web Applications UX/UI Design](docs/05-chapter-4-product-design.md#44-web-applications-uxui-design)
+    - [4.4.1 Web Applications Wireframes](docs/05-chapter-4-product-design.md#441-web-applications-wireframes)
+    - [4.4.2 Web Applications Wireflow Diagrams](docs/05-chapter-4-product-design.md#442-web-applications-wireflow-diagrams)
+    - [4.4.3 Web Applications Mock-ups](docs/05-chapter-4-product-design.md#443-web-applications-mock-ups)
+    - [4.4.4 Web Applications User Flow Diagrams](docs/05-chapter-4-product-design.md#444-web-applications-user-flow-diagrams)
+  - [4.5 Web Applications Prototyping](docs/05-chapter-4-product-design.md#45-web-applications-prototyping)
+  - [4.6 Domain-Driven Software Architecture](docs/05-chapter-4-product-design.md#46-domain-driven-software-architecture)
+    - [4.6.1 Design-Level Event Storming](docs/05-chapter-4-product-design.md#461-design-level-event-storming)
+    - [4.6.2 Software Architecture Context Diagram](docs/05-chapter-4-product-design.md#462-software-architecture-context-diagram)
+    - [4.6.3 Software Architecture Container Diagrams](docs/05-chapter-4-product-design.md#463-software-architecture-container-diagrams)
+    - [4.6.4 Software Architecture Components Diagrams](docs/05-chapter-4-product-design.md#464-software-architecture-components-diagrams)
+    - [Backend Component Diagram](docs/05-chapter-4-product-design.md#backend-component-diagram)
+  - [4.7 Software Object-Oriented Design](docs/05-chapter-4-product-design.md#47-software-object-oriented-design)
+    - [4.7.1 Class Diagrams](docs/05-chapter-4-product-design.md#471-class-diagrams)
+  - [4.8 Database Design](docs/05-chapter-4-product-design.md#48-database-design)
+    - [4.8.1 Database Diagrams](docs/05-chapter-4-product-design.md#481-database-diagrams)
+- [Capítulo V: Product Implementation, Validation & Deployment](docs/06-chapter-5-implementation-validation-deployment.md#capítulo-v-product-implementation-validation--deployment)
+  - [5.1 Software Configuration Management](docs/06-chapter-5-implementation-validation-deployment.md#51-software-configuration-management)
+    - [5.1.1 Software Development Environment Configuration](docs/06-chapter-5-implementation-validation-deployment.md#511-software-development-environment-configuration)
+    - [5.1.2 Source Code Management](docs/06-chapter-5-implementation-validation-deployment.md#512-source-code-management)
+    - [5.1.3 Source Code Style Guide & Coding Conventions](docs/06-chapter-5-implementation-validation-deployment.md#513-source-code-style-guide--coding-conventions)
+    - [5.1.4 Software Deployment Configuration](docs/06-chapter-5-implementation-validation-deployment.md#514-software-deployment-configuration)
+  - [5.2 Landing Page, Services & Applications Implementation](docs/06-chapter-5-implementation-validation-deployment.md#52-landing-page-services--applications-implementation)
+    - [5.2.1 Sprint 1](docs/06-chapter-5-implementation-validation-deployment.md#521-sprint-1)
+      - [5.2.1.1 Sprint Planning 1](docs/06-chapter-5-implementation-validation-deployment.md#5211-sprint-planning-1)
+      - [5.2.1.2 Aspect Leaders and Collaborators](docs/06-chapter-5-implementation-validation-deployment.md#5212-aspect-leaders-and-collaborators)
+      - [5.2.1.3 Sprint Backlog 1](docs/06-chapter-5-implementation-validation-deployment.md#5213-sprint-backlog-1)
+      - [5.2.1.4 Development Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5214-development-evidence-for-sprint-review)
+      - [5.2.1.5 Execution Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5215-execution-evidence-for-sprint-review)
+      - [1](docs/06-chapter-5-implementation-validation-deployment.md#1)
+      - [2](docs/06-chapter-5-implementation-validation-deployment.md#2)
+      - [3](docs/06-chapter-5-implementation-validation-deployment.md#3)
+      - [4](docs/06-chapter-5-implementation-validation-deployment.md#4)
+      - [5.2.1.6 Services Documentation Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7 Software Deployment Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8 Team Collaboration Insights during Sprint](docs/06-chapter-5-implementation-validation-deployment.md#5218-team-collaboration-insights-during-sprint)
+    - [5.2.2 Sprint 2](docs/06-chapter-5-implementation-validation-deployment.md#522-sprint-2)
+      - [5.2.2.1 Sprint Planning 2](docs/06-chapter-5-implementation-validation-deployment.md#5221-sprint-planning-2)
+      - [5.2.2.2 Aspect Leaders and Collaborators](docs/06-chapter-5-implementation-validation-deployment.md#5222-aspect-leaders-and-collaborators)
+      - [5.2.2.3 Sprint Backlog 2](docs/06-chapter-5-implementation-validation-deployment.md#5223-sprint-backlog-2)
+      - [5.2.2.4 Development Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5224-development-evidence-for-sprint-review)
+      - [5.2.2.5 Execution Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5225-execution-evidence-for-sprint-review)
+      - [5.2.2.6 Services Documentation Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5226-services-documentation-evidence-for-sprint-review)
+      - [5.2.2.7 Software Deployment Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5227-software-deployment-evidence-for-sprint-review)
+      - [5.2.2.8 Team Collaboration Insights during Sprint](docs/06-chapter-5-implementation-validation-deployment.md#5228-team-collaboration-insights-during-sprint)
+    - [5.2.3 Sprint 3](docs/06-chapter-5-implementation-validation-deployment.md#523-sprint-3)
+      - [5.2.3.1 Sprint Planning 3](docs/06-chapter-5-implementation-validation-deployment.md#5231-sprint-planning-3)
+      - [5.2.3.2 Aspect Leaders and Collaborators](docs/06-chapter-5-implementation-validation-deployment.md#5232-aspect-leaders-and-collaborators)
+      - [5.2.3.3 Sprint Backlog 3](docs/06-chapter-5-implementation-validation-deployment.md#5233-sprint-backlog-3)
+      - [5.2.3.4 Development Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5234-development-evidence-for-sprint-review)
+      - [5.2.3.5 Execution Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5235-execution-evidence-for-sprint-review)
+      - [5.2.3.6 Services Documentation Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5236-services-documentation-evidence-for-sprint-review)
+      - [5.2.3.7 Software Deployment Evidence for Sprint Review](docs/06-chapter-5-implementation-validation-deployment.md#5237-software-deployment-evidence-for-sprint-review)
+      - [5.2.3.8 Team Collaboration Insights during Sprint](docs/06-chapter-5-implementation-validation-deployment.md#5238-team-collaboration-insights-during-sprint)
+  - [5.3 Validation Interviews](docs/06-chapter-5-implementation-validation-deployment.md#53-validation-interviews)
+    - [5.3.1 Diseño de entrevistas](docs/06-chapter-5-implementation-validation-deployment.md#531-diseño-de-entrevistas)
+    - [5.3.2 Registro de entrevistas](docs/06-chapter-5-implementation-validation-deployment.md#532-registro-de-entrevistas)
+      - [Entrevista 1: Roxana Limo](docs/06-chapter-5-implementation-validation-deployment.md#entrevista-1-roxana-limo)
+      - [Entrevista 2: Cristhian Amaya](docs/06-chapter-5-implementation-validation-deployment.md#entrevista-2-cristhian-amaya)
+    - [5.3.3 Evaluaciones según heurísticas](docs/06-chapter-5-implementation-validation-deployment.md#533-evaluaciones-según-heurísticas)
+  - [5.4 Video About-the-Product](docs/06-chapter-5-implementation-validation-deployment.md#54-video-about-the-product)
+    - [Pauta de secuencias](docs/06-chapter-5-implementation-validation-deployment.md#pauta-de-secuencias)
+    - [Testimonios incluidos](docs/06-chapter-5-implementation-validation-deployment.md#testimonios-incluidos)
+- [Conclusiones](docs/07-conclusions.md#conclusiones)
+  - [Conclusiones y recomendaciones](docs/07-conclusions.md#conclusiones-y-recomendaciones)
+    - [Conclusiones de AV1](docs/07-conclusions.md#conclusiones-de-av1)
+    - [Recomendaciones](docs/07-conclusions.md#recomendaciones)
+    - [Conclusiones de TB1](docs/07-conclusions.md#conclusiones-de-tb1)
+    - [Conclusiones de AV2](docs/07-conclusions.md#conclusiones-de-av2)
+  - [Video About-the-Team](docs/07-conclusions.md#video-about-the-team)
+- [Bibliografía](docs/08-bibliography.md#bibliografía)
+- [Anexos](docs/09-annexes.md#anexos)
+  - [Anexo A: Videos de Exposiciones](docs/09-annexes.md#anexo-a-videos-de-exposiciones)
+  - [Anexo B: Needfinding Interviews](docs/09-annexes.md#anexo-b-needfinding-interviews)
+  - [Anexo C: Prototype Navigation](docs/09-annexes.md#anexo-c-prototype-navigation)
+  - [Anexo D: Validation Interviews](docs/09-annexes.md#anexo-d-validation-interviews)
+  - [Anexo E: About the Product](docs/09-annexes.md#anexo-e-about-the-product)
+  - [Anexo F: About the Team](docs/09-annexes.md#anexo-f-about-the-team)
