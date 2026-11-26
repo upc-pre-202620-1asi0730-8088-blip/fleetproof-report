@@ -10,7 +10,7 @@
 
 ## Repositorio
 
-URL del repositorio del informe: https://github.com/1ASI0730-8088-Blit/blip-fleetproof-project-report
+URL del repositorio del informe: https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report
 
 ## Estrategia de colaboración
 
@@ -24,6 +24,12 @@ El equipo BLIP elaborará el informe en Markdown usando GitHub como sistema de c
 | TB1 | Actualización de commits, mejoras sobre feedback y nueva versión del informe. | Pendiente para esa entrega |
 | AV2 | Evidencias ampliadas de colaboración, validación y mejoras. | Pendiente para esa entrega |
 | TB2 | Evidencia final de colaboración durante todo el ciclo. | Pendiente para esa entrega |
+
+## Analíticos de GitHub del informe
+
+![Analíticos de colaboración del repositorio del informe](assets/chapter-5/sprint-3/analiticos-report-contributors.png)
+
+Captura histórica del repositorio `fleetproof-report`, rama `develop`, con el período del 10 de octubre al 14 de noviembre de 2026. Esta evidencia corresponde al corte registrado para AV2; no representa los commits de corrección posteriores a la evaluación.
 
 ## Convenciones de GitFlow
 

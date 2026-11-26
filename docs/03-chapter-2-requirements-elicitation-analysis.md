@@ -86,7 +86,7 @@ Para cumplir la rúbrica de la primera entrega, el equipo trabajó dos segmentos
 
 ### 2.2.2 Registro de entrevistas
 
-Las entrevistas fueron registradas en video y almacenadas en una carpeta compartida de Google Drive. El registro sigue el formato de la guía: datos del entrevistado, evidencia visual, enlace al video, timing, duración y resumen breve. Para los videos con duración mayor a cinco minutos se consigna la duración total y el tramo principal utilizado para el análisis de la primera entrega.
+Las entrevistas fueron registradas en video y almacenadas en una carpeta compartida de Google Drive. El registro incluye datos del entrevistado, evidencia visual, enlace al video, inicio, fin, duración y resumen. Las horas de sesión son una reconstrucción aproximada, distribuida según el orden del registro dentro de la franja de 11:00 a. m. a 4:00 p. m. recordada por el entrevistador; no son horas exactas ni metadatos de grabación. Los tiempos dentro del video se presentan por separado y cubren la grabación completa.
 
 Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.com/drive/folders/1J_CH36gLPBuRfEddE-mYVSuRtR42PupA?usp=sharing).
 
@@ -99,9 +99,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | 39 años |
 | Distrito | Chiclayo |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 11:00 |
+| Hora de fin (estimada, UTC−5) | 11:06 |
 | Video | [Entrevista Cristhian Amaya](https://drive.google.com/file/d/1vuK3760hfVoZ6iQ2w8zH8JjX1x1xN4wV/view?usp=sharing) |
 | Screenshot | ![Entrevista Cristhian Amaya](assets/chapter-2/interviews/interview-cristhian-amaya.png) |
-| Timing analizado | 00:00-04:59 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:06:09 |
 | Duración total | 06:09 |
 | Resumen | Cristhian describe el proceso de revisión de información vehicular desde el rol de asesor automotor. Su experiencia evidencia que la consulta no se limita a obtener un dato, sino a interpretar información de distintas fuentes, explicar riesgos a terceros y conservar evidencia suficiente para respaldar una recomendación. El caso refuerza la necesidad de reportes claros, trazables y comprensibles para personas que no dominan términos técnicos del sector automotor. |
 
@@ -114,9 +117,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | Pendiente |
 | Distrito | Pendiente |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 11:49 |
+| Hora de fin (estimada, UTC−5) | 11:52 |
 | Video | [Entrevista Diego Salazar](https://drive.google.com/file/d/1WOgmq7SrvhCsfrzepEs4MYiihV_H29So/view?usp=sharing) |
 | Screenshot | ![Entrevista Diego Salazar](assets/chapter-2/interviews/interview-diego-salazar.png) |
-| Timing analizado | 00:00-02:53 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:02:53 |
 | Duración total | 02:53 |
 | Resumen | Diego representa a usuarios que revisan vehículos antes de recomendar o continuar una compra. Su entrevista muestra que el proceso exige consultar varias fuentes, comparar resultados y comunicar hallazgos de forma simple. También evidencia que las capturas y mensajes se usan como respaldo informal, lo que abre oportunidad para centralizar evidencia y mantener historial por placa. |
 
@@ -129,9 +135,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | Pendiente |
 | Distrito | Pendiente |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 12:39 |
+| Hora de fin (estimada, UTC−5) | 12:41 |
 | Video | [Entrevista Carmen Rojas](https://drive.google.com/file/d/1oC_IIEz323KG5xMw2XBtcArW4iBLHnSo/view?usp=sharing) |
 | Screenshot | ![Entrevista Carmen Rojas](assets/chapter-2/interviews/interview-carmen-rojas.png) |
-| Timing analizado | 00:00-02:21 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:02:21 |
 | Duración total | 02:21 |
 | Resumen | Carmen refleja la perspectiva de una compradora particular que necesita validar un vehículo antes de tomar una decisión. El principal dolor identificado es la dificultad para interpretar resultados dispersos y saber si un hallazgo es grave, pendiente o simplemente informativo. Este perfil confirma que FleetProof debe presentar riesgos en lenguaje claro y permitir compartir evidencia con personas de confianza. |
 
@@ -144,9 +153,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | 43 años |
 | Distrito | Trujillo |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 13:28 |
+| Hora de fin (estimada, UTC−5) | 13:40 |
 | Video | [Entrevista Roxana Limo](https://drive.google.com/file/d/162TzcnpSq3aFRJ9C3_9D3Boq27fG1iA2/view?usp=sharing) |
 | Screenshot | ![Entrevista Roxana Limo](assets/chapter-2/interviews/interview-roxana-limo.png) |
-| Timing analizado | 00:00-04:59 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:11:47 |
 | Duración total | 11:47 |
 | Resumen | Roxana trabaja en el sector automotriz desde 2012 y actualmente se desempeña como jefa de marca para Hyundai y Geely, supervisando operaciones comerciales en Trujillo, Huancayo y Chiclayo. Explica que, antes de exhibir o entregar una unidad, intervienen áreas como PDI, lavado y calidad, utilizando checklists para validar estado de pintura, equipamiento, batería, tablero, sistema eléctrico, frenos y estado general. Señala que las observaciones se registran primero en checklist y luego en informes enviados a la marca. También menciona que una mala preparación comercial, una batería descargada, una puerta mal cerrada, la pérdida de una llave o una rayadura antes de la entrega pueden generar inseguridad en el cliente y retrasar la compra. Para resolver observaciones, cada área tiene responsables definidos dentro del organigrama y puede intervenir postventa, taller o PDI. Su principal aprendizaje es que la prevención y una preparación con más anticipación reducen riesgos antes del showroom o la entrega. |
 
@@ -159,9 +171,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | Pendiente |
 | Distrito | Pendiente |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 14:18 |
+| Hora de fin (estimada, UTC−5) | 14:20 |
 | Video | [Entrevista Patricia Valdez](https://drive.google.com/file/d/1xHdo7dU-W5I4Iyjdo4MMCZ1lm9HqCnv_/view?usp=sharing) |
 | Screenshot | ![Entrevista Patricia Valdez](assets/chapter-2/interviews/interview-patricia-valdez.png) |
-| Timing analizado | 00:00-02:14 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:02:14 |
 | Duración total | 02:14 |
 | Resumen | Patricia representa a responsables que coordinan vehículos dentro de una operación logística. Su entrevista evidencia que la información se administra entre documentos, hojas de cálculo y comunicación por mensajería, lo cual puede dificultar saber qué versión está actualizada o quién resolvió una observación. Este caso refuerza funcionalidades de historial, responsable asignado y seguimiento de pendientes. |
 
@@ -174,9 +189,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | Pendiente |
 | Distrito | Pendiente |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 15:07 |
+| Hora de fin (estimada, UTC−5) | 15:09 |
 | Video | [Entrevista Jorge Quispe](https://drive.google.com/file/d/11BytvV6lIa4OAwuAf7aGYBnovSOXAWAk/view?usp=sharing) |
 | Screenshot | ![Entrevista Jorge Quispe](assets/chapter-2/interviews/interview-jorge-quispe.png) |
-| Timing analizado | 00:00-02:23 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:02:23 |
 | Duración total | 02:23 |
 | Resumen | Jorge representa a pequeños negocios que dependen de vehículos para operar. Su caso muestra la importancia de verificar documentos antes de incorporar o usar una unidad, así como la necesidad de identificar responsables cuando aparece una observación. El proceso actual depende de mensajes y archivos separados, por lo que FleetProof puede aportar una vista única del estado del vehículo. |
 
@@ -189,9 +207,12 @@ Carpeta de evidencias: [Entrevistas BLIP en Google Drive](https://drive.google.c
 | Edad | Pendiente |
 | Distrito | Pendiente |
 | Fecha | 14/09/2026 |
+| Hora de inicio (estimada, UTC−5) | 15:56 |
+| Hora de fin (estimada, UTC−5) | 16:00 |
 | Video | [Entrevista Mei Lin Tanaka](https://drive.google.com/file/d/1DfSUkGKlXqStdo9usFfPKANPNCxcknrs/view?usp=sharing) |
 | Screenshot | ![Entrevista Mei Lin Tanaka](assets/chapter-2/interviews/interview-mei-lin.png) |
-| Timing analizado | 00:00-03:44 |
+| Inicio en el video | 00:00:00 |
+| Fin en el video | 00:03:44 |
 | Duración total | 03:44 |
 | Resumen | Mei Lin representa a negocios gastronómicos pequeños que usan reparto propio o tercerizado. Su entrevista evidencia preocupación por la puntualidad, confiabilidad y disponibilidad de vehículos o repartidores. El dolor principal no es solo consultar una placa, sino reducir riesgos antes de asignar un pedido y recibir alertas cuando un documento, multa o condición del vehículo cambia. |
 

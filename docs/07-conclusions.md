@@ -24,29 +24,20 @@ Finalmente, se recomienda mantener el carácter iterativo del proceso Lean UX. L
 
 ## Video About-the-Team
 
-### Resumen
 
-El video presenta el trabajo del equipo BLIP en la entrega AV1 del curso Aplicaciones Web (1ASI0730, NRC 8088) sobre el producto FleetProof. Los integrantes exponen la startup y el producto, los segmentos objetivo y el proceso Lean UX, los artefactos de Needfinding del Capítulo II, la especificación de requisitos del Capítulo III, el diseño de producto y la arquitectura de software del Capítulo IV, la evidencia de desarrollo del Sprint 1 por integrante y las conclusiones de la entrega.
+Esta versión reúne cinco testimonios sobre el trabajo en FleetProof. El equipo explica cómo coordinó la integración entre la aplicación y el backend, revisó la arquitectura, preparó material audiovisual y organizó las correcciones de la entrega. Los testimonios relacionan esas actividades con el Student Outcome ABET 5: distribución del liderazgo, colaboración y verificación de objetivos compartidos.
 
-**Duración:** 21 min 54 s.
+**Archivo:** `upc-pre-202620-1asi0730-8088-blip-about-the-team-sprint-3.mp4`. **Duración:** 00:06:09.
 
-### Pauta de secuencias
-
-| Momento | Contenido |
+| Inicio | Secuencia |
 |---|---|
-| 00:00 | Portada: curso Aplicaciones Web (1ASI0730), NRC 8088, docente y producto FleetProof. |
-| 00:15 | Startup profile: misión y visión de BLIP, propuesta de valor y presentación de los integrantes. |
-| 05:00 | Capítulo II: User Personas de los segmentos entrevistados (asesor automotor y responsable comercial) y hallazgos del Needfinding. |
-| 10:00 | Capítulo III: Impact Mapping con el objetivo de negocio y su relación con las User Stories (US012, US013 y US015). |
-| 11:40 | Capítulo IV: Style Guidelines con la paleta de colores, la tipografía y la navegación del producto. |
-| 15:00 | Capítulo IV: arquitectura de software a nivel de Bounded Context. |
-| 18:20 | Evidencia de desarrollo del Sprint 1: ramas de trabajo y capturas de commits de cada integrante. |
-| 21:20 | Conclusiones de AV1: validación del problema, viabilidad de la solución, solidez metodológica del Lean UX y despliegue de la Landing Page en GitHub Pages. |
+| 00:00:00 | Portada de FleetProof: BLIP, Aplicaciones Web, NRC 8088, AV2. |
+| 00:00:04 | Sebastián Eduardo Reyes Limo: coordinación, integración de flotas y reportes por placa, y verificación del flujo después de recargar. |
+| 00:01:26 | Harrison Hubert Payesa Torres: trabajo audiovisual, validaciones, monitoreo y coordinación con GitFlow. |
+| 00:02:21 | Daniel Stalin Palomino Murga: diseño, diagramas de arquitectura, implementación y revisión de artefactos. |
+| 00:03:41 | Sebastián Uriel Becerra Durand: documentación de arquitectura, trazabilidad de cambios y aprendizaje técnico. |
+| 00:05:04 | Rodrigo Fernando Gómez De La Torre Huertas: correcciones en equipo y retrospectiva sobre organización y tiempos. |
 
-### Screenshot
+![Portada del video About the Team de AV2](assets/team/about-the-team-av2.png)
 
-![Portada del video About-the-Team de la entrega AV1](assets/team/about-the-team-av1.png)
-
-### URL del video
-
-[Video About-the-Team - AV1 (Google Drive)](https://drive.google.com/file/d/1FLNnxTZTzsK9Y0VTbScm8yhSiuJtYtqe/view?usp=sharing)
+[Video About the Team AV2 en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202311656_upc_edu_pe/IQAbbm_PwsF9Sqe3-cD1YA9HAZaLuQEnaHpzU96VtGrvscY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=IXcbKr)

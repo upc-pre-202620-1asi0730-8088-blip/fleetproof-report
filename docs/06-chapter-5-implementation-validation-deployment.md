@@ -53,6 +53,7 @@ Para mantener un historial de confirmaciones (*commits*) claro, legible y automa
 * **Estructura obligatoria:**
   ```text
   <type>(<scope>): <short description in present tense>
+  ```
 
 ### 5.1.3 Source Code Style Guide & Coding Conventions
 
@@ -134,7 +135,7 @@ A continuación se presenta el resumen formal de la reunión de planificación d
 | **Sprint 0 Review Summary** | Al tratarse del primer sprint del ciclo de desarrollo, no existe un incremento de software previo sujeto a revisión formal. El equipo consolidó los requerimientos iniciales, los arquetipos de usuario y las directrices de diseño visual en Figma. |
 | **Sprint 0 Retrospective Summary** | Como retrospectiva previa, el equipo acordó estandarizar el flujo de trabajo mediante ramas GitFlow y Conventional Commits para evitar conflictos de integración en el repositorio del informe y del producto. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | Publicar una página de inicio adaptable y accesible que explique la propuesta de FleetProof a responsables de flotas y propietarios particulares. Se verificará que ambos perfiles puedan comparar los planes, consultar las políticas legales y utilizar las llamadas a la acción correspondientes. |
+| **Sprint 1 Goal** | Our focus is on presenting FleetProof and its service offering to potential users.<br>We believe it delivers a clear understanding of vehicle information and fleet monitoring services to individual and business visitors.<br>This will be confirmed when visitors can navigate the published landing page, identify the offering for their segment and access its call to action. |
 | **Sprint 1 Velocity** | 11 Story Points |
 | **Sum of Story Points** | 11 Story Points |
 
@@ -303,7 +304,7 @@ El incremento permite al cliente acceder a su cuenta, solicitar un reporte indiv
 | Sprint 1 Review Summary | Durante el Sprint 1 se implementaron la propuesta de valor (US001), los CTA de flota y reporte individual (US002 y US003), la comparación de planes (US004) y las páginas legales (US005). El informe registra el Landing Page desplegado en GitHub Pages y evidencias de visualización adaptable, idioma ES/EN, diálogos legales y CTA de demostración. Estos entregables constituyen la base del Sprint 2: el cliente debe poder ejecutar los flujos del producto en una Web Application, no solamente conocer su propuesta comercial. |
 | Sprint 1 Retrospective Summary | A partir del trabajo del Sprint 1 se identifica la necesidad de mantener coherencia entre User Stories, wireframes e implementación, mejorar la legibilidad de diagramas y conservar trazabilidad de contribuciones y pruebas. Para la siguiente etapa se organiza el frontend por los seis bounded contexts del Capítulo IV, reutilizando componentes e infraestructura compartidos. También se diferencia el alcance de demostración de los servicios reales: pagos, fuentes oficiales y correos no se consideran integrados por disponer de una Fake API. Esta síntesis se basa en los artefactos y correcciones del repositorio. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Permitir que particulares obtengan un reporte vehicular y que responsables de flota gestionen sus vehículos desde la aplicación publicada. Se verificará que un usuario pueda iniciar sesión, ingresar una placa válida, confirmar un pago simulado y descargar el reporte PDF; y que un responsable pueda registrar o importar vehículos, filtrar su flota y consultar el plan y su consumo mediante la API simulada. |
+| Sprint 2 Goal | Our focus is on enabling vehicle registration, vehicle reports and fleet monitoring in the web application with demonstration data.<br>We believe it delivers a connected way to review and organize vehicle information to individual users and fleet managers.<br>This will be confirmed when users can complete the documented user flows in the published web application connected to the Fake RESTful API. |
 | Sprint 2 Velocity | **31 Story Points como capacidad objetivo propuesta** para las nueve historias seleccionadas. Se diferencia de la velocidad lograda, que se calcula con historias aceptadas al cierre; los 11 SP del Sprint 1 no se extrapolan como medición de esta iteración. |
 | Sum of Story Points | **31 SP** para la propuesta de selección indicada a continuación; no representa velocidad lograda ni aceptación de todas las historias. |
 
@@ -525,7 +526,7 @@ El incremento de AV2 conecta la Web Application Vue con los Web Services de Flee
 | Sprint 2 Review Summary | Quedaron verificados los recorridos del frontend y de la Mock API en escritorio y móvil. |
 | Sprint 2 Retrospective Summary | El historial del informe permite identificar oportunidades: registrar pruebas con su versión y ambiente, y distinguir evidencia de ejecución de evidencia de publicación. No se presenta como acta de retrospectiva. |
 | **Sprint Goal & User Stories** |• US006: Manage user access (3 SP) <br> • US007: View plan usage (2 SP) <br> •US008: Register vehicle (3 SP) <br> •US020: Provide vehicle report API (5 SP) <br> •T-ACL: Fleet Entitlement ACL & Persistence Integration (5 SP) |
-| Sprint 3 Goal | Permitir que un usuario active un plan, registre un vehículo y lo asigne a una flota desde FleetProof. La asignación debe seguir visible tras recargar, no ser accesible por otra cuenta y las escrituras deben quedar bloqueadas sin un plan activo. |
+| Sprint 3 Goal | Our focus is on enabling plan activation, vehicle registration and assignment to a fleet in FleetProof.<br>We believe it delivers persistent and account-isolated fleet management to users with an active subscription.<br>This will be confirmed when an assignment remains visible after reloading, cannot be accessed by another account and fleet writes are rejected without an active plan. |
 | Sprint 3 Velocity | 21 Story Points |
 | Sum of Story Points | 18 Story Points |
 
@@ -689,6 +690,8 @@ Los flujos de navegación que recorre el video son los siguientes. En la sesión
 
 ### 5.3.2 Registro de entrevistas
 
+Las horas de sesión se estimaron dentro de la franja aproximada de 11:00 a. m. a 4:00 p. m. recordada por el entrevistador; no se registró la hora exacta de cada sesión. El inicio y fin dentro del video consolidado se consignan por separado.
+
 Después de las entrevistas, se adaptó la navegación de la aplicación Vue al diseño de referencia. La barra lateral, la cabecera y la paleta conservan los patrones visuales del recorrido mostrado. Se verificaron en Vue los flujos de registro, inicio de sesión, activación de plan, registro de vehículo y asignación a flota con el backend local. Las grabaciones corresponden a las sesiones originales y documentan las observaciones que motivaron la adaptación.
 
 **Video consolidado.** Las dos sesiones se editaron en el archivo `upc-pre-202620-1asi0730-8088-blip-validation-sprint-3.mp4`, de 08:07 de duración, publicado en Microsoft Stream con enlace privado: [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z). Cada sesión va precedida por una tarjeta de título de cuatro segundos con el nombre, la edad, el distrito, el segmento objetivo, la fecha y la duración, y durante la sesión se mantiene un rótulo con esos datos.
@@ -706,8 +709,11 @@ Figura 5.3-1. Tarjeta de título de la entrevista 1, en 00:00:02 del video conso
 | Edad | 43 años |
 | Distrito | Trujillo |
 | Fecha | 11/11/2026 |
+| Hora de inicio (estimada, UTC−5) | 11:00 |
+| Hora de fin (estimada, UTC−5) | 11:04 |
 | Video | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
 | Inicio en el video consolidado | 00:00:04 (tarjeta de título en 00:00:00) |
+| Fin en el video consolidado | 00:04:13 |
 | Duración | 04:09 |
 | Grabación original | [Validación con Roxana](https://drive.google.com/file/d/1rnyaSSVS_42uR4PmsGFv6SOQrKGxjh5N/view?usp=sharing) |
 | Screenshot | Figura 5.3-2 |
@@ -726,8 +732,11 @@ Figura 5.3-2. Roxana, en 00:01:02 del video consolidado (00:58 de su sesión): l
 | Edad | 39 años |
 | Distrito | Chiclayo |
 | Fecha | 11/11/2026 |
+| Hora de inicio (estimada, UTC−5) | 15:56 |
+| Hora de fin (estimada, UTC−5) | 16:00 |
 | Video | [Video de entrevistas de validación en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQAG4NFGE1HEQ6XwkP07ms7fAWlyrtJJ2IVlb1Q-tNMH5p8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5fJd2z) |
 | Inicio en el video consolidado | 00:04:17 (tarjeta de título en 00:04:13) |
+| Fin en el video consolidado | 00:08:07 |
 | Duración | 03:50 |
 | Grabación original | [Validación con Cristhian](https://drive.google.com/file/d/1CtNP9LyLidYjLD7K_gaAsz1zfq1H0Lq8/view?usp=sharing) |
 | Screenshot | Figura 5.3-3 |
