@@ -21,8 +21,8 @@ Para garantizar la integridad, trazabilidad y el trabajo colaborativo en el desa
 
 | Producto / Artefacto | Propósito | Enlace al Repositorio en GitHub |
 | :--- | :--- | :--- |
-| **Project Documentation Report** | Repositorio para la elaboración colaborativa del informe técnico del proyecto en formato Markdown. | [blip-fleetproof-project-report](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report) |
-| **Landing Page** | Repositorio del sitio web estático para la presentación comercial y conversión del modelo de negocio. | [fleetproof-landing-page](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website) |
+| **Project Documentation Report** | Repositorio para la elaboración colaborativa del informe técnico del proyecto en formato Markdown. | [fleetproof-report](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report) |
+| **Landing Page** | Repositorio del sitio web estático para la presentación comercial y conversión del modelo de negocio. | [fleetproof-website](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website) |
 ##### Flujo de Ramas: GitFlow Workflow
 
 El equipo implementa el modelo de flujo de trabajo **GitFlow**, estructurando el ciclo de desarrollo a través de ramas principales y ramas temporales de soporte:
@@ -221,7 +221,7 @@ A continuación, se presentan las evidencias de desarrollo y registros de confir
 
 | Integrante / Rol | Rama de trabajo | Descripción de aportes | Captura de commits (Git log / GitHub) |
 |---|---|---|---|
-| **Sebastina Becerra**<br>(Developer) | `implement hero and product benefits sections` | feat 2. | ![image](https://hackmd.io/_uploads/rJtIvi2Yfg.png)|
+| **Sebastián Becerra**<br>(Developer) | `implement hero and product benefits sections` | feat 2. | ![image](https://hackmd.io/_uploads/rJtIvi2Yfg.png)|
 | **Daniel Palomino**<br>(Developer) | ` implement landing page navigation and base layout` | feat 1. | ![image](https://hackmd.io/_uploads/Hy4ldjnKMg.png) |
 | **Rodrigo Gómez De La Torre**<br>(Developer) | `add localization and accessibility suppor` | feat 5. | ![image](https://hackmd.io/_uploads/BJcVus3tGe.png) |
 | **Sebastian Reyes**<br>(Developer) | `implement subscription plans section` | feat 4 | ![image](https://hackmd.io/_uploads/SJa2_o2tGg.png)|
@@ -357,7 +357,7 @@ Las tareas descomponen el objetivo del incremento en actividades de **4 a 8 hora
 | US011 | Request vehicle report | S2-T09 | Simulate individual payment | Mostrar diálogo de pago y QR ficticio; crear reporte con tres fuentes simuladas después de confirmar. | 4 | llegastian11 | Done |
 | US015 | Download vehicle report | S2-T10 | Generate report PDF | Generar documento con diseño FleetProof, placa, fecha y resultados ficticios de las tres fuentes. Evidencia: figura 5.2.2-4. | 6 | llegastian11 | Done |
 | US017 | Prioritize critical vehicles | S2-T11 | Display fleet risk | Mostrar indicadores, tabla de vehículos y distribución de riesgo con datos simulados de la cuenta. | 4 | llegastian11 | Done |
-| US020 | Provide vehicle report API | S2-T12 | Configure Fake RESTful API | Exponer recursos de reportes y demás contextos mediante JSON Server con autenticación de demostración. | 6 | sebasdev28 | Done |
+| US020 | Provide vehicle report API | S2-T12 | Configure Fake RESTful API | Exponer recursos de reportes y demás contextos mediante JSON Server con autenticación de demostración. | 6 | sebasdev28 | To Review |
 | General | Sprint constraint | S2-T13 | Deploy frontend and Fake API | Configurar Netlify y Render gratuitos, URL HTTPS de API, redirección SPA y comprobar la versión publicada. | 4 | llegastian11 | Done |
 | General | Sprint constraint | S2-T14 | Validate responsive experience | Revisar escritorio y móvil, navegación, diálogos y errores; incorporar evidencias. | 6 | DanielPM23 / rod670 | Done |
 | General | Sprint constraint | S2-T15 | Align automatic report workflow | Retirar revisión/publicación manual, revisar Casos y consolidar Monitoreo en Flota conforme al flujo aclarado. | 6 | llegastian11 / rod670 | Done |
@@ -574,7 +574,7 @@ Figura 5.2.3.3-1. Tablero público de Trello del Sprint 3, capturado el 14 de no
 | US008 | Register vehicle | S3-T03 | Verify fleet assignment | Registrar vehículo, crear flota y asignarlo; comprobar el resultado tras recargar. | 6 | DanielPM23 / llegastian11 | Done |
 | Técnico | Comunicación entre contextos | S3-T04 | Verify fleet entitlement ACL | Validar que Flotas no lea directamente Suscripciones y que el API rechace escrituras sin permiso. | 6 | llegastian11 | Done |
 | US020 | Provide vehicle report API | S3-T05 | Verify API contract | Verificar el documento OpenAPI y la respuesta de salud de los servicios locales. | 4 | llegastian11 | Done |
-| Técnico | Arquitectura y dominio | S3-T06 | Align diagrams with implementation | Corregir Big Picture, Context Map y C4 contra el código actual y distinguir lo externo de lo local. | 6 | sebasdev28 | Done |
+| Técnico | Arquitectura y dominio | S3-T06 | Align diagrams with implementation | Corregir Big Picture, Context Map y C4 contra el código actual y distinguir lo externo de lo local. | 6 | sebasdev28 | To Review |
 | Técnico | Validación | S3-T07 | Analyze validation sessions | Registrar las dos sesiones disponibles y sus hallazgos; no atribuir ejecución autónoma. | 4 | rod670 / Harrison1024 | Done |
 | Técnico | Validación | S3-T08 | Validate missing scenarios | Completar muestra por segmento, interacción con Landing y prueba autónoma del flujo empresarial. | 8 | rod670 / Harrison1024 | To Review |
 | Técnico | Publicación | S3-T09 | Deploy Web Services | Publicar C# con PostgreSQL persistente y verificar URL, commit y salud. El release se registra en S3-T12. | 8 | llegastian11 | Done |
@@ -591,7 +591,7 @@ Figura 5.2.3.3-1. Tablero público de Trello del Sprint 3, capturado el 14 de no
 - **S3-T11:** el PR #7 del Landing Page (`c8fb901`) se integró, el release v3.0.0 se publicó en `main` y la página de GitHub Pages incrusta el video About the Product y enlaza la aplicación publicada (5.2.3.7 y 5.4).
 - **S3-T07:** el video consolidado de las dos sesiones de validación está en Microsoft Stream y su registro está en 5.3.2, 5.3.3 y el Anexo D.
 - **S3-T12:** están el video About the Product (5.4 y Anexo E), el video de validación (5.3 y Anexo D), este tablero y las capturas de analíticos de 5.2.3.8.
-- **S3-T06 y el resto de S3-T12** (video de navegación del producto, video About the Team y evidencias de releases): el Team Leader las da por completadas y conserva el material en su copia local. Esa evidencia aún no figura en los repositorios; hasta que se integre, estas tareas no se pueden comprobar desde el informe. Las secciones 5.3 y el Anexo D registran solo las dos sesiones de validación publicadas.
+- **S3-T06:** la revisión de arquitectura queda a cargo del integrante responsable. **S3-T12:** el About-the-Team de AV2 figura en Conclusiones y Anexo F, y las releases se enlazan en 5.2.3.7; las grabaciones o evidencias que no estén incorporadas no se consideran verificadas. Las secciones 5.3 y el Anexo D registran solo las dos sesiones de validación publicadas.
 
 #### 5.2.3.4 Development Evidence for Sprint Review
 
@@ -695,10 +695,10 @@ Figura 5.2.3-9. Aplicación de la migración `AddSubscriptionAudience` a la base
 
 | Producto | Versión publicada | Alcance |
 |---|---|---|
-| Landing Page | [v3.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/v3.0.0) | Landing de AV2 con el video About the Product incrustado y los enlaces a la aplicación publicada. La versión [v2.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/release/v2.0.0) es la anterior a AV2. |
-| Web Application | [v1.1.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/releases/tag/v1.1.0) | Frontend de AV2 publicado en Netlify desde el commit `48f27d9`. |
+| Landing Page | [v3.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/v3.0.0) | Landing de AV2 con el video About the Product incrustado y los enlaces a la aplicación publicada. La versión [v2.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/releases/tag/v2.0.0) es la anterior a AV2. |
+| Web Application | [v2.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/releases/tag/v2.0.0) | Integra en `main` y `develop` el frontend de AV2 y su conexión con Render; cierre de versión del 25/11/2026, commit `5ee5c6b`. Las capturas originales de AV2 conservan su commit de referencia `48f27d9`. |
 | Web Services | [v1.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/releases/tag/v1.0.0) | Backend de AV2 desplegado en Render desde el commit `c1177eb`. |
-| Informe | [av2-capitulo-5](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/releases/tag/av2-capitulo-5) | Prerelease de revisión del capítulo 5, correspondiente al commit `bbc545b`. |
+| Informe | [v4.0.0](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/releases/tag/v4.0.0) | Normalización del versionado solicitada el 25/11/2026. Las versiones v1.0.0 a v4.0.0 se distinguen por metadatos de versión; no representan cuatro entregas históricas reconstruidas. La prerelease anterior `av2-capitulo-5` se conserva como referencia de revisión. |
 
 #### 5.2.3.8 Team Collaboration Insights during Sprint
 
@@ -707,7 +707,7 @@ Se separaron las correcciones por capítulo para facilitar su revisión e integr
 | Integrante | Aporte verificable del Sprint 3 | Evidencia | Revisión o colaboración |
 |---|---|---|---|
 | Reyes Limo, Sebastian Eduardo (llegastian11) | Backend C# con PostgreSQL y configuración Docker para su despliegue; frontend conectado a la autenticación real y adaptado al diseño de la validación; integración del Landing Page y publicación de su release v3.0.0; documentación del Sprint en el informe. | [c1177eb](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/commit/c1177eb), [2f5234e](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/commit/2f5234e), [48f27d9](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-webapp/commit/48f27d9), PR #8 y #9 del Landing Page, [638906f](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/638906f) del informe. | Integró el PR #7 del Landing Page y el PR #10 del informe, ambos de Harrison1024. |
-| Palomino Murga, Daniel Stalin (DanielPM23) | Diagrama de clases completo del backend; Capítulo IV del informe: diagramas de componentes y estructura relacional de PostgreSQL. | [b80cdde](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/commit/b80cdde) en el backend; [0ddc1dd](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/0ddc1dd), [2477b49](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/2477b49) y [315f0be](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/315f0be) en la rama `feature/sprint3/capitulo-4`. | La rama `feature/sprint3/capitulo-4` aún no está integrada en `develop`. |
+| Palomino Murga, Daniel Stalin (DanielPM23) | Diagrama de clases completo del backend; Capítulo IV del informe: diagramas de componentes y estructura relacional de PostgreSQL. | [b80cdde](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-platform/commit/b80cdde) en el backend; [0ddc1dd](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/0ddc1dd), [2477b49](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/2477b49) y [315f0be](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/315f0be) en la rama `feature/sprint3/capitulo-4`. | La rama se integró a `develop` por el PR #14. La revisión actual no modifica sus diagramas. |
 | Becerra Durand, Sebastian Uriel (sebasdev28) | No registra commits en los repositorios de FleetProof entre el 2026-10-11 y el 2026-11-15. | Capturas 5.2.3.8-1 a 5.2.3.8-4. | Sin revisiones registradas. |
 | Gómez De La Torre Huertas, Rodrigo Fernando (rod670) | Actualizó fecha, horario, modalidad y asistentes de la planificación, y registró historias y puntos del Sprint 3. | [c410aeb](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/c410aeb) y [2b59bb7](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/2b59bb7). | Sin revisiones registradas. |
 | Payesa Torres, Harrison Hubert (Harrison1024) | Landing Page de AV2 con el video About the Product incrustado y las llamadas a la acción hacia la aplicación publicada; video About the Product; video de las entrevistas de validación; secciones 5.3, 5.4 y los anexos D y E del informe. | [c8fb901](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-website/commit/c8fb901), [c204778](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/commit/c204778), PR #12 del informe, [video en YouTube](https://youtu.be/zLoyj8Rw4oA). | Sus PR #7 y #10 fueron revisados e integrados por llegastian11. |

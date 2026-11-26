@@ -15,22 +15,27 @@ URL del repositorio del informe: https://github.com/upc-pre-202620-asi0730-8088-
 
 ## Estrategia de colaboración
 
-El equipo BLIP elaborará el informe en Markdown usando GitHub como sistema de control de versiones. El archivo principal será `README.md` y cada capítulo tendrá un archivo independiente en `docs/`, con el fin de reducir conflictos de edición y evidenciar aportes individuales.
+El equipo BLIP elabora el informe en Markdown usando GitHub como sistema de control de versiones. El archivo principal es `README.md` y cada capítulo tiene un archivo independiente en `docs/`, con el fin de reducir conflictos de edición y evidenciar aportes individuales.
 
 ## Evidencias por entrega
 
 | Entrega | Evidencia requerida | Estado |
 |---|---|---|
-| AV1 | Commits, ramas, Pull Requests, merges y capturas de colaboración del informe. | Completado: 6 Pull Requests mergeados en `develop`, release `v1.0.0` de la Landing Page, despliegue en GitHub Pages y video About-the-Team. |
-| TB1 | Actualización de commits, mejoras sobre feedback y nueva versión del informe. | Ver el registro de implementación del Sprint 2. |
-| AV2 | Evidencias ampliadas de colaboración, validación y mejoras. | PR #10 y #12 para evidencias audiovisuales; PR #14 para arquitectura; PR #13 y #15 abiertos para planificación y Student Outcome. |
-| TB2 | Evidencia final de colaboración durante todo el ciclo. | Fuera del alcance de AV2. |
+| AV1 | Organización del informe, capítulos iniciales y aportes por integrante. | Historial de septiembre y seis PR integrados; la exposición AV1 se referencia en el Anexo A y no se presenta como About-the-Team. |
+| TB1 | Desarrollo de la aplicación y revisión de artefactos del Sprint 2. | Capítulo V, Sprint 2, y commits de octubre de los cinco integrantes; Student Outcome TB1 recuperado de `fae26fb`. |
+| AV2 | Evidencias ampliadas de colaboración, validación y mejoras. | PR #10 y #12 de evidencia audiovisual; PR #14 de arquitectura. PR #13, #15 y #16 integrados en develop durante la revisión del 25/11/2026, preservando los cambios de Rodrigo y el Student Outcome acumulado. |
 
 ## Analíticos de GitHub del informe
 
 ![Analíticos de colaboración del repositorio del informe](assets/chapter-5/sprint-3/analiticos-report-contributors.png)
 
 Captura histórica del repositorio `fleetproof-report`, rama `develop`, con el período del 10 de octubre al 14 de noviembre de 2026. Esta evidencia corresponde al corte registrado para AV2; no representa los commits de corrección posteriores a la evaluación.
+
+## Analíticos acumulados y correcciones
+
+![Contributors de GitHub del informe](assets/chapter-5/sprint-3/github-report-contributors-2026-11-25.jpg)
+
+Captura nativa realizada el 25/11/2026 en [GitHub Contributors](https://github.com/upc-pre-202620-asi0730-8088-blip/fleetproof-report/graphs/contributors), rama `develop`, período visible del 22 de agosto al 21 de noviembre de 2026, excluyendo commits de fusión. GitHub muestra Harrison1024 (20), sebasdev28 (16), llegastian11 (16), DanielPM23 (16) y rod670 (15). Es un corte acumulado calculado por GitHub; no atribuye los commits de las correcciones de hoy a las entregas anteriores.
 
 ## Convenciones de GitFlow
 

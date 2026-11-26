@@ -2,7 +2,7 @@
 
 ## Conclusiones y recomendaciones
 
-### Conclusiones
+### Conclusiones de AV1
 
 El desarrollo de la primera entrega permitió establecer y delimitar el problema que FleetProof busca abordar: la verificación de información documentaria y administrativa de vehículos se realiza actualmente mediante consultas distribuidas entre diferentes fuentes, lo que dificulta consolidar resultados, conservar evidencias, comparar estados y realizar seguimiento de observaciones. Esta problemática se encuentra especialmente relacionada con empresas que administran flotas pequeñas y medianas, aunque también se identificó su presencia en propietarios, compradores y conductores independientes.
 
@@ -21,6 +21,10 @@ Como siguiente paso, se recomienda profundizar el Needfinding y utilizar sus res
 En el desarrollo del producto se recomienda priorizar las funcionalidades relacionadas directamente con la propuesta de valor identificada: consolidación de información, trazabilidad de fuentes, generación de reportes, comparación de estados, identificación de unidades críticas y seguimiento de observaciones. Estas capacidades mantienen correspondencia con las User Stories y el Product Backlog definidos para FleetProof.
 
 Finalmente, se recomienda mantener el carácter iterativo del proceso Lean UX. Los *Assumptions* y *Hypothesis Statements* deben actualizarse conforme se obtenga nueva evidencia, evitando considerar como validadas aquellas afirmaciones que todavía no hayan sido contrastadas con métricas o pruebas de usuarios. Para las siguientes entregas, el roadmap deberá orientarse progresivamente desde la validación del problema hacia la validación de la propuesta de valor, las funcionalidades principales y posteriormente la implementación completa de la solución.
+
+### Conclusiones de TB1
+
+El Sprint 2 incorporó la aplicación web por contextos y su integración con una Fake RESTful API. Se documentaron acceso de usuarios, información vehicular, reportes PDF, suscripciones y pagos simulados, flotas y monitoreo. Este incremento permitió comprobar navegación y persistencia de demostración; no acredita conexión con fuentes oficiales ni cobros reales. Los resultados se relacionan con la centralización y trazabilidad planteadas en Lean UX, pero no bastan para afirmar las reducciones de tiempo previstas en las hipótesis.
 
 ### Conclusiones de AV2
 

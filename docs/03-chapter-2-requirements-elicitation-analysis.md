@@ -368,7 +368,7 @@ En esta sección se registran los As-is Scenario Maps elaborados para representa
 
 Los mapas enviados deben tratarse como evidencia visual de trabajo del equipo. Antes de la entrega final, se recomienda reemplazar o complementar las descripciones preliminares con hallazgos obtenidos en entrevistas reales, indicando fecha, herramienta utilizada, integrantes participantes y enlace al tablero original.
 
-#### Segmento 1: responsables de flotas pequeñas y medianas
+#### Segmento 2: responsables de flotas pequeñas y medianas
 
 ![As-is Scenario Map - Responsables de flotas pequeñas y medianas](assets/chapter-2/as-is-scenario-maps/as-is-seg-01-fleet-operations.png)
 
@@ -378,7 +378,7 @@ Fuente y enlace al artefacto: tablero elaborado por el equipo en Miro. URL: [COM
 
 Este mapa representa el recorrido de un responsable que recibe la necesidad de revisar documentación vehicular, busca información en diversas fuentes, verifica datos y documentos, gestiona problemas encontrados y toma decisiones operativas. El principal dolor identificado es la dispersión de información y el seguimiento manual de por atender, lo que sustenta funciones como checklist por fuente, dashboard de riesgo, registro de evidencia y casos de resolución.
 
-#### Segmento 2: propietarios o compradores particulares
+#### Segmento 1: propietarios o compradores particulares
 
 ![As-is Scenario Map - Propietarios o compradores particulares](assets/chapter-2/as-is-scenario-maps/as-is-seg-02-buyer-owner.png)
 
