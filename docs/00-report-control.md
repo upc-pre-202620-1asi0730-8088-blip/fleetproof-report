@@ -6,6 +6,7 @@
 | 0.2.0 | 2026-09-13 | Reyes Limo, Sebastian Eduardo | Desarrollo del Capítulo II, evidencias de Needfinding, Big Picture Event Storming y mejora del Ubiquitous Language. |
 | 0.3.0 | 2026-09-20 | Reyes Limo, Sebastian Eduardo | Corrección de los datos de colaboración del `README.md` (códigos y usuarios de GitHub), incorporación de los enlaces de los repositorios del proyecto, actualización de los roles y del estado de AV1, conclusiones del Student Outcome por integrante y cierre de los entregables del plan AV1. Se agregó el video About-the-Team y se completaron las evidencias de ejecución del Capítulo V (US01 a US04) y los anexos de entrevistas y de navegación del prototipo. |
 | 0.4.0 | 2026-11-15 | BLIP | AV2: se actualizó el Sprint 3 con evidencias de integración y despliegue, las entrevistas de validación y el video About the Team. |
+| v1.0.0 | 2026-11-25 | BLIP | Normalización administrativa del número de versión del informe acumulado AV1, TB1 y AV2; sin cambios de contenido entre v1.0.0 y v4.0.0. |
 
 # Project Report Collaboration Insights
 
