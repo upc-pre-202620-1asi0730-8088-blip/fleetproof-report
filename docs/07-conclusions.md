@@ -22,6 +22,12 @@ En el desarrollo del producto se recomienda priorizar las funcionalidades relaci
 
 Finalmente, se recomienda mantener el carácter iterativo del proceso Lean UX. Los *Assumptions* y *Hypothesis Statements* deben actualizarse conforme se obtenga nueva evidencia, evitando considerar como validadas aquellas afirmaciones que todavía no hayan sido contrastadas con métricas o pruebas de usuarios. Para las siguientes entregas, el roadmap deberá orientarse progresivamente desde la validación del problema hacia la validación de la propuesta de valor, las funcionalidades principales y posteriormente la implementación completa de la solución.
 
+### Conclusiones de AV2
+
+En el Sprint 3 se integró la aplicación Vue con los servicios ASP.NET Core y PostgreSQL. Las pruebas de ejecución documentaron la activación del plan, el registro y la asignación de vehículos, y la persistencia de la asignación después de recargar. La landing publicada dirige a la aplicación de AV2.
+
+Las sesiones guiadas aportaron dos prioridades: hacer visible la vigencia y cobertura de los datos por fuente, y distinguir el reporte puntual del seguimiento recurrente. Para la siguiente revisión se recomienda validar ambos recorridos en Vue sin asistencia, ampliar la muestra por segmento y medir si localizar el riesgo y revisar una placa requieren menos pasos.
+
 ## Video About-the-Team
 
 
